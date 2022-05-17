@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_pac_man_1_1_player" xml:lang="en-US">
+<title>PacMan::Player Class Reference</title>
+<indexterm><primary>PacMan::Player</primary></indexterm>
+<para>
+<computeroutput>#include &lt;Player.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_pac_man_1_1_player_1a2df50a021cd169aa34f744049accfb62">Player</link> ()=default</para>
+</listitem>
+            <listitem><para><link linkend="_class_pac_man_1_1_player_1a69fcbff3737c51c419ce0b5b17b69df7">Player</link> (const <link linkend="_class_pac_man_1_1_point">Point</link> startPosition)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_pac_man_1_1_player_1aded75e03d338b5a5cfd449a1558c9fe1">Move</link> (<link linkend="_class_pac_man_1_1_point">Point</link> dir)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_pac_man_1_1_player_1a0b3a21676bf7a89ebf8e2f2e531b5776">Update</link> (<link linkend="_class_pac_man_1_1_map">Map</link>&lt; 21, 21 &gt; &amp;map, <link linkend="_class_pac_man_1_1_point">Point</link> ghostPositions[4])</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>bool <link linkend="_class_pac_man_1_1_player_1a0a2a57ba1341b6c7f083389af1758989">isDead</link> {}</para>
+</listitem>
+            <listitem><para><link linkend="_class_pac_man_1_1_point">Point</link> <link linkend="_class_pac_man_1_1_player_1a07ce2410ed70e3627ff6672b296eed52">position</link> {}</para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_class_pac_man_1_1_player_1aa37c08fdbdb1322955c5469c23f11f84">direction</link> {}</para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_class_pac_man_1_1_player_1a47c55929496d12adea751673d32029b5">score</link> {}</para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_class_pac_man_1_1_player_1afb0e29ff5e80ecf1580db2e709ae54a0">scoreMultiplier</link> {}</para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_class_pac_man_1_1_player_1a20d20e4a7015f82245ffd6e8489cb23f">multiplierTicks</link> {}</para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_pac_man_1_1_player_1a62aa803f9804f871bf5c307dfff95468">isPowered</link> {}</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Клас Играч </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_pac_man_1_1_player_1a2df50a021cd169aa34f744049accfb62"/><section>
+    <title>Player()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>Player</primary><secondary>PacMan::Player</secondary></indexterm>
+<indexterm><primary>PacMan::Player</primary><secondary>Player</secondary></indexterm>
+<para><computeroutput>PacMan::Player::Player ( )<computeroutput>[default]</computeroutput></computeroutput></para>
+<para>Конструктор по подразбиране </para>
+</section>
+<anchor xml:id="_class_pac_man_1_1_player_1a69fcbff3737c51c419ce0b5b17b69df7"/><section>
+    <title>Player()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>Player</primary><secondary>PacMan::Player</secondary></indexterm>
+<indexterm><primary>PacMan::Player</primary><secondary>Player</secondary></indexterm>
+<para><computeroutput>PacMan::Player::Player (const <link linkend="_class_pac_man_1_1_point">Point</link> startPosition)<computeroutput>[inline]</computeroutput></computeroutput></para>
+<para>Конструктор при който се задава началната позиция на играча </para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_pac_man_1_1_player_1aded75e03d338b5a5cfd449a1558c9fe1"/><section>
+    <title>Move()</title>
+<indexterm><primary>Move</primary><secondary>PacMan::Player</secondary></indexterm>
+<indexterm><primary>PacMan::Player</primary><secondary>Move</secondary></indexterm>
+<para><computeroutput>void PacMan::Player::Move (<link linkend="_class_pac_man_1_1_point">Point</link> dir)<computeroutput>[inline]</computeroutput></computeroutput></para>
+<para>Функция която мърда играча в дадена посока </para>
+</section>
+<anchor xml:id="_class_pac_man_1_1_player_1a0b3a21676bf7a89ebf8e2f2e531b5776"/><section>
+    <title>Update()</title>
+<indexterm><primary>Update</primary><secondary>PacMan::Player</secondary></indexterm>
+<indexterm><primary>PacMan::Player</primary><secondary>Update</secondary></indexterm>
+<para><computeroutput>void PacMan::Player::Update (<link linkend="_class_pac_man_1_1_map">Map</link>&lt; 21, 21 &gt; &amp; map, <link linkend="_class_pac_man_1_1_point">Point</link> ghostPositions[4])</computeroutput></para>
+<para>Функция която опреснява играча и картата </para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_pac_man_1_1_player_1aa37c08fdbdb1322955c5469c23f11f84"/><section>
+    <title>direction</title>
+<indexterm><primary>direction</primary><secondary>PacMan::Player</secondary></indexterm>
+<indexterm><primary>PacMan::Player</primary><secondary>direction</secondary></indexterm>
+<para><computeroutput>uint32_t PacMan::Player::direction {}</computeroutput></para>
+<para>Посока в която се движи играча </para>
+</section>
+<anchor xml:id="_class_pac_man_1_1_player_1a0a2a57ba1341b6c7f083389af1758989"/><section>
+    <title>isDead</title>
+<indexterm><primary>isDead</primary><secondary>PacMan::Player</secondary></indexterm>
+<indexterm><primary>PacMan::Player</primary><secondary>isDead</secondary></indexterm>
+<para><computeroutput>bool PacMan::Player::isDead {}</computeroutput></para>
+<para>Флаг който служи за проверка дали играчът е умрял </para>
+</section>
+<anchor xml:id="_class_pac_man_1_1_player_1a62aa803f9804f871bf5c307dfff95468"/><section>
+    <title>isPowered</title>
+<indexterm><primary>isPowered</primary><secondary>PacMan::Player</secondary></indexterm>
+<indexterm><primary>PacMan::Player</primary><secondary>isPowered</secondary></indexterm>
+<para><computeroutput>bool PacMan::Player::isPowered {}</computeroutput></para>
+<para>Флаг за проверка дали може да изяде духче </para>
+</section>
+<anchor xml:id="_class_pac_man_1_1_player_1a20d20e4a7015f82245ffd6e8489cb23f"/><section>
+    <title>multiplierTicks</title>
+<indexterm><primary>multiplierTicks</primary><secondary>PacMan::Player</secondary></indexterm>
+<indexterm><primary>PacMan::Player</primary><secondary>multiplierTicks</secondary></indexterm>
+<para><computeroutput>uint32_t PacMan::Player::multiplierTicks {}</computeroutput></para>
+<para>Изминали тикове </para>
+</section>
+<anchor xml:id="_class_pac_man_1_1_player_1a07ce2410ed70e3627ff6672b296eed52"/><section>
+    <title>position</title>
+<indexterm><primary>position</primary><secondary>PacMan::Player</secondary></indexterm>
+<indexterm><primary>PacMan::Player</primary><secondary>position</secondary></indexterm>
+<para><computeroutput><link linkend="_class_pac_man_1_1_point">Point</link> PacMan::Player::position {}</computeroutput></para>
+<para>Позиция на играча </para>
+</section>
+<anchor xml:id="_class_pac_man_1_1_player_1a47c55929496d12adea751673d32029b5"/><section>
+    <title>score</title>
+<indexterm><primary>score</primary><secondary>PacMan::Player</secondary></indexterm>
+<indexterm><primary>PacMan::Player</primary><secondary>score</secondary></indexterm>
+<para><computeroutput>uint32_t PacMan::Player::score {}</computeroutput></para>
+<para>Точки които е събрал играча </para>
+</section>
+<anchor xml:id="_class_pac_man_1_1_player_1afb0e29ff5e80ecf1580db2e709ae54a0"/><section>
+    <title>scoreMultiplier</title>
+<indexterm><primary>scoreMultiplier</primary><secondary>PacMan::Player</secondary></indexterm>
+<indexterm><primary>PacMan::Player</primary><secondary>scoreMultiplier</secondary></indexterm>
+<para><computeroutput>uint32_t PacMan::Player::scoreMultiplier {}</computeroutput></para>
+<para>умножител на точки </para>
+</section>
+<para>
+The documentation for this class was generated from the following files:</para>
+<link linkend="__player_8h">Player.h</link><link linkend="__player_8cpp">Player.cpp</link></section>
+</section>

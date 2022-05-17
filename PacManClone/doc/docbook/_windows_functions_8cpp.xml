@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__windows_functions_8cpp" xml:lang="en-US">
+<title>WindowsFunctions.cpp File Reference</title>
+<indexterm><primary>WindowsFunctions.cpp</primary></indexterm>
+<programlisting linenumbering="unnumbered">#include &quot;WindowsFunctions.h&quot;
+</programlisting><simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="__windows_functions_8cpp_1acbfe10552d3a0096f9e3f3e78f4a505f">GotoXY</link> (SHORT x, SHORT y)</para>
+</listitem>
+            <listitem><para>POINT <link linkend="__windows_functions_8cpp_1a7e0c531b5e91c583ba939a19a4e55e16">GetCursorPosition</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="__windows_functions_8cpp_1a6a3ca153f0817e8ba91a023b886bb662">ClearScreen</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="__windows_functions_8cpp_1ab439747e31446222d0260e86d5955a1b">ShowConsoleCursor</link> (bool showFlag)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="__windows_functions_8cpp_1a6a3ca153f0817e8ba91a023b886bb662"/><section>
+    <title>ClearScreen()</title>
+<indexterm><primary>ClearScreen</primary><secondary>WindowsFunctions.cpp</secondary></indexterm>
+<indexterm><primary>WindowsFunctions.cpp</primary><secondary>ClearScreen</secondary></indexterm>
+<para><computeroutput>void ClearScreen ( )</computeroutput></para>
+<para>Функция която трие екрана </para>
+</section>
+<anchor xml:id="__windows_functions_8cpp_1a7e0c531b5e91c583ba939a19a4e55e16"/><section>
+    <title>GetCursorPosition()</title>
+<indexterm><primary>GetCursorPosition</primary><secondary>WindowsFunctions.cpp</secondary></indexterm>
+<indexterm><primary>WindowsFunctions.cpp</primary><secondary>GetCursorPosition</secondary></indexterm>
+<para><computeroutput>POINT GetCursorPosition ( )</computeroutput></para>
+<para>Функция която взима позицията на курсора </para>
+</section>
+<anchor xml:id="__windows_functions_8cpp_1acbfe10552d3a0096f9e3f3e78f4a505f"/><section>
+    <title>GotoXY()</title>
+<indexterm><primary>GotoXY</primary><secondary>WindowsFunctions.cpp</secondary></indexterm>
+<indexterm><primary>WindowsFunctions.cpp</primary><secondary>GotoXY</secondary></indexterm>
+<para><computeroutput>void GotoXY (SHORT x, SHORT y)</computeroutput></para>
+<para>Функция която казва на курсора да отиде на x,y </para>
+</section>
+<anchor xml:id="__windows_functions_8cpp_1ab439747e31446222d0260e86d5955a1b"/><section>
+    <title>ShowConsoleCursor()</title>
+<indexterm><primary>ShowConsoleCursor</primary><secondary>WindowsFunctions.cpp</secondary></indexterm>
+<indexterm><primary>WindowsFunctions.cpp</primary><secondary>ShowConsoleCursor</secondary></indexterm>
+<para><computeroutput>void ShowConsoleCursor (bool showFlag)</computeroutput></para>
+<para>Функцуя която показва или скрива курсора </para>
+</section>
+</section>
+</section>

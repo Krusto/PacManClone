@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__math_8cpp" xml:lang="en-US">
+<title>Math.cpp File Reference</title>
+<indexterm><primary>Math.cpp</primary></indexterm>
+<programlisting linenumbering="unnumbered">#include &quot;Math.h&quot;
+</programlisting><simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>float <link linkend="__math_8cpp_1a5db37d12fdb63c08bd0705fbad423279">GetDistance</link> (<link linkend="_class_pac_man_1_1_point">PacMan::Point</link> p1, <link linkend="_class_pac_man_1_1_point">PacMan::Point</link> p2)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="__math_8cpp_1a5db37d12fdb63c08bd0705fbad423279"/><section>
+    <title>GetDistance()</title>
+<indexterm><primary>GetDistance</primary><secondary>Math.cpp</secondary></indexterm>
+<indexterm><primary>Math.cpp</primary><secondary>GetDistance</secondary></indexterm>
+<para><computeroutput>float GetDistance (<link linkend="_class_pac_man_1_1_point">PacMan::Point</link> p1, <link linkend="_class_pac_man_1_1_point">PacMan::Point</link> p2)</computeroutput></para>
+<para>Функция за изчисляване на дистанция използвайки теоремата на Питагор </para>
+</section>
+</section>
+</section>

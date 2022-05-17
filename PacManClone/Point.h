@@ -4,8 +4,17 @@
 namespace PacMan {
 	class Point {
 	public:
+		/**
+		* Конструктор по подразбиране
+		*/
 		Point() = default;
+		/**
+		* Конструктор който взима х,у като параметри
+		*/
 		Point(float x, float y) : x(x), y(y) {}
+		/**
+		* Конструктор който копира данните от друга точка
+		*/
 		Point(const Point&) = default;
 
 		Point& operator=(const Point& other) = default;

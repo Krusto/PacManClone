@@ -1,0 +1,350 @@
+\hypertarget{_ghost_8h_source}{}\doxysection{Ghost.\+h}
+\mbox{\hyperlink{_ghost_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_point_8h}{Point.h}}"{}}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <stdlib.h>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_map_8h}{Map.h}}"{}}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_math_8h}{Math.h}}"{}}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_player_8h}{Player.h}}"{}}}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespace_pac_man}{PacMan}} \{}
+\DoxyCodeLine{10     \textcolor{keyword}{class }\mbox{\hyperlink{class_pac_man_1_1_ghost}{Ghost}} \{}
+\DoxyCodeLine{11     \textcolor{keyword}{public}:}
+\DoxyCodeLine{12         \mbox{\hyperlink{class_pac_man_1_1_ghost_a954b23981b67a5d1a63e67f04d5eb53b}{Ghost}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{17         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_pac_man_1_1_ghost_aeec3ee1effda144606b54d09c11e0c6d}{Move}}(\mbox{\hyperlink{class_pac_man_1_1_point}{Point}} dir) \{ \mbox{\hyperlink{class_pac_man_1_1_ghost_a6067b8e3476e191b13a202b5b8e59a34}{position}} += dir; \}}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{22         \textcolor{keywordtype}{float} \mbox{\hyperlink{class_pac_man_1_1_ghost_a94c6ce208203fefe799ebf4ed2c6d6a9}{GetTargetDistance}}(uint32\_t \mbox{\hyperlink{class_pac_man_1_1_ghost_ad856d42488ccd3219ffa7bd794b3e607}{direction}}) \{}
+\DoxyCodeLine{23             \textcolor{keywordtype}{float} x = \mbox{\hyperlink{class_pac_man_1_1_ghost_a6067b8e3476e191b13a202b5b8e59a34}{position}}.\mbox{\hyperlink{class_pac_man_1_1_point_a3924af949ab632d79d7da9342a38858b}{x}};}
+\DoxyCodeLine{24             \textcolor{keywordtype}{float} y = \mbox{\hyperlink{class_pac_man_1_1_ghost_a6067b8e3476e191b13a202b5b8e59a34}{position}}.\mbox{\hyperlink{class_pac_man_1_1_point_abc32b96862fc2d149fed3f452c3d92e3}{y}};}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26             \textcolor{keywordflow}{switch} (\mbox{\hyperlink{class_pac_man_1_1_ghost_ad856d42488ccd3219ffa7bd794b3e607}{direction}})}
+\DoxyCodeLine{27             \{}
+\DoxyCodeLine{28             \textcolor{keywordflow}{case} 0:}
+\DoxyCodeLine{29             \{}
+\DoxyCodeLine{30                 x += 1;}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{33             \}}
+\DoxyCodeLine{34             \textcolor{keywordflow}{case} 1:}
+\DoxyCodeLine{35             \{}
+\DoxyCodeLine{36                 y -\/= 1;}
+\DoxyCodeLine{37 }
+\DoxyCodeLine{38                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{39             \}}
+\DoxyCodeLine{40             \textcolor{keywordflow}{case} 2:}
+\DoxyCodeLine{41             \{}
+\DoxyCodeLine{42                 x -\/= 1;}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{44                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{45             \}}
+\DoxyCodeLine{46             \textcolor{keywordflow}{case} 3:}
+\DoxyCodeLine{47             \{}
+\DoxyCodeLine{48                 y += 1;}
+\DoxyCodeLine{49             \}}
+\DoxyCodeLine{50             \}}
+\DoxyCodeLine{51             \textcolor{keywordflow}{return} \mbox{\hyperlink{_math_8cpp_a5db37d12fdb63c08bd0705fbad423279}{GetDistance}}(\{ x,y \}, \mbox{\hyperlink{class_pac_man_1_1_ghost_a2d81ccdab46f80c323c1dbf1701d6823}{target}});}
+\DoxyCodeLine{52         \}}
+\DoxyCodeLine{53 }
+\DoxyCodeLine{57         \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_pac_man_1_1_ghost_aa3f3ce336e930350eac546a8fc9e64a5}{IsCollidingPacman}}(\mbox{\hyperlink{class_pac_man_1_1_player}{Player}}\& player) \{}
+\DoxyCodeLine{58             \textcolor{keywordflow}{return} player.\mbox{\hyperlink{class_pac_man_1_1_player_a07ce2410ed70e3627ff6672b296eed52}{position}}.\mbox{\hyperlink{class_pac_man_1_1_point_ac97e17a8cdcdc9f253ffe15a95b94a91}{GetTrunc}}() == \mbox{\hyperlink{class_pac_man_1_1_ghost_a6067b8e3476e191b13a202b5b8e59a34}{position}};}
+\DoxyCodeLine{59         \}}
+\DoxyCodeLine{63         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_pac_man_1_1_ghost_a12858435f4ba53675af720aa54c57c6a}{UpdateTarget}}(uint32\_t pacmanDirection, \mbox{\hyperlink{class_pac_man_1_1_point}{Point}} ghostPosition, \mbox{\hyperlink{class_pac_man_1_1_point}{Point}} pacmanPosition,\mbox{\hyperlink{class_pac_man_1_1_map}{Map<21,21>}}\& map) \{}
+\DoxyCodeLine{64                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_pac_man_1_1_ghost_ac649b9d854dc1820d2000dea2417b243}{movementMode}} == 0) \textcolor{comment}{// scatter mode}}
+\DoxyCodeLine{65                 \{}
+\DoxyCodeLine{66                     \textcolor{comment}{//отива в края на картата}}
+\DoxyCodeLine{67                     \textcolor{keywordflow}{switch} (\textcolor{keywordtype}{id})}
+\DoxyCodeLine{68                     \{}
+\DoxyCodeLine{69                     \textcolor{keywordflow}{case} 0:}
+\DoxyCodeLine{70                     \{}
+\DoxyCodeLine{71                         \mbox{\hyperlink{class_pac_man_1_1_ghost_a2d81ccdab46f80c323c1dbf1701d6823}{target}} = \{(map.\mbox{\hyperlink{class_pac_man_1_1_map_a0b8cd839dd6322ae080ac116ae874a82}{GetSizeX}}() -\/ 1.0f), 0.0f \};}
+\DoxyCodeLine{72 }
+\DoxyCodeLine{73                         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{74                     \}}
+\DoxyCodeLine{75                     \textcolor{keywordflow}{case} 1:}
+\DoxyCodeLine{76                     \{}
+\DoxyCodeLine{77                         \mbox{\hyperlink{class_pac_man_1_1_ghost_a2d81ccdab46f80c323c1dbf1701d6823}{target}} = \{ 0.0f, 0.0f \};}
+\DoxyCodeLine{78 }
+\DoxyCodeLine{79                         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{80                     \}}
+\DoxyCodeLine{81                     \textcolor{keywordflow}{case} 2:}
+\DoxyCodeLine{82                     \{}
+\DoxyCodeLine{83                         \mbox{\hyperlink{class_pac_man_1_1_ghost_a2d81ccdab46f80c323c1dbf1701d6823}{target}} = \{ (map.\mbox{\hyperlink{class_pac_man_1_1_map_a0b8cd839dd6322ae080ac116ae874a82}{GetSizeX}}() -\/ 1.0f), (map.\mbox{\hyperlink{class_pac_man_1_1_map_a24d69b455463dffd0a55224a4150c9a0}{GetSizeY}}() -\/ 1.0f) \};}
+\DoxyCodeLine{84 }
+\DoxyCodeLine{85                         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{86                     \}}
+\DoxyCodeLine{87                     \textcolor{keywordflow}{case} 3:}
+\DoxyCodeLine{88                     \{}
+\DoxyCodeLine{89                         \mbox{\hyperlink{class_pac_man_1_1_ghost_a2d81ccdab46f80c323c1dbf1701d6823}{target}} = \{ 0.0f,(map.\mbox{\hyperlink{class_pac_man_1_1_map_a24d69b455463dffd0a55224a4150c9a0}{GetSizeY}}() -\/ 1.0f) \};}
+\DoxyCodeLine{90                     \}}
+\DoxyCodeLine{91                     \}}
+\DoxyCodeLine{92                 \}}
+\DoxyCodeLine{93                 \textcolor{keywordflow}{else} \textcolor{comment}{//chase mode}}
+\DoxyCodeLine{94                 \{}
+\DoxyCodeLine{95                     \textcolor{keywordflow}{switch} (\textcolor{keywordtype}{id})}
+\DoxyCodeLine{96                     \{}
+\DoxyCodeLine{97                     \textcolor{keywordflow}{case} 0: \textcolor{comment}{//червеният дух нацелва пакман}}
+\DoxyCodeLine{98                     \{}
+\DoxyCodeLine{99                         \mbox{\hyperlink{class_pac_man_1_1_ghost_a2d81ccdab46f80c323c1dbf1701d6823}{target}} = pacmanPosition;}
+\DoxyCodeLine{100 }
+\DoxyCodeLine{101                         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{102                     \}}
+\DoxyCodeLine{103                     \textcolor{keywordflow}{case} 1: \textcolor{comment}{//розовият дух нацелва 4 клетки пред пакман}}
+\DoxyCodeLine{104                     \{}
+\DoxyCodeLine{105                         \mbox{\hyperlink{class_pac_man_1_1_ghost_a2d81ccdab46f80c323c1dbf1701d6823}{target}} = pacmanPosition;}
+\DoxyCodeLine{106 }
+\DoxyCodeLine{107                         \textcolor{keywordflow}{switch} (pacmanDirection)}
+\DoxyCodeLine{108                         \{}
+\DoxyCodeLine{109                         \textcolor{keywordflow}{case} 0:}
+\DoxyCodeLine{110                         \{}
+\DoxyCodeLine{111                             \mbox{\hyperlink{class_pac_man_1_1_ghost_a2d81ccdab46f80c323c1dbf1701d6823}{target}} += \{2, 0\};}
+\DoxyCodeLine{112 }
+\DoxyCodeLine{113                             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{114                         \}}
+\DoxyCodeLine{115                         \textcolor{keywordflow}{case} 1:}
+\DoxyCodeLine{116                         \{}
+\DoxyCodeLine{117                             \mbox{\hyperlink{class_pac_man_1_1_ghost_a2d81ccdab46f80c323c1dbf1701d6823}{target}} -\/= \{0, 2\};}
+\DoxyCodeLine{118 }
+\DoxyCodeLine{119                             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{120                         \}}
+\DoxyCodeLine{121                         \textcolor{keywordflow}{case} 2:}
+\DoxyCodeLine{122                         \{}
+\DoxyCodeLine{123                             \mbox{\hyperlink{class_pac_man_1_1_ghost_a2d81ccdab46f80c323c1dbf1701d6823}{target}} -\/= \{2, 0\};}
+\DoxyCodeLine{124                             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{125                         \}}
+\DoxyCodeLine{126                         \textcolor{keywordflow}{case} 3:}
+\DoxyCodeLine{127                         \{}
+\DoxyCodeLine{128                             \mbox{\hyperlink{class_pac_man_1_1_ghost_a2d81ccdab46f80c323c1dbf1701d6823}{target}} += \{0, 2\};}
+\DoxyCodeLine{129 }
+\DoxyCodeLine{130                         \}}
+\DoxyCodeLine{131                         \}}
+\DoxyCodeLine{132 }
+\DoxyCodeLine{133                         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{134                     \}}
+\DoxyCodeLine{135                     \textcolor{keywordflow}{case} 2: \textcolor{comment}{// синият нацелва 2 клетки пред пакман}}
+\DoxyCodeLine{136                     \{}
+\DoxyCodeLine{137                         \mbox{\hyperlink{class_pac_man_1_1_ghost_a2d81ccdab46f80c323c1dbf1701d6823}{target}} = pacmanPosition;}
+\DoxyCodeLine{138 }
+\DoxyCodeLine{139                         \textcolor{keywordflow}{switch} (pacmanDirection)}
+\DoxyCodeLine{140                         \{}
+\DoxyCodeLine{141                         \textcolor{keywordflow}{case} 0:}
+\DoxyCodeLine{142                         \{}
+\DoxyCodeLine{143                             \mbox{\hyperlink{class_pac_man_1_1_ghost_a2d81ccdab46f80c323c1dbf1701d6823}{target}} += \{1, 0\};}
+\DoxyCodeLine{144 }
+\DoxyCodeLine{145                             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{146                         \}}
+\DoxyCodeLine{147                         \textcolor{keywordflow}{case} 1:}
+\DoxyCodeLine{148                         \{}
+\DoxyCodeLine{149                             \mbox{\hyperlink{class_pac_man_1_1_ghost_a2d81ccdab46f80c323c1dbf1701d6823}{target}} -\/= \{0, 1\};}
+\DoxyCodeLine{150 }
+\DoxyCodeLine{151                             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{152                         \}}
+\DoxyCodeLine{153                         \textcolor{keywordflow}{case} 2:}
+\DoxyCodeLine{154                         \{}
+\DoxyCodeLine{155                             \mbox{\hyperlink{class_pac_man_1_1_ghost_a2d81ccdab46f80c323c1dbf1701d6823}{target}} -\/= \{1, 0\};}
+\DoxyCodeLine{156 }
+\DoxyCodeLine{157                             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{158                         \}}
+\DoxyCodeLine{159                         \textcolor{keywordflow}{case} 3:}
+\DoxyCodeLine{160                         \{}
+\DoxyCodeLine{161                             \mbox{\hyperlink{class_pac_man_1_1_ghost_a2d81ccdab46f80c323c1dbf1701d6823}{target}} += \{0, 1\};}
+\DoxyCodeLine{162                         \}}
+\DoxyCodeLine{163                         \}}
+\DoxyCodeLine{164 }
+\DoxyCodeLine{165                         \mbox{\hyperlink{class_pac_man_1_1_ghost_a2d81ccdab46f80c323c1dbf1701d6823}{target}} += \{\mbox{\hyperlink{class_pac_man_1_1_ghost_a2d81ccdab46f80c323c1dbf1701d6823}{target}}.\mbox{\hyperlink{class_pac_man_1_1_point_a3924af949ab632d79d7da9342a38858b}{x}} -\/ ghostPosition.\mbox{\hyperlink{class_pac_man_1_1_point_a3924af949ab632d79d7da9342a38858b}{x}}, }
+\DoxyCodeLine{166                                      \mbox{\hyperlink{class_pac_man_1_1_ghost_a2d81ccdab46f80c323c1dbf1701d6823}{target}}.\mbox{\hyperlink{class_pac_man_1_1_point_abc32b96862fc2d149fed3f452c3d92e3}{y}} -\/ ghostPosition.\mbox{\hyperlink{class_pac_man_1_1_point_abc32b96862fc2d149fed3f452c3d92e3}{y}}\};}
+\DoxyCodeLine{167 }
+\DoxyCodeLine{168                         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{169                     \}}
+\DoxyCodeLine{170                     \textcolor{keywordflow}{case} 3: \textcolor{comment}{// оранжевият дух преследва пакман и след това отива в scatter режим}}
+\DoxyCodeLine{171                     \{}
+\DoxyCodeLine{172                         }
+\DoxyCodeLine{173                         \textcolor{keywordflow}{if} ( \mbox{\hyperlink{_math_8cpp_a5db37d12fdb63c08bd0705fbad423279}{GetDistance}}(pacmanPosition,\mbox{\hyperlink{class_pac_man_1_1_ghost_a6067b8e3476e191b13a202b5b8e59a34}{position}}) >= 4)}
+\DoxyCodeLine{174                         \{}
+\DoxyCodeLine{175                             \mbox{\hyperlink{class_pac_man_1_1_ghost_a2d81ccdab46f80c323c1dbf1701d6823}{target}} = pacmanPosition;}
+\DoxyCodeLine{176                         \}}
+\DoxyCodeLine{177                         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{178                         \{}
+\DoxyCodeLine{179                             \mbox{\hyperlink{class_pac_man_1_1_ghost_a2d81ccdab46f80c323c1dbf1701d6823}{target}} = \{ 0.0f, (map.\mbox{\hyperlink{class_pac_man_1_1_map_a24d69b455463dffd0a55224a4150c9a0}{GetSizeY}}() -\/ 1.0f) \};}
+\DoxyCodeLine{180                         \}}
+\DoxyCodeLine{181                     \}}
+\DoxyCodeLine{182                     \}}
+\DoxyCodeLine{183                 \}}
+\DoxyCodeLine{184         \}}
+\DoxyCodeLine{188         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_pac_man_1_1_ghost_a726b9b9f0860f9982ab32ec64ff96a6c}{Update}}(\mbox{\hyperlink{class_pac_man_1_1_map}{Map<21, 21>}}\& map, \mbox{\hyperlink{class_pac_man_1_1_player}{Player}}\& player,\mbox{\hyperlink{class_pac_man_1_1_ghost}{Ghost}}\& ghost) \{}
+\DoxyCodeLine{189             \textcolor{keywordtype}{bool} move = 0;}
+\DoxyCodeLine{190 }
+\DoxyCodeLine{191             \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{char} available\_ways = 0;}
+\DoxyCodeLine{192             \textcolor{keywordtype}{float} speed = 1;}
+\DoxyCodeLine{193 }
+\DoxyCodeLine{194             \textcolor{keywordtype}{bool} walls[4]\{\};}
+\DoxyCodeLine{195 }
+\DoxyCodeLine{196             \mbox{\hyperlink{class_pac_man_1_1_ghost_a12858435f4ba53675af720aa54c57c6a}{UpdateTarget}}(player.\mbox{\hyperlink{class_pac_man_1_1_player_aa37c08fdbdb1322955c5469c23f11f84}{direction}},ghost.\mbox{\hyperlink{class_pac_man_1_1_ghost_a6067b8e3476e191b13a202b5b8e59a34}{position}}, player.\mbox{\hyperlink{class_pac_man_1_1_player_a07ce2410ed70e3627ff6672b296eed52}{position}},map);}
+\DoxyCodeLine{197 }
+\DoxyCodeLine{198             walls[0] = map.\mbox{\hyperlink{class_pac_man_1_1_map_a0dd8ee98ccf17ef4a716a10aec02c5dd}{Get}}(\mbox{\hyperlink{class_pac_man_1_1_ghost_a6067b8e3476e191b13a202b5b8e59a34}{position}} + \mbox{\hyperlink{class_pac_man_1_1_point}{Point}}\{ speed,0 \}) == \textcolor{charliteral}{'\#'};}
+\DoxyCodeLine{199             walls[1] = map.\mbox{\hyperlink{class_pac_man_1_1_map_a0dd8ee98ccf17ef4a716a10aec02c5dd}{Get}}(\mbox{\hyperlink{class_pac_man_1_1_ghost_a6067b8e3476e191b13a202b5b8e59a34}{position}} + \mbox{\hyperlink{class_pac_man_1_1_point}{Point}}\{ 0,-\/speed \}) == \textcolor{charliteral}{'\#'};}
+\DoxyCodeLine{200             walls[2] = map.\mbox{\hyperlink{class_pac_man_1_1_map_a0dd8ee98ccf17ef4a716a10aec02c5dd}{Get}}(\mbox{\hyperlink{class_pac_man_1_1_ghost_a6067b8e3476e191b13a202b5b8e59a34}{position}} + \mbox{\hyperlink{class_pac_man_1_1_point}{Point}}\{ -\/speed,0 \}) == \textcolor{charliteral}{'\#'};}
+\DoxyCodeLine{201             walls[3] = map.\mbox{\hyperlink{class_pac_man_1_1_map_a0dd8ee98ccf17ef4a716a10aec02c5dd}{Get}}(\mbox{\hyperlink{class_pac_man_1_1_ghost_a6067b8e3476e191b13a202b5b8e59a34}{position}} + \mbox{\hyperlink{class_pac_man_1_1_point}{Point}}\{ 0,speed \}) == \textcolor{charliteral}{'\#'};}
+\DoxyCodeLine{202 }
+\DoxyCodeLine{203             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_pac_man_1_1_ghost_a11f08a6195ae76a77f28e4bdf4ba3df4}{frightenedMode}} != 1)}
+\DoxyCodeLine{204             \{}
+\DoxyCodeLine{205                 \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{char} optimal\_direction = 4;}
+\DoxyCodeLine{206 }
+\DoxyCodeLine{207                 \textcolor{comment}{// духчето може да мърда}}
+\DoxyCodeLine{208                 move = 1;}
+\DoxyCodeLine{209 }
+\DoxyCodeLine{210                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{char} a = 0; a < 4; a++)}
+\DoxyCodeLine{211                 \{}
+\DoxyCodeLine{212                     \textcolor{comment}{//духчетата не могат да се обърнат, стига да не е нужно}}
+\DoxyCodeLine{213                     \textcolor{keywordflow}{if} (a == (2 + \mbox{\hyperlink{class_pac_man_1_1_ghost_ad856d42488ccd3219ffa7bd794b3e607}{direction}}) \% 4)}
+\DoxyCodeLine{214                     \{}
+\DoxyCodeLine{215                         \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{216                     \}}
+\DoxyCodeLine{217                     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (walls[a] == \textcolor{keyword}{false})}
+\DoxyCodeLine{218                     \{}
+\DoxyCodeLine{219                         \textcolor{keywordflow}{if} (optimal\_direction == 4)}
+\DoxyCodeLine{220                         \{}
+\DoxyCodeLine{221                             optimal\_direction = a;}
+\DoxyCodeLine{222                         \}}
+\DoxyCodeLine{223 }
+\DoxyCodeLine{224                         available\_ways++;}
+\DoxyCodeLine{225 }
+\DoxyCodeLine{226                         \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_pac_man_1_1_ghost_a94c6ce208203fefe799ebf4ed2c6d6a9}{GetTargetDistance}}(a) < \mbox{\hyperlink{class_pac_man_1_1_ghost_a94c6ce208203fefe799ebf4ed2c6d6a9}{GetTargetDistance}}(optimal\_direction))}
+\DoxyCodeLine{227                         \{}
+\DoxyCodeLine{228                             \textcolor{comment}{// оптималната посока за да стигне целта}}
+\DoxyCodeLine{229                             optimal\_direction = a;}
+\DoxyCodeLine{230                         \}}
+\DoxyCodeLine{231                     \}}
+\DoxyCodeLine{232                 \}}
+\DoxyCodeLine{233 }
+\DoxyCodeLine{234                 \textcolor{keywordflow}{if} (available\_ways > 1)}
+\DoxyCodeLine{235                 \{}
+\DoxyCodeLine{236                     \textcolor{comment}{// когато стигне кръстопът избира най добрата посока}}
+\DoxyCodeLine{237                     \mbox{\hyperlink{class_pac_man_1_1_ghost_ad856d42488ccd3219ffa7bd794b3e607}{direction}} = optimal\_direction;}
+\DoxyCodeLine{238                 \}}
+\DoxyCodeLine{239                 \textcolor{keywordflow}{else}}
+\DoxyCodeLine{240                 \{}
+\DoxyCodeLine{241                     \textcolor{keywordflow}{if} (optimal\_direction == 4)}
+\DoxyCodeLine{242                     \{}
+\DoxyCodeLine{243                         \textcolor{comment}{// обръща се духчето на обратно защото трябва}}
+\DoxyCodeLine{244                         \mbox{\hyperlink{class_pac_man_1_1_ghost_ad856d42488ccd3219ffa7bd794b3e607}{direction}} = (2 + \mbox{\hyperlink{class_pac_man_1_1_ghost_ad856d42488ccd3219ffa7bd794b3e607}{direction}}) \% 4;}
+\DoxyCodeLine{245                     \}}
+\DoxyCodeLine{246                     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{247                     \{}
+\DoxyCodeLine{248                         \mbox{\hyperlink{class_pac_man_1_1_ghost_ad856d42488ccd3219ffa7bd794b3e607}{direction}} = optimal\_direction;}
+\DoxyCodeLine{249                     \}}
+\DoxyCodeLine{250                 \}}
+\DoxyCodeLine{251             \}}
+\DoxyCodeLine{252             \textcolor{keywordflow}{else}}
+\DoxyCodeLine{253             \{}
+\DoxyCodeLine{254                 \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{char} random\_direction = rand() \% 4;}
+\DoxyCodeLine{255 }
+\DoxyCodeLine{256                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_pac_man_1_1_ghost_a09c79e5ce945e94372d7b9ec9e2c88a6}{frightenedSpeedTimer}} == 0)}
+\DoxyCodeLine{257                 \{}
+\DoxyCodeLine{258                     }
+\DoxyCodeLine{259                     move = 1;}
+\DoxyCodeLine{260 }
+\DoxyCodeLine{261                     \mbox{\hyperlink{class_pac_man_1_1_ghost_a09c79e5ce945e94372d7b9ec9e2c88a6}{frightenedSpeedTimer}} = 30;}
+\DoxyCodeLine{262 }
+\DoxyCodeLine{263                     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{char} a = 0; a < 4; a++)}
+\DoxyCodeLine{264                     \{}
+\DoxyCodeLine{265                         \textcolor{comment}{// не може да се обръщат дори и да се страхуват}}
+\DoxyCodeLine{266                         \textcolor{keywordflow}{if} (a == (2 + \mbox{\hyperlink{class_pac_man_1_1_ghost_ad856d42488ccd3219ffa7bd794b3e607}{direction}}) \% 4)}
+\DoxyCodeLine{267                         \{}
+\DoxyCodeLine{268                             \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{269                         \}}
+\DoxyCodeLine{270                         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (walls[a] == 0)}
+\DoxyCodeLine{271                         \{}
+\DoxyCodeLine{272                             available\_ways++;}
+\DoxyCodeLine{273                         \}}
+\DoxyCodeLine{274                     \}}
+\DoxyCodeLine{275 }
+\DoxyCodeLine{276                     \textcolor{keywordflow}{if} (available\_ways > 0)}
+\DoxyCodeLine{277                     \{}
+\DoxyCodeLine{278                         \textcolor{keywordflow}{while} (walls[random\_direction] == 1 || random\_direction == (2 + \mbox{\hyperlink{class_pac_man_1_1_ghost_ad856d42488ccd3219ffa7bd794b3e607}{direction}}) \% 4)}
+\DoxyCodeLine{279                         \{}
+\DoxyCodeLine{280                             \textcolor{comment}{// взимаме произволна посока докато не може да я използваме}}
+\DoxyCodeLine{281                             random\_direction = rand() \% 4;}
+\DoxyCodeLine{282                         \}}
+\DoxyCodeLine{283 }
+\DoxyCodeLine{284                         \mbox{\hyperlink{class_pac_man_1_1_ghost_ad856d42488ccd3219ffa7bd794b3e607}{direction}} = random\_direction;}
+\DoxyCodeLine{285                     \}}
+\DoxyCodeLine{286                     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{287                     \{}
+\DoxyCodeLine{288                         \textcolor{comment}{// ако няма друг път се обръща наобратно}}
+\DoxyCodeLine{289                         \mbox{\hyperlink{class_pac_man_1_1_ghost_ad856d42488ccd3219ffa7bd794b3e607}{direction}} = (2 + \mbox{\hyperlink{class_pac_man_1_1_ghost_ad856d42488ccd3219ffa7bd794b3e607}{direction}}) \% 4;}
+\DoxyCodeLine{290                     \}}
+\DoxyCodeLine{291                 \}}
+\DoxyCodeLine{292                 \textcolor{keywordflow}{else}}
+\DoxyCodeLine{293                 \{}
+\DoxyCodeLine{294                     \mbox{\hyperlink{class_pac_man_1_1_ghost_a09c79e5ce945e94372d7b9ec9e2c88a6}{frightenedSpeedTimer}}-\/-\/;}
+\DoxyCodeLine{295                 \}}
+\DoxyCodeLine{296             \}}
+\DoxyCodeLine{297             \textcolor{comment}{// ако може да се мръдне го местим}}
+\DoxyCodeLine{298             \textcolor{keywordflow}{if} (move)}
+\DoxyCodeLine{299             \{}
+\DoxyCodeLine{300                 \textcolor{keywordflow}{switch} (\mbox{\hyperlink{class_pac_man_1_1_ghost_ad856d42488ccd3219ffa7bd794b3e607}{direction}})}
+\DoxyCodeLine{301                 \{}
+\DoxyCodeLine{302                 \textcolor{keywordflow}{case} 0:}
+\DoxyCodeLine{303                 \{}
+\DoxyCodeLine{304                     \mbox{\hyperlink{class_pac_man_1_1_ghost_a6067b8e3476e191b13a202b5b8e59a34}{position}}.\mbox{\hyperlink{class_pac_man_1_1_point_a3924af949ab632d79d7da9342a38858b}{x}} += speed;}
+\DoxyCodeLine{305 }
+\DoxyCodeLine{306                     \textcolor{keywordflow}{break};}
+\DoxyCodeLine{307                 \}}
+\DoxyCodeLine{308                 \textcolor{keywordflow}{case} 1:}
+\DoxyCodeLine{309                 \{}
+\DoxyCodeLine{310                     \mbox{\hyperlink{class_pac_man_1_1_ghost_a6067b8e3476e191b13a202b5b8e59a34}{position}}.\mbox{\hyperlink{class_pac_man_1_1_point_abc32b96862fc2d149fed3f452c3d92e3}{y}} -\/= speed;}
+\DoxyCodeLine{311 }
+\DoxyCodeLine{312                     \textcolor{keywordflow}{break};}
+\DoxyCodeLine{313                 \}}
+\DoxyCodeLine{314                 \textcolor{keywordflow}{case} 2:}
+\DoxyCodeLine{315                 \{}
+\DoxyCodeLine{316                     \mbox{\hyperlink{class_pac_man_1_1_ghost_a6067b8e3476e191b13a202b5b8e59a34}{position}}.\mbox{\hyperlink{class_pac_man_1_1_point_a3924af949ab632d79d7da9342a38858b}{x}} -\/= speed;}
+\DoxyCodeLine{317 }
+\DoxyCodeLine{318                     \textcolor{keywordflow}{break};}
+\DoxyCodeLine{319                 \}}
+\DoxyCodeLine{320                 \textcolor{keywordflow}{case} 3:}
+\DoxyCodeLine{321                 \{}
+\DoxyCodeLine{322                     \mbox{\hyperlink{class_pac_man_1_1_ghost_a6067b8e3476e191b13a202b5b8e59a34}{position}}.\mbox{\hyperlink{class_pac_man_1_1_point_abc32b96862fc2d149fed3f452c3d92e3}{y}} += speed;}
+\DoxyCodeLine{323                 \}}
+\DoxyCodeLine{324                 \}}
+\DoxyCodeLine{325 }
+\DoxyCodeLine{326                 \textcolor{comment}{// когато мине през портала го пращаме от другата страна}}
+\DoxyCodeLine{327                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_pac_man_1_1_ghost_a6067b8e3476e191b13a202b5b8e59a34}{position}}.\mbox{\hyperlink{class_pac_man_1_1_point_a3924af949ab632d79d7da9342a38858b}{x}} <= -\/1)}
+\DoxyCodeLine{328                 \{}
+\DoxyCodeLine{329                     \mbox{\hyperlink{class_pac_man_1_1_ghost_a6067b8e3476e191b13a202b5b8e59a34}{position}}.\mbox{\hyperlink{class_pac_man_1_1_point_a3924af949ab632d79d7da9342a38858b}{x}} = map.\mbox{\hyperlink{class_pac_man_1_1_map_a0b8cd839dd6322ae080ac116ae874a82}{GetSizeX}}() -\/ speed;}
+\DoxyCodeLine{330                 \}}
+\DoxyCodeLine{331                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_pac_man_1_1_ghost_a6067b8e3476e191b13a202b5b8e59a34}{position}}.\mbox{\hyperlink{class_pac_man_1_1_point_a3924af949ab632d79d7da9342a38858b}{x}} >= map.\mbox{\hyperlink{class_pac_man_1_1_map_a0b8cd839dd6322ae080ac116ae874a82}{GetSizeX}}())}
+\DoxyCodeLine{332                 \{}
+\DoxyCodeLine{333                     \mbox{\hyperlink{class_pac_man_1_1_ghost_a6067b8e3476e191b13a202b5b8e59a34}{position}}.\mbox{\hyperlink{class_pac_man_1_1_point_a3924af949ab632d79d7da9342a38858b}{x}} = speed;}
+\DoxyCodeLine{334                 \}}
+\DoxyCodeLine{335             \}}
+\DoxyCodeLine{336 }
+\DoxyCodeLine{337             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_pac_man_1_1_ghost_a6067b8e3476e191b13a202b5b8e59a34}{position}}.\mbox{\hyperlink{class_pac_man_1_1_point_ac97e17a8cdcdc9f253ffe15a95b94a91}{GetTrunc}}() == player.\mbox{\hyperlink{class_pac_man_1_1_player_a07ce2410ed70e3627ff6672b296eed52}{position}}.\mbox{\hyperlink{class_pac_man_1_1_point_ac97e17a8cdcdc9f253ffe15a95b94a91}{GetTrunc}}())}
+\DoxyCodeLine{338             \{}
+\DoxyCodeLine{339                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_pac_man_1_1_ghost_a11f08a6195ae76a77f28e4bdf4ba3df4}{frightenedMode}} == 0) \textcolor{comment}{// когато не е уплашен и докосне пакман, играта приключва}}
+\DoxyCodeLine{340                 \{}
+\DoxyCodeLine{341                     player.\mbox{\hyperlink{class_pac_man_1_1_player_a0a2a57ba1341b6c7f083389af1758989}{isDead}} = 1;}
+\DoxyCodeLine{342                 \}}
+\DoxyCodeLine{343                 \textcolor{keywordflow}{else} \textcolor{comment}{//иначе бяга към клетката}}
+\DoxyCodeLine{344                 \{}
+\DoxyCodeLine{345                     \mbox{\hyperlink{class_pac_man_1_1_ghost_a11f08a6195ae76a77f28e4bdf4ba3df4}{frightenedMode}} = 2;}
+\DoxyCodeLine{346 }
+\DoxyCodeLine{347                     \mbox{\hyperlink{class_pac_man_1_1_ghost_a2d81ccdab46f80c323c1dbf1701d6823}{target}} = \mbox{\hyperlink{class_pac_man_1_1_ghost_ab6cbd103664221789d640638c093e81c}{home}};}
+\DoxyCodeLine{348                 \}}
+\DoxyCodeLine{349             \}}
+\DoxyCodeLine{350         \}}
+\DoxyCodeLine{354         uint32\_t \textcolor{keywordtype}{id}\{\};}
+\DoxyCodeLine{358         uint32\_t \mbox{\hyperlink{class_pac_man_1_1_ghost_a09c79e5ce945e94372d7b9ec9e2c88a6}{frightenedSpeedTimer}}\{\};}
+\DoxyCodeLine{362         \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_pac_man_1_1_ghost_a11f08a6195ae76a77f28e4bdf4ba3df4}{frightenedMode}}\{\};}
+\DoxyCodeLine{366         uint32\_t \mbox{\hyperlink{class_pac_man_1_1_ghost_ac649b9d854dc1820d2000dea2417b243}{movementMode}}\{0\};}
+\DoxyCodeLine{370         \mbox{\hyperlink{class_pac_man_1_1_point}{Point}} \mbox{\hyperlink{class_pac_man_1_1_ghost_a6067b8e3476e191b13a202b5b8e59a34}{position}}\{\};}
+\DoxyCodeLine{374         \mbox{\hyperlink{class_pac_man_1_1_point}{Point}} \mbox{\hyperlink{class_pac_man_1_1_ghost_ab6cbd103664221789d640638c093e81c}{home}}\{10,10\};}
+\DoxyCodeLine{378         uint32\_t \mbox{\hyperlink{class_pac_man_1_1_ghost_ad856d42488ccd3219ffa7bd794b3e607}{direction}}\{\};}
+\DoxyCodeLine{382         \mbox{\hyperlink{class_pac_man_1_1_point}{Point}} \mbox{\hyperlink{class_pac_man_1_1_ghost_a2d81ccdab46f80c323c1dbf1701d6823}{target}}\{\};}
+\DoxyCodeLine{383     \};}
+\DoxyCodeLine{384 \}}
+
+\end{DoxyCode}

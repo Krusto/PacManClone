@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__player_8h_source" xml:lang="en-US">
+<title>Player.h</title>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered">1 <emphasis role="preprocessor">#pragma&#32;once</emphasis>
+2 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="__point_8h">Point.h</link>&quot;</emphasis>
+3 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="__map_8h">Map.h</link>&quot;</emphasis>
+4 <emphasis role="preprocessor">#include&#32;&lt;cstdlib&gt;</emphasis>
+5 <emphasis role="keyword">namespace&#32;</emphasis><link linkend="_namespace_pac_man">PacMan</link>&#32;{
+9 &#32;&#32;&#32;&#32;<emphasis role="keyword">class&#32;</emphasis><link linkend="_class_pac_man_1_1_player">Player</link>&#32;{
+10 &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>:
+14 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_pac_man_1_1_player_1a2df50a021cd169aa34f744049accfb62">Player</link>()&#32;=&#32;<emphasis role="keywordflow">default</emphasis>;
+18 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_pac_man_1_1_player_1a69fcbff3737c51c419ce0b5b17b69df7">Player</link>(<emphasis role="keyword">const</emphasis>&#32;<link linkend="_class_pac_man_1_1_point">Point</link>&#32;startPosition)&#32;:&#32;<link linkend="_class_pac_man_1_1_player_1a07ce2410ed70e3627ff6672b296eed52">position</link>(startPosition)&#32;{}
+22 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_pac_man_1_1_player_1aded75e03d338b5a5cfd449a1558c9fe1">Move</link>(<link linkend="_class_pac_man_1_1_point">Point</link>&#32;dir)&#32;{&#32;<link linkend="_class_pac_man_1_1_player_1a07ce2410ed70e3627ff6672b296eed52">position</link>&#32;+=&#32;dir;&#32;};
+26 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_pac_man_1_1_player_1a0b3a21676bf7a89ebf8e2f2e531b5776">Update</link>(<link linkend="_class_pac_man_1_1_map">Map&lt;21, 21&gt;</link>&amp;&#32;map,<link linkend="_class_pac_man_1_1_point">Point</link>&#32;ghostPositions[4]);
+27 
+31 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_class_pac_man_1_1_player_1a0a2a57ba1341b6c7f083389af1758989">isDead</link>{};
+35 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_pac_man_1_1_point">Point</link>&#32;<link linkend="_class_pac_man_1_1_player_1a07ce2410ed70e3627ff6672b296eed52">position</link>{};
+39 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;uint32_t&#32;<link linkend="_class_pac_man_1_1_player_1aa37c08fdbdb1322955c5469c23f11f84">direction</link>{};
+43 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;uint32_t&#32;<link linkend="_class_pac_man_1_1_player_1a47c55929496d12adea751673d32029b5">score</link>{};
+47 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;uint32_t&#32;<link linkend="_class_pac_man_1_1_player_1afb0e29ff5e80ecf1580db2e709ae54a0">scoreMultiplier</link>{};
+51 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;uint32_t&#32;<link linkend="_class_pac_man_1_1_player_1a20d20e4a7015f82245ffd6e8489cb23f">multiplierTicks</link>{};
+55 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_class_pac_man_1_1_player_1a62aa803f9804f871bf5c307dfff95468">isPowered</link>{};
+56 &#32;&#32;&#32;&#32;};
+57 }
+</programlisting></section>

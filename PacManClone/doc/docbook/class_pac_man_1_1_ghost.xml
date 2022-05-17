@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_pac_man_1_1_ghost" xml:lang="en-US">
+<title>PacMan::Ghost Class Reference</title>
+<indexterm><primary>PacMan::Ghost</primary></indexterm>
+<para>
+<computeroutput>#include &lt;Ghost.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_pac_man_1_1_ghost_1a954b23981b67a5d1a63e67f04d5eb53b">Ghost</link> ()=default</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_pac_man_1_1_ghost_1aeec3ee1effda144606b54d09c11e0c6d">Move</link> (<link linkend="_class_pac_man_1_1_point">Point</link> dir)</para>
+</listitem>
+            <listitem><para>float <link linkend="_class_pac_man_1_1_ghost_1a94c6ce208203fefe799ebf4ed2c6d6a9">GetTargetDistance</link> (uint32_t <link linkend="_class_pac_man_1_1_ghost_1ad856d42488ccd3219ffa7bd794b3e607">direction</link>)</para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_pac_man_1_1_ghost_1aa3f3ce336e930350eac546a8fc9e64a5">IsCollidingPacman</link> (<link linkend="_class_pac_man_1_1_player">Player</link> &amp;player)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_pac_man_1_1_ghost_1a12858435f4ba53675af720aa54c57c6a">UpdateTarget</link> (uint32_t pacmanDirection, <link linkend="_class_pac_man_1_1_point">Point</link> ghostPosition, <link linkend="_class_pac_man_1_1_point">Point</link> pacmanPosition, <link linkend="_class_pac_man_1_1_map">Map</link>&lt; 21, 21 &gt; &amp;map)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_pac_man_1_1_ghost_1a726b9b9f0860f9982ab32ec64ff96a6c">Update</link> (<link linkend="_class_pac_man_1_1_map">Map</link>&lt; 21, 21 &gt; &amp;map, <link linkend="_class_pac_man_1_1_player">Player</link> &amp;player, <link linkend="_class_pac_man_1_1_ghost">Ghost</link> &amp;ghost)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>uint32_t <link linkend="_class_pac_man_1_1_ghost_1a64a0f3fac45e11327ff933a9b71e3178">id</link> {}</para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_class_pac_man_1_1_ghost_1a09c79e5ce945e94372d7b9ec9e2c88a6">frightenedSpeedTimer</link> {}</para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_pac_man_1_1_ghost_1a11f08a6195ae76a77f28e4bdf4ba3df4">frightenedMode</link> {}</para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_class_pac_man_1_1_ghost_1ac649b9d854dc1820d2000dea2417b243">movementMode</link> {0}</para>
+</listitem>
+            <listitem><para><link linkend="_class_pac_man_1_1_point">Point</link> <link linkend="_class_pac_man_1_1_ghost_1a6067b8e3476e191b13a202b5b8e59a34">position</link> {}</para>
+</listitem>
+            <listitem><para><link linkend="_class_pac_man_1_1_point">Point</link> <link linkend="_class_pac_man_1_1_ghost_1ab6cbd103664221789d640638c093e81c">home</link> {10,10}</para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_class_pac_man_1_1_ghost_1ad856d42488ccd3219ffa7bd794b3e607">direction</link> {}</para>
+</listitem>
+            <listitem><para><link linkend="_class_pac_man_1_1_point">Point</link> <link linkend="_class_pac_man_1_1_ghost_1a2d81ccdab46f80c323c1dbf1701d6823">target</link> {}</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_pac_man_1_1_ghost_1a954b23981b67a5d1a63e67f04d5eb53b"/><section>
+    <title>Ghost()</title>
+<indexterm><primary>Ghost</primary><secondary>PacMan::Ghost</secondary></indexterm>
+<indexterm><primary>PacMan::Ghost</primary><secondary>Ghost</secondary></indexterm>
+<para><computeroutput>PacMan::Ghost::Ghost ( )<computeroutput>[default]</computeroutput></computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_pac_man_1_1_ghost_1a94c6ce208203fefe799ebf4ed2c6d6a9"/><section>
+    <title>GetTargetDistance()</title>
+<indexterm><primary>GetTargetDistance</primary><secondary>PacMan::Ghost</secondary></indexterm>
+<indexterm><primary>PacMan::Ghost</primary><secondary>GetTargetDistance</secondary></indexterm>
+<para><computeroutput>float PacMan::Ghost::GetTargetDistance (uint32_t direction)<computeroutput>[inline]</computeroutput></computeroutput></para>
+<para>Функция която връща разстоянието до целта </para>
+</section>
+<anchor xml:id="_class_pac_man_1_1_ghost_1aa3f3ce336e930350eac546a8fc9e64a5"/><section>
+    <title>IsCollidingPacman()</title>
+<indexterm><primary>IsCollidingPacman</primary><secondary>PacMan::Ghost</secondary></indexterm>
+<indexterm><primary>PacMan::Ghost</primary><secondary>IsCollidingPacman</secondary></indexterm>
+<para><computeroutput>bool PacMan::Ghost::IsCollidingPacman (<link linkend="_class_pac_man_1_1_player">Player</link> &amp; player)<computeroutput>[inline]</computeroutput></computeroutput></para>
+<para>Функция която проверява дали има колизия м-у духчето и пакман </para>
+</section>
+<anchor xml:id="_class_pac_man_1_1_ghost_1aeec3ee1effda144606b54d09c11e0c6d"/><section>
+    <title>Move()</title>
+<indexterm><primary>Move</primary><secondary>PacMan::Ghost</secondary></indexterm>
+<indexterm><primary>PacMan::Ghost</primary><secondary>Move</secondary></indexterm>
+<para><computeroutput>void PacMan::Ghost::Move (<link linkend="_class_pac_man_1_1_point">Point</link> dir)<computeroutput>[inline]</computeroutput></computeroutput></para>
+<para>Функция за движение на духчето в някаква посока </para>
+</section>
+<anchor xml:id="_class_pac_man_1_1_ghost_1a726b9b9f0860f9982ab32ec64ff96a6c"/><section>
+    <title>Update()</title>
+<indexterm><primary>Update</primary><secondary>PacMan::Ghost</secondary></indexterm>
+<indexterm><primary>PacMan::Ghost</primary><secondary>Update</secondary></indexterm>
+<para><computeroutput>void PacMan::Ghost::Update (<link linkend="_class_pac_man_1_1_map">Map</link>&lt; 21, 21 &gt; &amp; map, <link linkend="_class_pac_man_1_1_player">Player</link> &amp; player, <link linkend="_class_pac_man_1_1_ghost">Ghost</link> &amp; ghost)<computeroutput>[inline]</computeroutput></computeroutput></para>
+<para>Функция за опресняване на духчето </para>
+</section>
+<anchor xml:id="_class_pac_man_1_1_ghost_1a12858435f4ba53675af720aa54c57c6a"/><section>
+    <title>UpdateTarget()</title>
+<indexterm><primary>UpdateTarget</primary><secondary>PacMan::Ghost</secondary></indexterm>
+<indexterm><primary>PacMan::Ghost</primary><secondary>UpdateTarget</secondary></indexterm>
+<para><computeroutput>void PacMan::Ghost::UpdateTarget (uint32_t pacmanDirection, <link linkend="_class_pac_man_1_1_point">Point</link> ghostPosition, <link linkend="_class_pac_man_1_1_point">Point</link> pacmanPosition, <link linkend="_class_pac_man_1_1_map">Map</link>&lt; 21, 21 &gt; &amp; map)<computeroutput>[inline]</computeroutput></computeroutput></para>
+<para>Функция която опреснява целта </para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_pac_man_1_1_ghost_1ad856d42488ccd3219ffa7bd794b3e607"/><section>
+    <title>direction</title>
+<indexterm><primary>direction</primary><secondary>PacMan::Ghost</secondary></indexterm>
+<indexterm><primary>PacMan::Ghost</primary><secondary>direction</secondary></indexterm>
+<para><computeroutput>uint32_t PacMan::Ghost::direction {}</computeroutput></para>
+<para>Посока на духчето </para>
+</section>
+<anchor xml:id="_class_pac_man_1_1_ghost_1a11f08a6195ae76a77f28e4bdf4ba3df4"/><section>
+    <title>frightenedMode</title>
+<indexterm><primary>frightenedMode</primary><secondary>PacMan::Ghost</secondary></indexterm>
+<indexterm><primary>PacMan::Ghost</primary><secondary>frightenedMode</secondary></indexterm>
+<para><computeroutput>bool PacMan::Ghost::frightenedMode {}</computeroutput></para>
+<para>Променлива която служи за проверка дали е уплашено </para>
+</section>
+<anchor xml:id="_class_pac_man_1_1_ghost_1a09c79e5ce945e94372d7b9ec9e2c88a6"/><section>
+    <title>frightenedSpeedTimer</title>
+<indexterm><primary>frightenedSpeedTimer</primary><secondary>PacMan::Ghost</secondary></indexterm>
+<indexterm><primary>PacMan::Ghost</primary><secondary>frightenedSpeedTimer</secondary></indexterm>
+<para><computeroutput>uint32_t PacMan::Ghost::frightenedSpeedTimer {}</computeroutput></para>
+<para>Таймер за колко време се страхува </para>
+</section>
+<anchor xml:id="_class_pac_man_1_1_ghost_1ab6cbd103664221789d640638c093e81c"/><section>
+    <title>home</title>
+<indexterm><primary>home</primary><secondary>PacMan::Ghost</secondary></indexterm>
+<indexterm><primary>PacMan::Ghost</primary><secondary>home</secondary></indexterm>
+<para><computeroutput><link linkend="_class_pac_man_1_1_point">Point</link> PacMan::Ghost::home {10,10}</computeroutput></para>
+<para>Позиция на къщата на духчето </para>
+</section>
+<anchor xml:id="_class_pac_man_1_1_ghost_1a64a0f3fac45e11327ff933a9b71e3178"/><section>
+    <title>id</title>
+<indexterm><primary>id</primary><secondary>PacMan::Ghost</secondary></indexterm>
+<indexterm><primary>PacMan::Ghost</primary><secondary>id</secondary></indexterm>
+<para><computeroutput>uint32_t PacMan::Ghost::id {}</computeroutput></para>
+<para>Идентификатор на духчето </para>
+</section>
+<anchor xml:id="_class_pac_man_1_1_ghost_1ac649b9d854dc1820d2000dea2417b243"/><section>
+    <title>movementMode</title>
+<indexterm><primary>movementMode</primary><secondary>PacMan::Ghost</secondary></indexterm>
+<indexterm><primary>PacMan::Ghost</primary><secondary>movementMode</secondary></indexterm>
+<para><computeroutput>uint32_t PacMan::Ghost::movementMode {0}</computeroutput></para>
+<para>Режим на движение </para>
+</section>
+<anchor xml:id="_class_pac_man_1_1_ghost_1a6067b8e3476e191b13a202b5b8e59a34"/><section>
+    <title>position</title>
+<indexterm><primary>position</primary><secondary>PacMan::Ghost</secondary></indexterm>
+<indexterm><primary>PacMan::Ghost</primary><secondary>position</secondary></indexterm>
+<para><computeroutput><link linkend="_class_pac_man_1_1_point">Point</link> PacMan::Ghost::position {}</computeroutput></para>
+<para>Позижия на духчето </para>
+</section>
+<anchor xml:id="_class_pac_man_1_1_ghost_1a2d81ccdab46f80c323c1dbf1701d6823"/><section>
+    <title>target</title>
+<indexterm><primary>target</primary><secondary>PacMan::Ghost</secondary></indexterm>
+<indexterm><primary>PacMan::Ghost</primary><secondary>target</secondary></indexterm>
+<para><computeroutput><link linkend="_class_pac_man_1_1_point">Point</link> PacMan::Ghost::target {}</computeroutput></para>
+<para>Цел на духчето </para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="__ghost_8h">Ghost.h</link></section>
+</section>

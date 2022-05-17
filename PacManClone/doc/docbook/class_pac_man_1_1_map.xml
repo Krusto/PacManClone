@@ -1,0 +1,134 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_pac_man_1_1_map" xml:lang="en-US">
+<title>PacMan::Map&lt; SizeX, SizeY &gt; Class Template Reference</title>
+<indexterm><primary>PacMan::Map&lt; SizeX, SizeY &gt;</primary></indexterm>
+<para>
+<computeroutput>#include &lt;Map.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_pac_man_1_1_map_1a9bbbd7e1ab5c599588e9d0ee1f6a2a14">Map</link> ()=default</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_pac_man_1_1_map_1abf799dad5df1c5ffd65d211ece6c2217">Set</link> (size_t x, size_t y, int8_t value)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_pac_man_1_1_map_1a27722b8b3dc43f77aff135489b2e995e">Set</link> (<link linkend="_class_pac_man_1_1_point">Point</link> pos, int8_t value)</para>
+</listitem>
+            <listitem><para>int8_t <link linkend="_class_pac_man_1_1_map_1a0dd8ee98ccf17ef4a716a10aec02c5dd">Get</link> (size_t x, size_t y) const</para>
+</listitem>
+            <listitem><para>int8_t <link linkend="_class_pac_man_1_1_map_1a22e8b4e33e5dfa9f5bec90ad0977b9d1">Get</link> (<link linkend="_class_pac_man_1_1_point">Point</link> pos) const</para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_pac_man_1_1_map_1a6442e160f3b883b5acda705c70fb2e0d">IsValid</link> (<link linkend="_class_pac_man_1_1_point">Point</link> pos)</para>
+</listitem>
+            <listitem><para>auto &amp; <link linkend="_class_pac_man_1_1_map_1a0a07ca19e2842c41ae7ea3cf9ce5b739">data</link> ()</para>
+</listitem>
+            <listitem><para>auto <link linkend="_class_pac_man_1_1_map_1a0b8cd839dd6322ae080ac116ae874a82">GetSizeX</link> () const</para>
+</listitem>
+            <listitem><para>auto <link linkend="_class_pac_man_1_1_map_1a24d69b455463dffd0a55224a4150c9a0">GetSizeY</link> () const</para>
+</listitem>
+            <listitem><para>const void <link linkend="_class_pac_man_1_1_map_1ac82881ca536916e5fc34ea27d4ef18e5">Draw</link> (<link linkend="_class_pac_man_1_1_point">Point</link> playerPosition, <link linkend="_class_pac_man_1_1_point">Point</link> ghostPosition[4], bool frightened[4]) const</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_pac_man_1_1_map_1a51536b105dca1bcb98b99060dea208b7">Fill</link> (int8_t symbol)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_pac_man_1_1_map_1a8904860dc2e522dad90b31b97092d863">Fill</link> (std::string <link linkend="_class_pac_man_1_1_map_1a0a07ca19e2842c41ae7ea3cf9ce5b739">data</link>[SizeY])</para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_pac_man_1_1_map_1a432e7330cec0d690643ba903838e83bc">isColliding</link> (<link linkend="_class_pac_man_1_1_point">Point</link> p)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_pac_man_1_1_map_1a9bbbd7e1ab5c599588e9d0ee1f6a2a14"/><section>
+    <title>Map()</title>
+<indexterm><primary>Map</primary><secondary>PacMan::Map&lt; SizeX, SizeY &gt;</secondary></indexterm>
+<indexterm><primary>PacMan::Map&lt; SizeX, SizeY &gt;</primary><secondary>Map</secondary></indexterm>
+<computeroutput>template&lt;uint32_t SizeX, uint32_t SizeY&gt; </computeroutput><para><computeroutput><link linkend="_class_pac_man_1_1_map">PacMan::Map</link>&lt; SizeX, SizeY &gt;::Map ( )<computeroutput>[default]</computeroutput></computeroutput></para>
+<para>Конструктор по подразбиране </para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_pac_man_1_1_map_1a0a07ca19e2842c41ae7ea3cf9ce5b739"/><section>
+    <title>data()</title>
+<indexterm><primary>data</primary><secondary>PacMan::Map&lt; SizeX, SizeY &gt;</secondary></indexterm>
+<indexterm><primary>PacMan::Map&lt; SizeX, SizeY &gt;</primary><secondary>data</secondary></indexterm>
+<computeroutput>template&lt;uint32_t SizeX, uint32_t SizeY&gt; </computeroutput><para><computeroutput>auto &amp; <link linkend="_class_pac_man_1_1_map">PacMan::Map</link>&lt; SizeX, SizeY &gt;::data ( )<computeroutput>[inline]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_pac_man_1_1_map_1ac82881ca536916e5fc34ea27d4ef18e5"/><section>
+    <title>Draw()</title>
+<indexterm><primary>Draw</primary><secondary>PacMan::Map&lt; SizeX, SizeY &gt;</secondary></indexterm>
+<indexterm><primary>PacMan::Map&lt; SizeX, SizeY &gt;</primary><secondary>Draw</secondary></indexterm>
+<computeroutput>template&lt;uint32_t SizeX, uint32_t SizeY&gt; </computeroutput><para><computeroutput>const void <link linkend="_class_pac_man_1_1_map">PacMan::Map</link>&lt; SizeX, SizeY &gt;::Draw (<link linkend="_class_pac_man_1_1_point">Point</link> playerPosition, <link linkend="_class_pac_man_1_1_point">Point</link> ghostPosition[4], bool frightened[4]) const</computeroutput></para>
+<para>Функция която рисува </para>
+</section>
+<anchor xml:id="_class_pac_man_1_1_map_1a51536b105dca1bcb98b99060dea208b7"/><section>
+    <title>Fill()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>Fill</primary><secondary>PacMan::Map&lt; SizeX, SizeY &gt;</secondary></indexterm>
+<indexterm><primary>PacMan::Map&lt; SizeX, SizeY &gt;</primary><secondary>Fill</secondary></indexterm>
+<computeroutput>template&lt;uint32_t SizeX, uint32_t SizeY&gt; </computeroutput><para><computeroutput>void <link linkend="_class_pac_man_1_1_map">PacMan::Map</link>&lt; SizeX, SizeY &gt;::Fill (int8_t symbol)</computeroutput></para>
+<para>Функция която запълва картата с някакъв символ </para>
+</section>
+<anchor xml:id="_class_pac_man_1_1_map_1a8904860dc2e522dad90b31b97092d863"/><section>
+    <title>Fill()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>Fill</primary><secondary>PacMan::Map&lt; SizeX, SizeY &gt;</secondary></indexterm>
+<indexterm><primary>PacMan::Map&lt; SizeX, SizeY &gt;</primary><secondary>Fill</secondary></indexterm>
+<computeroutput>template&lt;uint32_t SizeX, uint32_t SizeY&gt; </computeroutput><para><computeroutput>void <link linkend="_class_pac_man_1_1_map">PacMan::Map</link>&lt; SizeX, SizeY &gt;::Fill (std::string data[SizeY])</computeroutput></para></section>
+<anchor xml:id="_class_pac_man_1_1_map_1a22e8b4e33e5dfa9f5bec90ad0977b9d1"/><section>
+    <title>Get()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>Get</primary><secondary>PacMan::Map&lt; SizeX, SizeY &gt;</secondary></indexterm>
+<indexterm><primary>PacMan::Map&lt; SizeX, SizeY &gt;</primary><secondary>Get</secondary></indexterm>
+<computeroutput>template&lt;uint32_t SizeX, uint32_t SizeY&gt; </computeroutput><para><computeroutput>int8_t <link linkend="_class_pac_man_1_1_map">PacMan::Map</link>&lt; SizeX, SizeY &gt;::Get (<link linkend="_class_pac_man_1_1_point">Point</link> pos) const<computeroutput>[inline]</computeroutput></computeroutput></para>
+<para>Функция която връща стойност на клетка с позиция pos </para>
+</section>
+<anchor xml:id="_class_pac_man_1_1_map_1a0dd8ee98ccf17ef4a716a10aec02c5dd"/><section>
+    <title>Get()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>Get</primary><secondary>PacMan::Map&lt; SizeX, SizeY &gt;</secondary></indexterm>
+<indexterm><primary>PacMan::Map&lt; SizeX, SizeY &gt;</primary><secondary>Get</secondary></indexterm>
+<computeroutput>template&lt;uint32_t SizeX, uint32_t SizeY&gt; </computeroutput><para><computeroutput>int8_t <link linkend="_class_pac_man_1_1_map">PacMan::Map</link>&lt; SizeX, SizeY &gt;::Get (size_t x, size_t y) const<computeroutput>[inline]</computeroutput></computeroutput></para>
+<para>Функция която връща стойност на клетка с позиция х,у </para>
+</section>
+<anchor xml:id="_class_pac_man_1_1_map_1a0b8cd839dd6322ae080ac116ae874a82"/><section>
+    <title>GetSizeX()</title>
+<indexterm><primary>GetSizeX</primary><secondary>PacMan::Map&lt; SizeX, SizeY &gt;</secondary></indexterm>
+<indexterm><primary>PacMan::Map&lt; SizeX, SizeY &gt;</primary><secondary>GetSizeX</secondary></indexterm>
+<computeroutput>template&lt;uint32_t SizeX, uint32_t SizeY&gt; </computeroutput><para><computeroutput>auto <link linkend="_class_pac_man_1_1_map">PacMan::Map</link>&lt; SizeX, SizeY &gt;::GetSizeX ( ) const<computeroutput>[inline]</computeroutput></computeroutput></para>
+<para>Функция която връща широчина на картата </para>
+</section>
+<anchor xml:id="_class_pac_man_1_1_map_1a24d69b455463dffd0a55224a4150c9a0"/><section>
+    <title>GetSizeY()</title>
+<indexterm><primary>GetSizeY</primary><secondary>PacMan::Map&lt; SizeX, SizeY &gt;</secondary></indexterm>
+<indexterm><primary>PacMan::Map&lt; SizeX, SizeY &gt;</primary><secondary>GetSizeY</secondary></indexterm>
+<computeroutput>template&lt;uint32_t SizeX, uint32_t SizeY&gt; </computeroutput><para><computeroutput>auto <link linkend="_class_pac_man_1_1_map">PacMan::Map</link>&lt; SizeX, SizeY &gt;::GetSizeY ( ) const<computeroutput>[inline]</computeroutput></computeroutput></para>
+<para>Функция която връща височина на картата </para>
+</section>
+<anchor xml:id="_class_pac_man_1_1_map_1a432e7330cec0d690643ba903838e83bc"/><section>
+    <title>isColliding()</title>
+<indexterm><primary>isColliding</primary><secondary>PacMan::Map&lt; SizeX, SizeY &gt;</secondary></indexterm>
+<indexterm><primary>PacMan::Map&lt; SizeX, SizeY &gt;</primary><secondary>isColliding</secondary></indexterm>
+<computeroutput>template&lt;uint32_t SizeX, uint32_t SizeY&gt; </computeroutput><para><computeroutput>bool <link linkend="_class_pac_man_1_1_map">PacMan::Map</link>&lt; SizeX, SizeY &gt;::isColliding (<link linkend="_class_pac_man_1_1_point">Point</link> p)<computeroutput>[inline]</computeroutput></computeroutput></para>
+<para>Функция която проверява дали позицията се намира на мястото на стена </para>
+</section>
+<anchor xml:id="_class_pac_man_1_1_map_1a6442e160f3b883b5acda705c70fb2e0d"/><section>
+    <title>IsValid()</title>
+<indexterm><primary>IsValid</primary><secondary>PacMan::Map&lt; SizeX, SizeY &gt;</secondary></indexterm>
+<indexterm><primary>PacMan::Map&lt; SizeX, SizeY &gt;</primary><secondary>IsValid</secondary></indexterm>
+<computeroutput>template&lt;uint32_t SizeX, uint32_t SizeY&gt; </computeroutput><para><computeroutput>bool <link linkend="_class_pac_man_1_1_map">PacMan::Map</link>&lt; SizeX, SizeY &gt;::IsValid (<link linkend="_class_pac_man_1_1_point">Point</link> pos)<computeroutput>[inline]</computeroutput></computeroutput></para>
+<para>Функция която проверява дали точката е в картата </para>
+</section>
+<anchor xml:id="_class_pac_man_1_1_map_1a27722b8b3dc43f77aff135489b2e995e"/><section>
+    <title>Set()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>Set</primary><secondary>PacMan::Map&lt; SizeX, SizeY &gt;</secondary></indexterm>
+<indexterm><primary>PacMan::Map&lt; SizeX, SizeY &gt;</primary><secondary>Set</secondary></indexterm>
+<computeroutput>template&lt;uint32_t SizeX, uint32_t SizeY&gt; </computeroutput><para><computeroutput>void <link linkend="_class_pac_man_1_1_map">PacMan::Map</link>&lt; SizeX, SizeY &gt;::Set (<link linkend="_class_pac_man_1_1_point">Point</link> pos, int8_t value)<computeroutput>[inline]</computeroutput></computeroutput></para>
+<para>Функция която задава стойност на клетка с позиция pos </para>
+</section>
+<anchor xml:id="_class_pac_man_1_1_map_1abf799dad5df1c5ffd65d211ece6c2217"/><section>
+    <title>Set()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>Set</primary><secondary>PacMan::Map&lt; SizeX, SizeY &gt;</secondary></indexterm>
+<indexterm><primary>PacMan::Map&lt; SizeX, SizeY &gt;</primary><secondary>Set</secondary></indexterm>
+<computeroutput>template&lt;uint32_t SizeX, uint32_t SizeY&gt; </computeroutput><para><computeroutput>void <link linkend="_class_pac_man_1_1_map">PacMan::Map</link>&lt; SizeX, SizeY &gt;::Set (size_t x, size_t y, int8_t value)<computeroutput>[inline]</computeroutput></computeroutput></para>
+<para>Функция която задава стойност на клетка с позиция х,у </para>
+</section>
+<para>
+The documentation for this class was generated from the following files:</para>
+<link linkend="__map_8h">Map.h</link><link linkend="__map_8cpp">Map.cpp</link></section>
+</section>

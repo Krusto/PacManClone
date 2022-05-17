@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__map_8h" xml:lang="en-US">
+<title>Map.h File Reference</title>
+<indexterm><primary>Map.h</primary></indexterm>
+<programlisting linenumbering="unnumbered">#include &lt;cstdint&gt;
+#include &lt;string&gt;
+#include &quot;Point.h&quot;
+</programlisting><simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_pac_man_1_1_map">PacMan::Map&lt; SizeX, SizeY &gt;</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespace_pac_man">PacMan</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

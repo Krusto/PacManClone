@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__pac_man_8h_source" xml:lang="en-US">
+<title>PacMan.h</title>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered">1 <emphasis role="preprocessor">#pragma&#32;once</emphasis>
+2 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="__player_8h">Player.h</link>&quot;</emphasis>
+3 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="__map_8h">Map.h</link>&quot;</emphasis>
+4 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="__ghost_8h">Ghost.h</link>&quot;</emphasis>
+5 
+6 <emphasis role="keyword">namespace&#32;</emphasis><link linkend="_namespace_pac_man">PacMan</link>&#32;{
+7 &#32;&#32;&#32;&#32;<emphasis role="keyword">class&#32;</emphasis><link linkend="_class_pac_man_1_1_game">Game</link>&#32;{
+8 &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>:
+9 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">/*</emphasis>
+10 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;*&#32;Конструктор&#32;по&#32;подразбиране</emphasis>
+11 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;*/</emphasis>
+12 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_pac_man_1_1_game_1a677cd1502bc2d0f31f3c46204aeb6d02">Game</link>()&#32;=&#32;<emphasis role="keywordflow">default</emphasis>;
+13 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">/*</emphasis>
+14 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;*&#32;Функция&#32;за&#32;инициализация&#32;на&#32;играта</emphasis>
+15 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;*/</emphasis>
+16 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_pac_man_1_1_game_1ab12793c6af86d2de5d02f18777522268">Init</link>();
+17 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">/*</emphasis>
+18 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;*&#32;Функция&#32;която&#32;опреснява&#32;играта</emphasis>
+19 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;*/</emphasis>
+20 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_pac_man_1_1_game_1aa33c93758770a5c05e3bcb4a6355093f">Update</link>();
+21 &#32;&#32;&#32;&#32;<emphasis role="keyword">private</emphasis>:
+22 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">/*</emphasis>
+23 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;*&#32;Предишна&#32;позиция&#32;на&#32;играча</emphasis>
+24 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;*/</emphasis>
+25 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_pac_man_1_1_point">Point</link>&#32;m_OldPlayerPosition{};
+26 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">/*</emphasis>
+27 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;*&#32;Играч</emphasis>
+28 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;*/</emphasis>
+29 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_pac_man_1_1_player">Player</link>&#32;m_Player{};
+30 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">/*</emphasis>
+31 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;*&#32;Низ&#32;от&#32;духчета&#32;които&#32;се&#32;движат&#32;на&#32;картата</emphasis>
+32 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;*/</emphasis>
+33 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Ghost&#32;m_Enemy[4]{};
+34 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">/*</emphasis>
+35 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;*&#32;Карта&#32;с&#32;размери&#32;[21,21]</emphasis>
+36 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;*/</emphasis>
+37 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Map&lt;21,21&gt;&#32;m_Map{};
+38 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">/*</emphasis>
+39 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;*&#32;брой&#32;изминали&#32;тикове</emphasis>
+40 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;*/</emphasis>
+41 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;uint32_t&#32;m_Ticks{};
+42 &#32;&#32;&#32;&#32;};
+43 }
+</programlisting></section>

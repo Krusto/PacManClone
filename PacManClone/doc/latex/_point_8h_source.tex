@@ -1,0 +1,52 @@
+\hypertarget{_point_8h_source}{}\doxysection{Point.\+h}
+\mbox{\hyperlink{_point_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include <cstdint>}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <cmath>}}
+\DoxyCodeLine{4 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespace_pac_man}{PacMan}} \{}
+\DoxyCodeLine{5     \textcolor{keyword}{class }\mbox{\hyperlink{class_pac_man_1_1_point}{Point}} \{}
+\DoxyCodeLine{6     \textcolor{keyword}{public}:}
+\DoxyCodeLine{10         \mbox{\hyperlink{class_pac_man_1_1_point_a252e6ba858457d81cb22a01b3aa6b6ee}{Point}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{14         \mbox{\hyperlink{class_pac_man_1_1_point_a8b54232026dc73472e3da771722ddb22}{Point}}(\textcolor{keywordtype}{float} \mbox{\hyperlink{class_pac_man_1_1_point_a3924af949ab632d79d7da9342a38858b}{x}}, \textcolor{keywordtype}{float} \mbox{\hyperlink{class_pac_man_1_1_point_abc32b96862fc2d149fed3f452c3d92e3}{y}}) : \mbox{\hyperlink{class_pac_man_1_1_point_a3924af949ab632d79d7da9342a38858b}{x}}(\mbox{\hyperlink{class_pac_man_1_1_point_a3924af949ab632d79d7da9342a38858b}{x}}), \mbox{\hyperlink{class_pac_man_1_1_point_abc32b96862fc2d149fed3f452c3d92e3}{y}}(\mbox{\hyperlink{class_pac_man_1_1_point_abc32b96862fc2d149fed3f452c3d92e3}{y}}) \{\}}
+\DoxyCodeLine{18         \mbox{\hyperlink{class_pac_man_1_1_point_a90ba7c62519665b78165712fcd02299f}{Point}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_pac_man_1_1_point}{Point}}\&) = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20         \mbox{\hyperlink{class_pac_man_1_1_point}{Point}}\& \mbox{\hyperlink{class_pac_man_1_1_point_a59b0b154f1c8899f0359c61355c7fdd2}{operator=}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_pac_man_1_1_point}{Point}}\& other) = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{21         \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_pac_man_1_1_point_a6b1aa6f1e4d4af9828c73adf6332c33f}{operator==}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_pac_man_1_1_point}{Point}}\& rhs) \{}
+\DoxyCodeLine{22             \textcolor{keywordflow}{return} (this-\/>\mbox{\hyperlink{class_pac_man_1_1_point_a3924af949ab632d79d7da9342a38858b}{x}} == rhs.\mbox{\hyperlink{class_pac_man_1_1_point_a3924af949ab632d79d7da9342a38858b}{x}} \&\& this-\/>y == rhs.\mbox{\hyperlink{class_pac_man_1_1_point_abc32b96862fc2d149fed3f452c3d92e3}{y}});}
+\DoxyCodeLine{23         \}}
+\DoxyCodeLine{24         \mbox{\hyperlink{class_pac_man_1_1_point}{Point}}\& \mbox{\hyperlink{class_pac_man_1_1_point_a381aef659bbd5d6b1c4c9b25cae51048}{operator+=}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_pac_man_1_1_point}{Point}}\& rhs)}
+\DoxyCodeLine{25         \{}
+\DoxyCodeLine{26             this-\/>\mbox{\hyperlink{class_pac_man_1_1_point_a3924af949ab632d79d7da9342a38858b}{x}} += rhs.\mbox{\hyperlink{class_pac_man_1_1_point_a3924af949ab632d79d7da9342a38858b}{x}};}
+\DoxyCodeLine{27             this-\/>\mbox{\hyperlink{class_pac_man_1_1_point_abc32b96862fc2d149fed3f452c3d92e3}{y}} += rhs.\mbox{\hyperlink{class_pac_man_1_1_point_abc32b96862fc2d149fed3f452c3d92e3}{y}};}
+\DoxyCodeLine{28             \textcolor{keywordflow}{return} *\textcolor{keyword}{this};}
+\DoxyCodeLine{29         \}}
+\DoxyCodeLine{30         \mbox{\hyperlink{class_pac_man_1_1_point}{Point}}\& \mbox{\hyperlink{class_pac_man_1_1_point_a082378cf17cfa3079569ecce415a7839}{operator-\/=}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_pac_man_1_1_point}{Point}}\& rhs)}
+\DoxyCodeLine{31         \{}
+\DoxyCodeLine{32             this-\/>\mbox{\hyperlink{class_pac_man_1_1_point_a3924af949ab632d79d7da9342a38858b}{x}} -\/= rhs.\mbox{\hyperlink{class_pac_man_1_1_point_a3924af949ab632d79d7da9342a38858b}{x}};}
+\DoxyCodeLine{33             this-\/>\mbox{\hyperlink{class_pac_man_1_1_point_abc32b96862fc2d149fed3f452c3d92e3}{y}} -\/= rhs.\mbox{\hyperlink{class_pac_man_1_1_point_abc32b96862fc2d149fed3f452c3d92e3}{y}};}
+\DoxyCodeLine{34             \textcolor{keywordflow}{return} *\textcolor{keyword}{this};}
+\DoxyCodeLine{35         \}}
+\DoxyCodeLine{36         \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_pac_man_1_1_point_aa6198a6f7e8852af75fe52dbfdc5c396}{operator!=}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_pac_man_1_1_point}{Point}}\& rhs)}
+\DoxyCodeLine{37         \{}
+\DoxyCodeLine{38             \textcolor{keywordflow}{return} !(*\textcolor{keyword}{this}==rhs);}
+\DoxyCodeLine{39         \}}
+\DoxyCodeLine{40         \mbox{\hyperlink{class_pac_man_1_1_point}{Point}} \mbox{\hyperlink{class_pac_man_1_1_point_a4150aa86907365c34587dbbb0d454783}{operator+}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_pac_man_1_1_point}{Point}}\& rhs)}
+\DoxyCodeLine{41         \{}
+\DoxyCodeLine{42             \textcolor{keywordtype}{float} \mbox{\hyperlink{class_pac_man_1_1_point_a3924af949ab632d79d7da9342a38858b}{x}} = this-\/>x + rhs.\mbox{\hyperlink{class_pac_man_1_1_point_a3924af949ab632d79d7da9342a38858b}{x}};}
+\DoxyCodeLine{43             \textcolor{keywordtype}{float} \mbox{\hyperlink{class_pac_man_1_1_point_abc32b96862fc2d149fed3f452c3d92e3}{y}} = this-\/>y + rhs.\mbox{\hyperlink{class_pac_man_1_1_point_abc32b96862fc2d149fed3f452c3d92e3}{y}};}
+\DoxyCodeLine{44             \textcolor{keywordflow}{return} \{ \mbox{\hyperlink{class_pac_man_1_1_point_a3924af949ab632d79d7da9342a38858b}{x}},\mbox{\hyperlink{class_pac_man_1_1_point_abc32b96862fc2d149fed3f452c3d92e3}{y}} \};}
+\DoxyCodeLine{45         \}}
+\DoxyCodeLine{46         \mbox{\hyperlink{class_pac_man_1_1_point}{Point}}\& \mbox{\hyperlink{class_pac_man_1_1_point_ac54d8bd73bddd826f64ef07d22bffed4}{operator*}}(\textcolor{keywordtype}{float} rhs) \{}
+\DoxyCodeLine{47             this-\/>\mbox{\hyperlink{class_pac_man_1_1_point_a3924af949ab632d79d7da9342a38858b}{x}} *= rhs;}
+\DoxyCodeLine{48             this-\/>\mbox{\hyperlink{class_pac_man_1_1_point_abc32b96862fc2d149fed3f452c3d92e3}{y}} *= rhs;}
+\DoxyCodeLine{49             \textcolor{keywordflow}{return} *\textcolor{keyword}{this};}
+\DoxyCodeLine{50         \}}
+\DoxyCodeLine{51         \mbox{\hyperlink{class_pac_man_1_1_point}{Point}} \mbox{\hyperlink{class_pac_man_1_1_point_ac97e17a8cdcdc9f253ffe15a95b94a91}{GetTrunc}}() \{ \textcolor{keywordflow}{return} \{ trunc(floor(\mbox{\hyperlink{class_pac_man_1_1_point_a3924af949ab632d79d7da9342a38858b}{x}})),trunc(floor(\mbox{\hyperlink{class_pac_man_1_1_point_abc32b96862fc2d149fed3f452c3d92e3}{y}})) \}; \};}
+\DoxyCodeLine{52         \textcolor{keywordtype}{float} \mbox{\hyperlink{class_pac_man_1_1_point_a3924af949ab632d79d7da9342a38858b}{x}}\{\};}
+\DoxyCodeLine{53         \textcolor{keywordtype}{float} \mbox{\hyperlink{class_pac_man_1_1_point_abc32b96862fc2d149fed3f452c3d92e3}{y}}\{\};}
+\DoxyCodeLine{54     \};}
+\DoxyCodeLine{55 }
+\DoxyCodeLine{56 \}}
+
+\end{DoxyCode}

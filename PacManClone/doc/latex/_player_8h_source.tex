@@ -1,0 +1,26 @@
+\hypertarget{_player_8h_source}{}\doxysection{Player.\+h}
+\mbox{\hyperlink{_player_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_point_8h}{Point.h}}"{}}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_map_8h}{Map.h}}"{}}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <cstdlib>}}
+\DoxyCodeLine{5 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespace_pac_man}{PacMan}} \{}
+\DoxyCodeLine{9     \textcolor{keyword}{class }\mbox{\hyperlink{class_pac_man_1_1_player}{Player}} \{}
+\DoxyCodeLine{10     \textcolor{keyword}{public}:}
+\DoxyCodeLine{14         \mbox{\hyperlink{class_pac_man_1_1_player_a2df50a021cd169aa34f744049accfb62}{Player}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{18         \mbox{\hyperlink{class_pac_man_1_1_player_a69fcbff3737c51c419ce0b5b17b69df7}{Player}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_pac_man_1_1_point}{Point}} startPosition) : \mbox{\hyperlink{class_pac_man_1_1_player_a07ce2410ed70e3627ff6672b296eed52}{position}}(startPosition) \{\}}
+\DoxyCodeLine{22         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_pac_man_1_1_player_aded75e03d338b5a5cfd449a1558c9fe1}{Move}}(\mbox{\hyperlink{class_pac_man_1_1_point}{Point}} dir) \{ \mbox{\hyperlink{class_pac_man_1_1_player_a07ce2410ed70e3627ff6672b296eed52}{position}} += dir; \};}
+\DoxyCodeLine{26         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_pac_man_1_1_player_a0b3a21676bf7a89ebf8e2f2e531b5776}{Update}}(\mbox{\hyperlink{class_pac_man_1_1_map}{Map<21, 21>}}\& map,\mbox{\hyperlink{class_pac_man_1_1_point}{Point}} ghostPositions[4]);}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{31         \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_pac_man_1_1_player_a0a2a57ba1341b6c7f083389af1758989}{isDead}}\{\};}
+\DoxyCodeLine{35         \mbox{\hyperlink{class_pac_man_1_1_point}{Point}} \mbox{\hyperlink{class_pac_man_1_1_player_a07ce2410ed70e3627ff6672b296eed52}{position}}\{\};}
+\DoxyCodeLine{39         uint32\_t \mbox{\hyperlink{class_pac_man_1_1_player_aa37c08fdbdb1322955c5469c23f11f84}{direction}}\{\};}
+\DoxyCodeLine{43         uint32\_t \mbox{\hyperlink{class_pac_man_1_1_player_a47c55929496d12adea751673d32029b5}{score}}\{\};}
+\DoxyCodeLine{47         uint32\_t \mbox{\hyperlink{class_pac_man_1_1_player_afb0e29ff5e80ecf1580db2e709ae54a0}{scoreMultiplier}}\{\};}
+\DoxyCodeLine{51         uint32\_t \mbox{\hyperlink{class_pac_man_1_1_player_a20d20e4a7015f82245ffd6e8489cb23f}{multiplierTicks}}\{\};}
+\DoxyCodeLine{55         \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_pac_man_1_1_player_a62aa803f9804f871bf5c307dfff95468}{isPowered}}\{\};}
+\DoxyCodeLine{56     \};}
+\DoxyCodeLine{57 \}}
+
+\end{DoxyCode}

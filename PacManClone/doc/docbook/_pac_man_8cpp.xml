@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__pac_man_8cpp" xml:lang="en-US">
+<title>PacMan.cpp File Reference</title>
+<indexterm><primary>PacMan.cpp</primary></indexterm>
+<programlisting linenumbering="unnumbered">#include &quot;PacMan.h&quot;
+#include &quot;Map.cpp&quot;
+#include &lt;Windows.h&gt;
+#include &quot;WindowsFunctions.h&quot;
+</programlisting></section>

@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__windows_functions_8h_source" xml:lang="en-US">
+<title>WindowsFunctions.h</title>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered">1 <emphasis role="preprocessor">#pragma&#32;once</emphasis>
+2 <emphasis role="preprocessor">#include&#32;&lt;Windows.h&gt;</emphasis>
+3 
+7 <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="__windows_functions_8h_1acbfe10552d3a0096f9e3f3e78f4a505f">GotoXY</link>(SHORT&#32;x,&#32;SHORT&#32;y);
+11 POINT&#32;<link linkend="__windows_functions_8h_1a7e0c531b5e91c583ba939a19a4e55e16">GetCursorPosition</link>();
+15 <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="__windows_functions_8h_1a6a3ca153f0817e8ba91a023b886bb662">ClearScreen</link>();
+19 <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="__windows_functions_8h_1ab439747e31446222d0260e86d5955a1b">ShowConsoleCursor</link>(<emphasis role="keywordtype">bool</emphasis>&#32;showFlag);
+</programlisting></section>

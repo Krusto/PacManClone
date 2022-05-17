@@ -1,0 +1,138 @@
+\hypertarget{class_pac_man_1_1_ghost}{}\doxysection{Pac\+Man\+::Ghost Class Reference}
+\label{class_pac_man_1_1_ghost}\index{PacMan::Ghost@{PacMan::Ghost}}
+
+
+{\ttfamily \#include $<$Ghost.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pac_man_1_1_ghost_a954b23981b67a5d1a63e67f04d5eb53b}{Ghost}} ()=default
+\item 
+void \mbox{\hyperlink{class_pac_man_1_1_ghost_aeec3ee1effda144606b54d09c11e0c6d}{Move}} (\mbox{\hyperlink{class_pac_man_1_1_point}{Point}} dir)
+\item 
+float \mbox{\hyperlink{class_pac_man_1_1_ghost_a94c6ce208203fefe799ebf4ed2c6d6a9}{Get\+Target\+Distance}} (uint32\+\_\+t \mbox{\hyperlink{class_pac_man_1_1_ghost_ad856d42488ccd3219ffa7bd794b3e607}{direction}})
+\item 
+bool \mbox{\hyperlink{class_pac_man_1_1_ghost_aa3f3ce336e930350eac546a8fc9e64a5}{Is\+Colliding\+Pacman}} (\mbox{\hyperlink{class_pac_man_1_1_player}{Player}} \&player)
+\item 
+void \mbox{\hyperlink{class_pac_man_1_1_ghost_a12858435f4ba53675af720aa54c57c6a}{Update\+Target}} (uint32\+\_\+t pacman\+Direction, \mbox{\hyperlink{class_pac_man_1_1_point}{Point}} ghost\+Position, \mbox{\hyperlink{class_pac_man_1_1_point}{Point}} pacman\+Position, \mbox{\hyperlink{class_pac_man_1_1_map}{Map}}$<$ 21, 21 $>$ \&map)
+\item 
+void \mbox{\hyperlink{class_pac_man_1_1_ghost_a726b9b9f0860f9982ab32ec64ff96a6c}{Update}} (\mbox{\hyperlink{class_pac_man_1_1_map}{Map}}$<$ 21, 21 $>$ \&map, \mbox{\hyperlink{class_pac_man_1_1_player}{Player}} \&player, \mbox{\hyperlink{class_pac_man_1_1_ghost}{Ghost}} \&ghost)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{class_pac_man_1_1_ghost_a64a0f3fac45e11327ff933a9b71e3178}{id}} \{\}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{class_pac_man_1_1_ghost_a09c79e5ce945e94372d7b9ec9e2c88a6}{frightened\+Speed\+Timer}} \{\}
+\item 
+bool \mbox{\hyperlink{class_pac_man_1_1_ghost_a11f08a6195ae76a77f28e4bdf4ba3df4}{frightened\+Mode}} \{\}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{class_pac_man_1_1_ghost_ac649b9d854dc1820d2000dea2417b243}{movement\+Mode}} \{0\}
+\item 
+\mbox{\hyperlink{class_pac_man_1_1_point}{Point}} \mbox{\hyperlink{class_pac_man_1_1_ghost_a6067b8e3476e191b13a202b5b8e59a34}{position}} \{\}
+\item 
+\mbox{\hyperlink{class_pac_man_1_1_point}{Point}} \mbox{\hyperlink{class_pac_man_1_1_ghost_ab6cbd103664221789d640638c093e81c}{home}} \{10,10\}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{class_pac_man_1_1_ghost_ad856d42488ccd3219ffa7bd794b3e607}{direction}} \{\}
+\item 
+\mbox{\hyperlink{class_pac_man_1_1_point}{Point}} \mbox{\hyperlink{class_pac_man_1_1_ghost_a2d81ccdab46f80c323c1dbf1701d6823}{target}} \{\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_pac_man_1_1_ghost_a954b23981b67a5d1a63e67f04d5eb53b}\label{class_pac_man_1_1_ghost_a954b23981b67a5d1a63e67f04d5eb53b}} 
+\index{PacMan::Ghost@{PacMan::Ghost}!Ghost@{Ghost}}
+\index{Ghost@{Ghost}!PacMan::Ghost@{PacMan::Ghost}}
+\doxysubsubsection{\texorpdfstring{Ghost()}{Ghost()}}
+{\footnotesize\ttfamily Pac\+Man\+::\+Ghost\+::\+Ghost (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_pac_man_1_1_ghost_a94c6ce208203fefe799ebf4ed2c6d6a9}\label{class_pac_man_1_1_ghost_a94c6ce208203fefe799ebf4ed2c6d6a9}} 
+\index{PacMan::Ghost@{PacMan::Ghost}!GetTargetDistance@{GetTargetDistance}}
+\index{GetTargetDistance@{GetTargetDistance}!PacMan::Ghost@{PacMan::Ghost}}
+\doxysubsubsection{\texorpdfstring{GetTargetDistance()}{GetTargetDistance()}}
+{\footnotesize\ttfamily float Pac\+Man\+::\+Ghost\+::\+Get\+Target\+Distance (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{direction }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Функция която връща разстоянието до целта \mbox{\Hypertarget{class_pac_man_1_1_ghost_aa3f3ce336e930350eac546a8fc9e64a5}\label{class_pac_man_1_1_ghost_aa3f3ce336e930350eac546a8fc9e64a5}} 
+\index{PacMan::Ghost@{PacMan::Ghost}!IsCollidingPacman@{IsCollidingPacman}}
+\index{IsCollidingPacman@{IsCollidingPacman}!PacMan::Ghost@{PacMan::Ghost}}
+\doxysubsubsection{\texorpdfstring{IsCollidingPacman()}{IsCollidingPacman()}}
+{\footnotesize\ttfamily bool Pac\+Man\+::\+Ghost\+::\+Is\+Colliding\+Pacman (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_pac_man_1_1_player}{Player}} \&}]{player }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Функция която проверява дали има колизия м-\/у духчето и пакман \mbox{\Hypertarget{class_pac_man_1_1_ghost_aeec3ee1effda144606b54d09c11e0c6d}\label{class_pac_man_1_1_ghost_aeec3ee1effda144606b54d09c11e0c6d}} 
+\index{PacMan::Ghost@{PacMan::Ghost}!Move@{Move}}
+\index{Move@{Move}!PacMan::Ghost@{PacMan::Ghost}}
+\doxysubsubsection{\texorpdfstring{Move()}{Move()}}
+{\footnotesize\ttfamily void Pac\+Man\+::\+Ghost\+::\+Move (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_pac_man_1_1_point}{Point}}}]{dir }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Функция за движение на духчето в някаква посока \mbox{\Hypertarget{class_pac_man_1_1_ghost_a726b9b9f0860f9982ab32ec64ff96a6c}\label{class_pac_man_1_1_ghost_a726b9b9f0860f9982ab32ec64ff96a6c}} 
+\index{PacMan::Ghost@{PacMan::Ghost}!Update@{Update}}
+\index{Update@{Update}!PacMan::Ghost@{PacMan::Ghost}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Pac\+Man\+::\+Ghost\+::\+Update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_pac_man_1_1_map}{Map}}$<$ 21, 21 $>$ \&}]{map,  }\item[{\mbox{\hyperlink{class_pac_man_1_1_player}{Player}} \&}]{player,  }\item[{\mbox{\hyperlink{class_pac_man_1_1_ghost}{Ghost}} \&}]{ghost }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Функция за опресняване на духчето \mbox{\Hypertarget{class_pac_man_1_1_ghost_a12858435f4ba53675af720aa54c57c6a}\label{class_pac_man_1_1_ghost_a12858435f4ba53675af720aa54c57c6a}} 
+\index{PacMan::Ghost@{PacMan::Ghost}!UpdateTarget@{UpdateTarget}}
+\index{UpdateTarget@{UpdateTarget}!PacMan::Ghost@{PacMan::Ghost}}
+\doxysubsubsection{\texorpdfstring{UpdateTarget()}{UpdateTarget()}}
+{\footnotesize\ttfamily void Pac\+Man\+::\+Ghost\+::\+Update\+Target (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{pacman\+Direction,  }\item[{\mbox{\hyperlink{class_pac_man_1_1_point}{Point}}}]{ghost\+Position,  }\item[{\mbox{\hyperlink{class_pac_man_1_1_point}{Point}}}]{pacman\+Position,  }\item[{\mbox{\hyperlink{class_pac_man_1_1_map}{Map}}$<$ 21, 21 $>$ \&}]{map }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Функция която опреснява целта 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_pac_man_1_1_ghost_ad856d42488ccd3219ffa7bd794b3e607}\label{class_pac_man_1_1_ghost_ad856d42488ccd3219ffa7bd794b3e607}} 
+\index{PacMan::Ghost@{PacMan::Ghost}!direction@{direction}}
+\index{direction@{direction}!PacMan::Ghost@{PacMan::Ghost}}
+\doxysubsubsection{\texorpdfstring{direction}{direction}}
+{\footnotesize\ttfamily uint32\+\_\+t Pac\+Man\+::\+Ghost\+::direction \{\}}
+
+Посока на духчето \mbox{\Hypertarget{class_pac_man_1_1_ghost_a11f08a6195ae76a77f28e4bdf4ba3df4}\label{class_pac_man_1_1_ghost_a11f08a6195ae76a77f28e4bdf4ba3df4}} 
+\index{PacMan::Ghost@{PacMan::Ghost}!frightenedMode@{frightenedMode}}
+\index{frightenedMode@{frightenedMode}!PacMan::Ghost@{PacMan::Ghost}}
+\doxysubsubsection{\texorpdfstring{frightenedMode}{frightenedMode}}
+{\footnotesize\ttfamily bool Pac\+Man\+::\+Ghost\+::frightened\+Mode \{\}}
+
+Променлива която служи за проверка дали е уплашено \mbox{\Hypertarget{class_pac_man_1_1_ghost_a09c79e5ce945e94372d7b9ec9e2c88a6}\label{class_pac_man_1_1_ghost_a09c79e5ce945e94372d7b9ec9e2c88a6}} 
+\index{PacMan::Ghost@{PacMan::Ghost}!frightenedSpeedTimer@{frightenedSpeedTimer}}
+\index{frightenedSpeedTimer@{frightenedSpeedTimer}!PacMan::Ghost@{PacMan::Ghost}}
+\doxysubsubsection{\texorpdfstring{frightenedSpeedTimer}{frightenedSpeedTimer}}
+{\footnotesize\ttfamily uint32\+\_\+t Pac\+Man\+::\+Ghost\+::frightened\+Speed\+Timer \{\}}
+
+Таймер за колко време се страхува \mbox{\Hypertarget{class_pac_man_1_1_ghost_ab6cbd103664221789d640638c093e81c}\label{class_pac_man_1_1_ghost_ab6cbd103664221789d640638c093e81c}} 
+\index{PacMan::Ghost@{PacMan::Ghost}!home@{home}}
+\index{home@{home}!PacMan::Ghost@{PacMan::Ghost}}
+\doxysubsubsection{\texorpdfstring{home}{home}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_pac_man_1_1_point}{Point}} Pac\+Man\+::\+Ghost\+::home \{10,10\}}
+
+Позиция на къщата на духчето \mbox{\Hypertarget{class_pac_man_1_1_ghost_a64a0f3fac45e11327ff933a9b71e3178}\label{class_pac_man_1_1_ghost_a64a0f3fac45e11327ff933a9b71e3178}} 
+\index{PacMan::Ghost@{PacMan::Ghost}!id@{id}}
+\index{id@{id}!PacMan::Ghost@{PacMan::Ghost}}
+\doxysubsubsection{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily uint32\+\_\+t Pac\+Man\+::\+Ghost\+::id \{\}}
+
+Идентификатор на духчето \mbox{\Hypertarget{class_pac_man_1_1_ghost_ac649b9d854dc1820d2000dea2417b243}\label{class_pac_man_1_1_ghost_ac649b9d854dc1820d2000dea2417b243}} 
+\index{PacMan::Ghost@{PacMan::Ghost}!movementMode@{movementMode}}
+\index{movementMode@{movementMode}!PacMan::Ghost@{PacMan::Ghost}}
+\doxysubsubsection{\texorpdfstring{movementMode}{movementMode}}
+{\footnotesize\ttfamily uint32\+\_\+t Pac\+Man\+::\+Ghost\+::movement\+Mode \{0\}}
+
+Режим на движение \mbox{\Hypertarget{class_pac_man_1_1_ghost_a6067b8e3476e191b13a202b5b8e59a34}\label{class_pac_man_1_1_ghost_a6067b8e3476e191b13a202b5b8e59a34}} 
+\index{PacMan::Ghost@{PacMan::Ghost}!position@{position}}
+\index{position@{position}!PacMan::Ghost@{PacMan::Ghost}}
+\doxysubsubsection{\texorpdfstring{position}{position}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_pac_man_1_1_point}{Point}} Pac\+Man\+::\+Ghost\+::position \{\}}
+
+Позижия на духчето \mbox{\Hypertarget{class_pac_man_1_1_ghost_a2d81ccdab46f80c323c1dbf1701d6823}\label{class_pac_man_1_1_ghost_a2d81ccdab46f80c323c1dbf1701d6823}} 
+\index{PacMan::Ghost@{PacMan::Ghost}!target@{target}}
+\index{target@{target}!PacMan::Ghost@{PacMan::Ghost}}
+\doxysubsubsection{\texorpdfstring{target}{target}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_pac_man_1_1_point}{Point}} Pac\+Man\+::\+Ghost\+::target \{\}}
+
+Цел на духчето 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_ghost_8h}{Ghost.\+h}}\end{DoxyCompactItemize}

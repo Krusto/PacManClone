@@ -1,0 +1,48 @@
+\hypertarget{_pac_man_8h_source}{}\doxysection{Pac\+Man.\+h}
+\mbox{\hyperlink{_pac_man_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_player_8h}{Player.h}}"{}}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_map_8h}{Map.h}}"{}}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_ghost_8h}{Ghost.h}}"{}}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespace_pac_man}{PacMan}} \{}
+\DoxyCodeLine{7     \textcolor{keyword}{class }\mbox{\hyperlink{class_pac_man_1_1_game}{Game}} \{}
+\DoxyCodeLine{8     \textcolor{keyword}{public}:}
+\DoxyCodeLine{9         \textcolor{comment}{/*}}
+\DoxyCodeLine{10 \textcolor{comment}{        * Конструктор по подразбиране}}
+\DoxyCodeLine{11 \textcolor{comment}{        */}}
+\DoxyCodeLine{12         \mbox{\hyperlink{class_pac_man_1_1_game_a677cd1502bc2d0f31f3c46204aeb6d02}{Game}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{13         \textcolor{comment}{/*}}
+\DoxyCodeLine{14 \textcolor{comment}{        * Функция за инициализация на играта}}
+\DoxyCodeLine{15 \textcolor{comment}{        */}}
+\DoxyCodeLine{16         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_pac_man_1_1_game_ab12793c6af86d2de5d02f18777522268}{Init}}();}
+\DoxyCodeLine{17         \textcolor{comment}{/*}}
+\DoxyCodeLine{18 \textcolor{comment}{        * Функция която опреснява играта}}
+\DoxyCodeLine{19 \textcolor{comment}{        */}}
+\DoxyCodeLine{20         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_pac_man_1_1_game_aa33c93758770a5c05e3bcb4a6355093f}{Update}}();}
+\DoxyCodeLine{21     \textcolor{keyword}{private}:}
+\DoxyCodeLine{22         \textcolor{comment}{/*}}
+\DoxyCodeLine{23 \textcolor{comment}{        * Предишна позиция на играча}}
+\DoxyCodeLine{24 \textcolor{comment}{        */}}
+\DoxyCodeLine{25         \mbox{\hyperlink{class_pac_man_1_1_point}{Point}} m\_OldPlayerPosition\{\};}
+\DoxyCodeLine{26         \textcolor{comment}{/*}}
+\DoxyCodeLine{27 \textcolor{comment}{        * Играч}}
+\DoxyCodeLine{28 \textcolor{comment}{        */}}
+\DoxyCodeLine{29         \mbox{\hyperlink{class_pac_man_1_1_player}{Player}} m\_Player\{\};}
+\DoxyCodeLine{30         \textcolor{comment}{/*}}
+\DoxyCodeLine{31 \textcolor{comment}{        * Низ от духчета които се движат на картата}}
+\DoxyCodeLine{32 \textcolor{comment}{        */}}
+\DoxyCodeLine{33         Ghost m\_Enemy[4]\{\};}
+\DoxyCodeLine{34         \textcolor{comment}{/*}}
+\DoxyCodeLine{35 \textcolor{comment}{        * Карта с размери [21,21]}}
+\DoxyCodeLine{36 \textcolor{comment}{        */}}
+\DoxyCodeLine{37         Map<21,21> m\_Map\{\};}
+\DoxyCodeLine{38         \textcolor{comment}{/*}}
+\DoxyCodeLine{39 \textcolor{comment}{        * брой изминали тикове}}
+\DoxyCodeLine{40 \textcolor{comment}{        */}}
+\DoxyCodeLine{41         uint32\_t m\_Ticks\{\};}
+\DoxyCodeLine{42     \};}
+\DoxyCodeLine{43 \}}
+
+\end{DoxyCode}

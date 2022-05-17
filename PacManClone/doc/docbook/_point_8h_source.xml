@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__point_8h_source" xml:lang="en-US">
+<title>Point.h</title>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered">1 <emphasis role="preprocessor">#pragma&#32;once</emphasis>
+2 <emphasis role="preprocessor">#include&#32;&lt;cstdint&gt;</emphasis>
+3 <emphasis role="preprocessor">#include&#32;&lt;cmath&gt;</emphasis>
+4 <emphasis role="keyword">namespace&#32;</emphasis><link linkend="_namespace_pac_man">PacMan</link>&#32;{
+5 &#32;&#32;&#32;&#32;<emphasis role="keyword">class&#32;</emphasis><link linkend="_class_pac_man_1_1_point">Point</link>&#32;{
+6 &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>:
+10 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_pac_man_1_1_point_1a252e6ba858457d81cb22a01b3aa6b6ee">Point</link>()&#32;=&#32;<emphasis role="keywordflow">default</emphasis>;
+14 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_pac_man_1_1_point_1a8b54232026dc73472e3da771722ddb22">Point</link>(<emphasis role="keywordtype">float</emphasis>&#32;<link linkend="_class_pac_man_1_1_point_1a3924af949ab632d79d7da9342a38858b">x</link>,&#32;<emphasis role="keywordtype">float</emphasis>&#32;<link linkend="_class_pac_man_1_1_point_1abc32b96862fc2d149fed3f452c3d92e3">y</link>)&#32;:&#32;<link linkend="_class_pac_man_1_1_point_1a3924af949ab632d79d7da9342a38858b">x</link>(<link linkend="_class_pac_man_1_1_point_1a3924af949ab632d79d7da9342a38858b">x</link>),&#32;<link linkend="_class_pac_man_1_1_point_1abc32b96862fc2d149fed3f452c3d92e3">y</link>(<link linkend="_class_pac_man_1_1_point_1abc32b96862fc2d149fed3f452c3d92e3">y</link>)&#32;{}
+18 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_pac_man_1_1_point_1a90ba7c62519665b78165712fcd02299f">Point</link>(<emphasis role="keyword">const</emphasis>&#32;<link linkend="_class_pac_man_1_1_point">Point</link>&amp;)&#32;=&#32;<emphasis role="keywordflow">default</emphasis>;
+19 
+20 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_pac_man_1_1_point">Point</link>&amp;&#32;<link linkend="_class_pac_man_1_1_point_1a59b0b154f1c8899f0359c61355c7fdd2">operator=</link>(<emphasis role="keyword">const</emphasis>&#32;<link linkend="_class_pac_man_1_1_point">Point</link>&amp;&#32;other)&#32;=&#32;<emphasis role="keywordflow">default</emphasis>;
+21 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_class_pac_man_1_1_point_1a6b1aa6f1e4d4af9828c73adf6332c33f">operator==</link>(<emphasis role="keyword">const</emphasis>&#32;<link linkend="_class_pac_man_1_1_point">Point</link>&amp;&#32;rhs)&#32;{
+22 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;(this-&gt;<link linkend="_class_pac_man_1_1_point_1a3924af949ab632d79d7da9342a38858b">x</link>&#32;==&#32;rhs.<link linkend="_class_pac_man_1_1_point_1a3924af949ab632d79d7da9342a38858b">x</link>&#32;&amp;&amp;&#32;this-&gt;y&#32;==&#32;rhs.<link linkend="_class_pac_man_1_1_point_1abc32b96862fc2d149fed3f452c3d92e3">y</link>);
+23 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+24 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_pac_man_1_1_point">Point</link>&amp;&#32;<link linkend="_class_pac_man_1_1_point_1a381aef659bbd5d6b1c4c9b25cae51048">operator+=</link>(<emphasis role="keyword">const</emphasis>&#32;<link linkend="_class_pac_man_1_1_point">Point</link>&amp;&#32;rhs)
+25 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+26 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;<link linkend="_class_pac_man_1_1_point_1a3924af949ab632d79d7da9342a38858b">x</link>&#32;+=&#32;rhs.<link linkend="_class_pac_man_1_1_point_1a3924af949ab632d79d7da9342a38858b">x</link>;
+27 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;<link linkend="_class_pac_man_1_1_point_1abc32b96862fc2d149fed3f452c3d92e3">y</link>&#32;+=&#32;rhs.<link linkend="_class_pac_man_1_1_point_1abc32b96862fc2d149fed3f452c3d92e3">y</link>;
+28 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;*<emphasis role="keyword">this</emphasis>;
+29 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+30 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_pac_man_1_1_point">Point</link>&amp;&#32;<link linkend="_class_pac_man_1_1_point_1a082378cf17cfa3079569ecce415a7839">operator-=</link>(<emphasis role="keyword">const</emphasis>&#32;<link linkend="_class_pac_man_1_1_point">Point</link>&amp;&#32;rhs)
+31 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+32 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;<link linkend="_class_pac_man_1_1_point_1a3924af949ab632d79d7da9342a38858b">x</link>&#32;-=&#32;rhs.<link linkend="_class_pac_man_1_1_point_1a3924af949ab632d79d7da9342a38858b">x</link>;
+33 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;<link linkend="_class_pac_man_1_1_point_1abc32b96862fc2d149fed3f452c3d92e3">y</link>&#32;-=&#32;rhs.<link linkend="_class_pac_man_1_1_point_1abc32b96862fc2d149fed3f452c3d92e3">y</link>;
+34 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;*<emphasis role="keyword">this</emphasis>;
+35 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+36 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_class_pac_man_1_1_point_1aa6198a6f7e8852af75fe52dbfdc5c396">operator!=</link>(<emphasis role="keyword">const</emphasis>&#32;<link linkend="_class_pac_man_1_1_point">Point</link>&amp;&#32;rhs)
+37 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+38 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;!(*<emphasis role="keyword">this</emphasis>==rhs);
+39 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+40 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_pac_man_1_1_point">Point</link>&#32;<link linkend="_class_pac_man_1_1_point_1a4150aa86907365c34587dbbb0d454783">operator+</link>(<emphasis role="keyword">const</emphasis>&#32;<link linkend="_class_pac_man_1_1_point">Point</link>&amp;&#32;rhs)
+41 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+42 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">float</emphasis>&#32;<link linkend="_class_pac_man_1_1_point_1a3924af949ab632d79d7da9342a38858b">x</link>&#32;=&#32;this-&gt;x&#32;+&#32;rhs.<link linkend="_class_pac_man_1_1_point_1a3924af949ab632d79d7da9342a38858b">x</link>;
+43 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">float</emphasis>&#32;<link linkend="_class_pac_man_1_1_point_1abc32b96862fc2d149fed3f452c3d92e3">y</link>&#32;=&#32;this-&gt;y&#32;+&#32;rhs.<link linkend="_class_pac_man_1_1_point_1abc32b96862fc2d149fed3f452c3d92e3">y</link>;
+44 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;{&#32;<link linkend="_class_pac_man_1_1_point_1a3924af949ab632d79d7da9342a38858b">x</link>,<link linkend="_class_pac_man_1_1_point_1abc32b96862fc2d149fed3f452c3d92e3">y</link>&#32;};
+45 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+46 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_pac_man_1_1_point">Point</link>&amp;&#32;<link linkend="_class_pac_man_1_1_point_1ac54d8bd73bddd826f64ef07d22bffed4">operator*</link>(<emphasis role="keywordtype">float</emphasis>&#32;rhs)&#32;{
+47 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;<link linkend="_class_pac_man_1_1_point_1a3924af949ab632d79d7da9342a38858b">x</link>&#32;*=&#32;rhs;
+48 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;<link linkend="_class_pac_man_1_1_point_1abc32b96862fc2d149fed3f452c3d92e3">y</link>&#32;*=&#32;rhs;
+49 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;*<emphasis role="keyword">this</emphasis>;
+50 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+51 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_pac_man_1_1_point">Point</link>&#32;<link linkend="_class_pac_man_1_1_point_1ac97e17a8cdcdc9f253ffe15a95b94a91">GetTrunc</link>()&#32;{&#32;<emphasis role="keywordflow">return</emphasis>&#32;{&#32;trunc(floor(<link linkend="_class_pac_man_1_1_point_1a3924af949ab632d79d7da9342a38858b">x</link>)),trunc(floor(<link linkend="_class_pac_man_1_1_point_1abc32b96862fc2d149fed3f452c3d92e3">y</link>))&#32;};&#32;};
+52 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">float</emphasis>&#32;<link linkend="_class_pac_man_1_1_point_1a3924af949ab632d79d7da9342a38858b">x</link>{};
+53 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">float</emphasis>&#32;<link linkend="_class_pac_man_1_1_point_1abc32b96862fc2d149fed3f452c3d92e3">y</link>{};
+54 &#32;&#32;&#32;&#32;};
+55 
+56 }
+</programlisting></section>

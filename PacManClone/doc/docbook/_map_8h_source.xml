@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__map_8h_source" xml:lang="en-US">
+<title>Map.h</title>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered">1 <emphasis role="preprocessor">#pragma&#32;once</emphasis>
+2 <emphasis role="preprocessor">#include&#32;&lt;cstdint&gt;</emphasis>
+3 <emphasis role="preprocessor">#include&#32;&lt;string&gt;</emphasis>
+4 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="__point_8h">Point.h</link>&quot;</emphasis>
+5 
+6 <emphasis role="keyword">namespace&#32;</emphasis><link linkend="_namespace_pac_man">PacMan</link>&#32;{
+7 
+8 &#32;&#32;&#32;&#32;<emphasis role="keyword">template</emphasis>&#32;&lt;u<emphasis role="keywordtype">int</emphasis>32_t&#32;SizeX,&#32;u<emphasis role="keywordtype">int</emphasis>32_t&#32;SizeY&gt;
+9 &#32;&#32;&#32;&#32;<emphasis role="keyword">class&#32;</emphasis><link linkend="_class_pac_man_1_1_map">Map</link>&#32;{
+10 &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>:
+14 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_pac_man_1_1_map_1a9bbbd7e1ab5c599588e9d0ee1f6a2a14">Map</link>()&#32;=&#32;<emphasis role="keywordflow">default</emphasis>;
+15 
+19 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_pac_man_1_1_map_1abf799dad5df1c5ffd65d211ece6c2217">Set</link>(<emphasis role="keywordtype">size_t</emphasis>&#32;x,&#32;<emphasis role="keywordtype">size_t</emphasis>&#32;y,&#32;int8_t&#32;value)&#32;{&#32;m_Data[x][y]&#32;=&#32;value;&#32;}
+23 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_pac_man_1_1_map_1a27722b8b3dc43f77aff135489b2e995e">Set</link>(<link linkend="_class_pac_man_1_1_point">Point</link>&#32;pos,&#32;int8_t&#32;value)&#32;{&#32;m_Data[(int)pos.<link linkend="_class_pac_man_1_1_point_1a3924af949ab632d79d7da9342a38858b">x</link>][(<emphasis role="keywordtype">int</emphasis>)pos.<link linkend="_class_pac_man_1_1_point_1abc32b96862fc2d149fed3f452c3d92e3">y</link>]&#32;=&#32;value;&#32;}
+27 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;int8_t&#32;<link linkend="_class_pac_man_1_1_map_1a0dd8ee98ccf17ef4a716a10aec02c5dd">Get</link>(<emphasis role="keywordtype">size_t</emphasis>&#32;x,&#32;<emphasis role="keywordtype">size_t</emphasis>&#32;y)<emphasis role="keyword">&#32;const&#32;</emphasis>{&#32;<emphasis role="keywordflow">return</emphasis>&#32;m_Data[x][y];&#32;}
+31 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;int8_t&#32;<link linkend="_class_pac_man_1_1_map_1a22e8b4e33e5dfa9f5bec90ad0977b9d1">Get</link>(<link linkend="_class_pac_man_1_1_point">Point</link>&#32;pos)<emphasis role="keyword">&#32;const&#32;</emphasis>{
+32 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(pos.<link linkend="_class_pac_man_1_1_point_1abc32b96862fc2d149fed3f452c3d92e3">y</link>&#32;&lt;&#32;height&#32;&amp;&amp;&#32;pos.<link linkend="_class_pac_man_1_1_point_1a3924af949ab632d79d7da9342a38858b">x</link>&#32;&lt;&#32;width&#32;&amp;&amp;&#32;pos.<link linkend="_class_pac_man_1_1_point_1a3924af949ab632d79d7da9342a38858b">x</link>&#32;&gt;=&#32;0&#32;&amp;&amp;&#32;pos.<link linkend="_class_pac_man_1_1_point_1abc32b96862fc2d149fed3f452c3d92e3">y</link>&#32;&gt;=&#32;0)&#32;{
+33 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;m_Data[(size_t)pos.<link linkend="_class_pac_man_1_1_point_1a3924af949ab632d79d7da9342a38858b">x</link>][(<emphasis role="keywordtype">size_t</emphasis>)pos.<link linkend="_class_pac_man_1_1_point_1abc32b96862fc2d149fed3f452c3d92e3">y</link>];
+34 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+35 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;INT8_MIN;
+36 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+37 
+41 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_class_pac_man_1_1_map_1a6442e160f3b883b5acda705c70fb2e0d">IsValid</link>(<link linkend="_class_pac_man_1_1_point">Point</link>&#32;pos)&#32;{&#32;<emphasis role="keywordflow">return</emphasis>&#32;(pos.<link linkend="_class_pac_man_1_1_point_1abc32b96862fc2d149fed3f452c3d92e3">y</link>&#32;&lt;&#32;height&#32;&amp;&amp;&#32;pos.<link linkend="_class_pac_man_1_1_point_1a3924af949ab632d79d7da9342a38858b">x</link>&#32;&lt;&#32;width&#32;&amp;&amp;&#32;pos.<link linkend="_class_pac_man_1_1_point_1a3924af949ab632d79d7da9342a38858b">x</link>&#32;&gt;=&#32;0&#32;&amp;&amp;&#32;pos.<link linkend="_class_pac_man_1_1_point_1abc32b96862fc2d149fed3f452c3d92e3">y</link>&#32;&gt;=&#32;0);&#32;}
+42 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">/*</emphasis>
+43 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;*&#32;Функция&#32;която&#32;връща&#32;низа&#32;с&#32;информация&#32;на&#32;картата</emphasis>
+44 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;*/</emphasis>
+45 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">auto</emphasis>&amp;&#32;<link linkend="_class_pac_man_1_1_map_1a0a07ca19e2842c41ae7ea3cf9ce5b739">data</link>()&#32;{&#32;<emphasis role="keywordflow">return</emphasis>&#32;&amp;m_Data;&#32;}
+46 
+50 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">auto</emphasis>&#32;<link linkend="_class_pac_man_1_1_map_1a0b8cd839dd6322ae080ac116ae874a82">GetSizeX</link>()<emphasis role="keyword">&#32;const&#32;</emphasis>{&#32;<emphasis role="keywordflow">return</emphasis>&#32;SizeX;&#32;};
+54 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">auto</emphasis>&#32;<link linkend="_class_pac_man_1_1_map_1a24d69b455463dffd0a55224a4150c9a0">GetSizeY</link>()<emphasis role="keyword">&#32;const&#32;</emphasis>{&#32;<emphasis role="keywordflow">return</emphasis>&#32;SizeY;&#32;};
+58 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_pac_man_1_1_map_1ac82881ca536916e5fc34ea27d4ef18e5">Draw</link>(<link linkend="_class_pac_man_1_1_point">Point</link>&#32;playerPosition,<link linkend="_class_pac_man_1_1_point">Point</link>&#32;ghostPosition[4],&#32;<emphasis role="keywordtype">bool</emphasis>&#32;frightened[4])&#32;<emphasis role="keyword">const</emphasis>;
+62 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_pac_man_1_1_map_1a51536b105dca1bcb98b99060dea208b7">Fill</link>(int8_t&#32;symbol);
+63 
+64 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">/*</emphasis>
+65 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;*&#32;Функция&#32;която&#32;запълва&#32;картата&#32;с&#32;някакъв&#32;низ&#32;от&#32;редове</emphasis>
+66 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;*/</emphasis>
+67 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_pac_man_1_1_map_1a51536b105dca1bcb98b99060dea208b7">Fill</link>(std::string&#32;<link linkend="_class_pac_man_1_1_map_1a0a07ca19e2842c41ae7ea3cf9ce5b739">data</link>[SizeY]);
+68 
+72 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_class_pac_man_1_1_map_1a432e7330cec0d690643ba903838e83bc">isColliding</link>(<link linkend="_class_pac_man_1_1_point">Point</link>&#32;p)&#32;{&#32;
+73 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">char</emphasis>&#32;c&#32;=&#32;m_Data[(int)p.<link linkend="_class_pac_man_1_1_point_1ac97e17a8cdcdc9f253ffe15a95b94a91">GetTrunc</link>().<link linkend="_class_pac_man_1_1_point_1a3924af949ab632d79d7da9342a38858b">x</link>][(int)p.<link linkend="_class_pac_man_1_1_point_1ac97e17a8cdcdc9f253ffe15a95b94a91">GetTrunc</link>().<link linkend="_class_pac_man_1_1_point_1abc32b96862fc2d149fed3f452c3d92e3">y</link>];
+74 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;c&#32;==&#32;<emphasis role="charliteral">&apos;#&apos;</emphasis>;
+75 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+76 
+77 &#32;&#32;&#32;&#32;<emphasis role="keyword">private</emphasis>:
+81 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">char</emphasis>&#32;m_Data[SizeX][SizeY]{};
+85 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;uint32_t&#32;width&#32;=&#32;SizeX;
+89 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;uint32_t&#32;height&#32;=&#32;SizeY;
+90 &#32;&#32;&#32;&#32;};
+91 
+92 }
+</programlisting></section>

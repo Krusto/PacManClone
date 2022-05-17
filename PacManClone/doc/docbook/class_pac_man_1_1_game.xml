@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_pac_man_1_1_game" xml:lang="en-US">
+<title>PacMan::Game Class Reference</title>
+<indexterm><primary>PacMan::Game</primary></indexterm>
+<para>
+<computeroutput>#include &lt;PacMan.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_pac_man_1_1_game_1a677cd1502bc2d0f31f3c46204aeb6d02">Game</link> ()=default</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_pac_man_1_1_game_1ab12793c6af86d2de5d02f18777522268">Init</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_pac_man_1_1_game_1aa33c93758770a5c05e3bcb4a6355093f">Update</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_pac_man_1_1_game_1a677cd1502bc2d0f31f3c46204aeb6d02"/><section>
+    <title>Game()</title>
+<indexterm><primary>Game</primary><secondary>PacMan::Game</secondary></indexterm>
+<indexterm><primary>PacMan::Game</primary><secondary>Game</secondary></indexterm>
+<para><computeroutput>PacMan::Game::Game ( )<computeroutput>[default]</computeroutput></computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_pac_man_1_1_game_1ab12793c6af86d2de5d02f18777522268"/><section>
+    <title>Init()</title>
+<indexterm><primary>Init</primary><secondary>PacMan::Game</secondary></indexterm>
+<indexterm><primary>PacMan::Game</primary><secondary>Init</secondary></indexterm>
+<para><computeroutput>void PacMan::Game::Init ( )</computeroutput></para></section>
+<anchor xml:id="_class_pac_man_1_1_game_1aa33c93758770a5c05e3bcb4a6355093f"/><section>
+    <title>Update()</title>
+<indexterm><primary>Update</primary><secondary>PacMan::Game</secondary></indexterm>
+<indexterm><primary>PacMan::Game</primary><secondary>Update</secondary></indexterm>
+<para><computeroutput>void PacMan::Game::Update ( )</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following files:</para>
+<link linkend="__pac_man_8h">PacMan.h</link><link linkend="__pac_man_8cpp">PacMan.cpp</link></section>
+</section>

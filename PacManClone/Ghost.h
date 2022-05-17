@@ -11,8 +11,14 @@ namespace PacMan {
 	public:
 		Ghost() = default;
 
-		void Move(Point dir,float speed = 1.0) { position += dir; }
+		/**
+		* Функция за движение на духчето в някаква посока
+		*/
+		void Move(Point dir) { position += dir; }
 
+		/**
+		* Функция която връща разстоянието до целта
+		*/
 		float GetTargetDistance(uint32_t direction) {
 			float x = position.x;
 			float y = position.y;
@@ -45,13 +51,19 @@ namespace PacMan {
 			return GetDistance({ x,y }, target);
 		}
 
+		/**
+		* Функция която проверява дали има колизия м-у духчето и пакман
+		*/
 		bool IsCollidingPacman(Player& player) {
 			return player.position.GetTrunc() == position;
 		}
+		/**
+		* Функция която опреснява целта
+		*/
 		void UpdateTarget(uint32_t pacmanDirection, Point ghostPosition, Point pacmanPosition,Map<21,21>& map) {
 				if (movementMode == 0) // scatter mode
 				{
-					//goes to corner
+					//отива в края на картата
 					switch (id)
 					{
 					case 0:
@@ -82,13 +94,13 @@ namespace PacMan {
 				{
 					switch (id)
 					{
-					case 0: //The red gohst will chase Pacman.
+					case 0: //червеният дух нацелва пакман
 					{
 						target = pacmanPosition;
 
 						break;
 					}
-					case 1: //The pink gohst will chase the 4th cell in front of Pacman.
+					case 1: //розовият дух нацелва 4 клетки пред пакман
 					{
 						target = pacmanPosition;
 
@@ -120,11 +132,10 @@ namespace PacMan {
 
 						break;
 					}
-					case 2: //The blue gohst.
+					case 2: // синият нацелва 2 клетки пред пакман
 					{
 						target = pacmanPosition;
 
-						//Getting the second cell in front of Pacman.
 						switch (pacmanDirection)
 						{
 						case 0:
@@ -151,17 +162,15 @@ namespace PacMan {
 						}
 						}
 
-						//We're sending a vector from the red gohst to the second cell in front of Pacman.
-						//Then we're doubling it.
 						target += {target.x - ghostPosition.x, 
 							         target.y - ghostPosition.y};
 
 						break;
 					}
-					case 3: //The orange gohst will chase Pacman until it gets close to him. Then it'll switch to the scatter mode.
+					case 3: // оранжевият дух преследва пакман и след това отива в scatter режим
 					{
-						//Using the Pythagoras' theorem again.
-						if (4 <= GetDistance(pacmanPosition,position))
+						
+						if ( GetDistance(pacmanPosition,position) >= 4)
 						{
 							target = pacmanPosition;
 						}
@@ -173,11 +182,12 @@ namespace PacMan {
 					}
 				}
 		}
+		/**
+		* Функция за опресняване на духчето
+		*/
 		void Update(Map<21, 21>& map, Player& player,Ghost& ghost) {
 			bool move = 0;
 
-			//If this is greater than 1, that means that the gohst has reached the intersection.
-			//We don't consider the way back as an available way.
 			unsigned char available_ways = 0;
 			float speed = 1;
 
@@ -185,7 +195,6 @@ namespace PacMan {
 
 			UpdateTarget(player.direction,ghost.position, player.position,map);
 
-			//This is so clean! I could spend hours staring at it.
 			walls[0] = map.Get(position + Point{ speed,0 }) == '#';
 			walls[1] = map.Get(position + Point{ 0,-speed }) == '#';
 			walls[2] = map.Get(position + Point{ -speed,0 }) == '#';
@@ -193,15 +202,14 @@ namespace PacMan {
 
 			if (frightenedMode != 1)
 			{
-				//I used 4 because using a number between 0 and 3 will make the gohst move in a direction it can't move.
 				unsigned char optimal_direction = 4;
 
-				//The gohst can move.
+				// духчето може да мърда
 				move = 1;
 
 				for (unsigned char a = 0; a < 4; a++)
 				{
-					//Gohsts can't turn back! (Unless they really have to)
+					//духчетата не могат да се обърнат, стига да не е нужно
 					if (a == (2 + direction) % 4)
 					{
 						continue;
@@ -217,7 +225,7 @@ namespace PacMan {
 
 						if (GetTargetDistance(a) < GetTargetDistance(optimal_direction))
 						{
-							//The optimal direction is the direction that's closest to the target.
+							// оптималната посока за да стигне целта
 							optimal_direction = a;
 						}
 					}
@@ -225,14 +233,14 @@ namespace PacMan {
 
 				if (available_ways > 1)
 				{
-					//When the gohst is at the intersection, it chooses the optimal direction.
+					// когато стигне кръстопът избира най добрата посока
 					direction = optimal_direction;
 				}
 				else
 				{
 					if (optimal_direction == 4)
 					{
-						//"Unless they have to" part.
+						// обръща се духчето на обратно защото трябва
 						direction = (2 + direction) % 4;
 					}
 					else
@@ -243,24 +251,23 @@ namespace PacMan {
 			}
 			else
 			{
-				//I used rand() because I figured that we're only using randomness here, and there's no need to use a whole library for it.
 				unsigned char random_direction = rand() % 4;
 
 				if (frightenedSpeedTimer == 0)
 				{
-					//The gohst can move after a certain number of frames.
+					
 					move = 1;
 
 					frightenedSpeedTimer = 30;
 
 					for (unsigned char a = 0; a < 4; a++)
 					{
-						//They can't turn back even if they're frightened.
+						// не може да се обръщат дори и да се страхуват
 						if (a == (2 + direction) % 4)
 						{
 							continue;
 						}
-						else if (0 == walls[a])
+						else if (walls[a] == 0)
 						{
 							available_ways++;
 						}
@@ -270,7 +277,7 @@ namespace PacMan {
 					{
 						while (walls[random_direction] == 1 || random_direction == (2 + direction) % 4)
 						{
-							//We keep picking a random direction until we can use it.
+							// взимаме произволна посока докато не може да я използваме
 							random_direction = rand() % 4;
 						}
 
@@ -278,7 +285,7 @@ namespace PacMan {
 					}
 					else
 					{
-						//If there's no other way, it turns back.
+						// ако няма друг път се обръща наобратно
 						direction = (2 + direction) % 4;
 					}
 				}
@@ -287,8 +294,7 @@ namespace PacMan {
 					frightenedSpeedTimer--;
 				}
 			}
-
-			//If the gohst can move, we move it.
+			// ако може да се мръдне го местим
 			if (move)
 			{
 				switch (direction)
@@ -317,8 +323,7 @@ namespace PacMan {
 				}
 				}
 
-				//Warping.
-				//When the gohst leaves the map, we move it to the other side.
+				// когато мине през портала го пращаме от другата страна
 				if (position.x <= -1)
 				{
 					position.x = map.GetSizeX() - speed;
@@ -331,28 +336,49 @@ namespace PacMan {
 
 			if (position.GetTrunc() == player.position.GetTrunc())
 			{
-				if (frightenedMode == 0) //When the gohst is not frightened and collides with Pacman, we kill Pacman.
+				if (frightenedMode == 0) // когато не е уплашен и докосне пакман, играта приключва
 				{
 					player.isDead = 1;
 				}
-				else //Otherwise, the gohst starts running towards the house.
+				else //иначе бяга към клетката
 				{
-					useDoor = 1;
-
 					frightenedMode = 2;
 
 					target = home;
 				}
 			}
 		}
+		/**
+		* Идентификатор на духчето
+		*/
 		uint32_t id{};
+		/**
+		* Таймер за колко време се страхува
+		*/
 		uint32_t frightenedSpeedTimer{};
+		/**
+		* Променлива която служи за проверка дали е уплашено
+		*/
 		bool frightenedMode{};
-		bool useDoor{};
+		/**
+		* Режим на движение
+		*/
 		uint32_t movementMode{0};
+		/**
+		* Позижия на духчето
+		*/
 		Point position{};
+		/**
+		* Позиция на къщата на духчето
+		*/
 		Point home{10,10};
+		/**
+		* Посока на духчето
+		*/
 		uint32_t direction{};
+		/**
+		* Цел на духчето
+		*/
 		Point target{};
 	};
 }
