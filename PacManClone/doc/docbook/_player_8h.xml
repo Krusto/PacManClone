@@ -1,19 +1,19 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__player_8h" xml:lang="en-US">
-<title>Player.h File Reference</title>
-<indexterm><primary>Player.h</primary></indexterm>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__player_8h" xml:lang="bg">
+<title>C:/Users/Krusto/source/repos/PacManClone/PacManClone/Player.h Файл Справка</title>
+<indexterm><primary>C:/Users/Krusto/source/repos/PacManClone/PacManClone/Player.h</primary></indexterm>
 <programlisting linenumbering="unnumbered">#include &quot;Point.h&quot;
 #include &quot;Map.h&quot;
 #include &lt;cstdlib&gt;
 </programlisting><simplesect>
-    <title>Classes    </title>
+    <title>Класове    </title>
         <itemizedlist>
             <listitem><para>class <link linkend="_class_pac_man_1_1_player">PacMan::Player</link></para>
 </listitem>
         </itemizedlist>
 </simplesect>
 <simplesect>
-    <title>Namespaces    </title>
+    <title>Именни пространства    </title>
         <itemizedlist>
             <listitem><para>namespace <link linkend="_namespace_pac_man">PacMan</link></para>
 </listitem>

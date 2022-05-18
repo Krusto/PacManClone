@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__map_8h_source" xml:lang="en-US">
-<title>Map.h</title>
-Go to the documentation of this file.<programlisting linenumbering="unnumbered">1 <emphasis role="preprocessor">#pragma&#32;once</emphasis>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__map_8h_source" xml:lang="bg">
+<title>C:/Users/Krusto/source/repos/PacManClone/PacManClone/Map.h</title>
+Вижте документацията за този файл.<programlisting linenumbering="unnumbered">1 <emphasis role="preprocessor">#pragma&#32;once</emphasis>
 2 <emphasis role="preprocessor">#include&#32;&lt;cstdint&gt;</emphasis>
 3 <emphasis role="preprocessor">#include&#32;&lt;string&gt;</emphasis>
 4 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="__point_8h">Point.h</link>&quot;</emphasis>
@@ -24,9 +24,6 @@ Go to the documentation of this file.<programlisting linenumbering="unnumbered">
 36 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
 37 
 41 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_class_pac_man_1_1_map_1a6442e160f3b883b5acda705c70fb2e0d">IsValid</link>(<link linkend="_class_pac_man_1_1_point">Point</link>&#32;pos)&#32;{&#32;<emphasis role="keywordflow">return</emphasis>&#32;(pos.<link linkend="_class_pac_man_1_1_point_1abc32b96862fc2d149fed3f452c3d92e3">y</link>&#32;&lt;&#32;height&#32;&amp;&amp;&#32;pos.<link linkend="_class_pac_man_1_1_point_1a3924af949ab632d79d7da9342a38858b">x</link>&#32;&lt;&#32;width&#32;&amp;&amp;&#32;pos.<link linkend="_class_pac_man_1_1_point_1a3924af949ab632d79d7da9342a38858b">x</link>&#32;&gt;=&#32;0&#32;&amp;&amp;&#32;pos.<link linkend="_class_pac_man_1_1_point_1abc32b96862fc2d149fed3f452c3d92e3">y</link>&#32;&gt;=&#32;0);&#32;}
-42 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">/*</emphasis>
-43 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;*&#32;Функция&#32;която&#32;връща&#32;низа&#32;с&#32;информация&#32;на&#32;картата</emphasis>
-44 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;*/</emphasis>
 45 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">auto</emphasis>&amp;&#32;<link linkend="_class_pac_man_1_1_map_1a0a07ca19e2842c41ae7ea3cf9ce5b739">data</link>()&#32;{&#32;<emphasis role="keywordflow">return</emphasis>&#32;&amp;m_Data;&#32;}
 46 
 50 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">auto</emphasis>&#32;<link linkend="_class_pac_man_1_1_map_1a0b8cd839dd6322ae080ac116ae874a82">GetSizeX</link>()<emphasis role="keyword">&#32;const&#32;</emphasis>{&#32;<emphasis role="keywordflow">return</emphasis>&#32;SizeX;&#32;};

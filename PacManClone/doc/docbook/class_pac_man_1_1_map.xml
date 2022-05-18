@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_pac_man_1_1_map" xml:lang="en-US">
-<title>PacMan::Map&lt; SizeX, SizeY &gt; Class Template Reference</title>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_pac_man_1_1_map" xml:lang="bg">
+<title>PacMan::Map&lt; SizeX, SizeY &gt; Клас Шаблон Препратка</title>
 <indexterm><primary>PacMan::Map&lt; SizeX, SizeY &gt;</primary></indexterm>
 <para>
 <computeroutput>#include &lt;Map.h&gt;</computeroutput>
 </para>
 <simplesect>
-    <title>Public Member Functions    </title>
+    <title>Общодостъпни членове функции    </title>
         <itemizedlist>
             <listitem><para><link linkend="_class_pac_man_1_1_map_1a9bbbd7e1ab5c599588e9d0ee1f6a2a14">Map</link> ()=default</para>
 </listitem>
@@ -37,7 +37,7 @@
         </itemizedlist>
 </simplesect>
 <section>
-<title>Constructor &amp; Destructor Documentation</title>
+<title>Конструктор &amp; Деструктор Документация</title>
 <anchor xml:id="_class_pac_man_1_1_map_1a9bbbd7e1ab5c599588e9d0ee1f6a2a14"/><section>
     <title>Map()</title>
 <indexterm><primary>Map</primary><secondary>PacMan::Map&lt; SizeX, SizeY &gt;</secondary></indexterm>
@@ -47,12 +47,14 @@
 </section>
 </section>
 <section>
-<title>Member Function Documentation</title>
+<title>Членове Функции(методи) Документация</title>
 <anchor xml:id="_class_pac_man_1_1_map_1a0a07ca19e2842c41ae7ea3cf9ce5b739"/><section>
     <title>data()</title>
 <indexterm><primary>data</primary><secondary>PacMan::Map&lt; SizeX, SizeY &gt;</secondary></indexterm>
 <indexterm><primary>PacMan::Map&lt; SizeX, SizeY &gt;</primary><secondary>data</secondary></indexterm>
-<computeroutput>template&lt;uint32_t SizeX, uint32_t SizeY&gt; </computeroutput><para><computeroutput>auto &amp; <link linkend="_class_pac_man_1_1_map">PacMan::Map</link>&lt; SizeX, SizeY &gt;::data ( )<computeroutput>[inline]</computeroutput></computeroutput></para></section>
+<computeroutput>template&lt;uint32_t SizeX, uint32_t SizeY&gt; </computeroutput><para><computeroutput>auto &amp; <link linkend="_class_pac_man_1_1_map">PacMan::Map</link>&lt; SizeX, SizeY &gt;::data ( )<computeroutput>[inline]</computeroutput></computeroutput></para>
+<para>Функция която връща низа с информация на картата </para>
+</section>
 <anchor xml:id="_class_pac_man_1_1_map_1ac82881ca536916e5fc34ea27d4ef18e5"/><section>
     <title>Draw()</title>
 <indexterm><primary>Draw</primary><secondary>PacMan::Map&lt; SizeX, SizeY &gt;</secondary></indexterm>
@@ -129,6 +131,6 @@
 <para>Функция която задава стойност на клетка с позиция х,у </para>
 </section>
 <para>
-The documentation for this class was generated from the following files:</para>
-<link linkend="__map_8h">Map.h</link><link linkend="__map_8cpp">Map.cpp</link></section>
+Документация за клас генериран от следните файлове:</para>
+C:/Users/Krusto/source/repos/PacManClone/PacManClone/<link linkend="__map_8h">Map.h</link>C:/Users/Krusto/source/repos/PacManClone/PacManClone/<link linkend="__map_8cpp">Map.cpp</link></section>
 </section>

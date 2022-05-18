@@ -1,138 +1,138 @@
-\hypertarget{class_pac_man_1_1_map}{}\doxysection{Pac\+Man\+::Map\texorpdfstring{$<$}{<} SizeX, SizeY \texorpdfstring{$>$}{>} Class Template Reference}
+\doxysection{Pac\+Man\+::Map$<$ SizeX, SizeY $>$ Клас Шаблон Препратка}
 \label{class_pac_man_1_1_map}\index{PacMan::Map$<$ SizeX, SizeY $>$@{PacMan::Map$<$ SizeX, SizeY $>$}}
 
 
 {\ttfamily \#include $<$Map.\+h$>$}
 
-\doxysubsection*{Public Member Functions}
+\doxysubsection*{Общодостъпни членове функции}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_pac_man_1_1_map_a9bbbd7e1ab5c599588e9d0ee1f6a2a14}{Map}} ()=default
+\textbf{ Map} ()=default
 \item 
-void \mbox{\hyperlink{class_pac_man_1_1_map_abf799dad5df1c5ffd65d211ece6c2217}{Set}} (size\+\_\+t x, size\+\_\+t y, int8\+\_\+t value)
+void \textbf{ Set} (size\+\_\+t x, size\+\_\+t y, int8\+\_\+t value)
 \item 
-void \mbox{\hyperlink{class_pac_man_1_1_map_a27722b8b3dc43f77aff135489b2e995e}{Set}} (\mbox{\hyperlink{class_pac_man_1_1_point}{Point}} pos, int8\+\_\+t value)
+void \textbf{ Set} (\textbf{ Point} pos, int8\+\_\+t value)
 \item 
-int8\+\_\+t \mbox{\hyperlink{class_pac_man_1_1_map_a0dd8ee98ccf17ef4a716a10aec02c5dd}{Get}} (size\+\_\+t x, size\+\_\+t y) const
+int8\+\_\+t \textbf{ Get} (size\+\_\+t x, size\+\_\+t y) const
 \item 
-int8\+\_\+t \mbox{\hyperlink{class_pac_man_1_1_map_a22e8b4e33e5dfa9f5bec90ad0977b9d1}{Get}} (\mbox{\hyperlink{class_pac_man_1_1_point}{Point}} pos) const
+int8\+\_\+t \textbf{ Get} (\textbf{ Point} pos) const
 \item 
-bool \mbox{\hyperlink{class_pac_man_1_1_map_a6442e160f3b883b5acda705c70fb2e0d}{Is\+Valid}} (\mbox{\hyperlink{class_pac_man_1_1_point}{Point}} pos)
+bool \textbf{ Is\+Valid} (\textbf{ Point} pos)
 \item 
-auto \& \mbox{\hyperlink{class_pac_man_1_1_map_a0a07ca19e2842c41ae7ea3cf9ce5b739}{data}} ()
+auto \& \textbf{ data} ()
 \item 
-auto \mbox{\hyperlink{class_pac_man_1_1_map_a0b8cd839dd6322ae080ac116ae874a82}{Get\+SizeX}} () const
+auto \textbf{ Get\+SizeX} () const
 \item 
-auto \mbox{\hyperlink{class_pac_man_1_1_map_a24d69b455463dffd0a55224a4150c9a0}{Get\+SizeY}} () const
+auto \textbf{ Get\+SizeY} () const
 \item 
-const void \mbox{\hyperlink{class_pac_man_1_1_map_ac82881ca536916e5fc34ea27d4ef18e5}{Draw}} (\mbox{\hyperlink{class_pac_man_1_1_point}{Point}} player\+Position, \mbox{\hyperlink{class_pac_man_1_1_point}{Point}} ghost\+Position\mbox{[}4\mbox{]}, bool frightened\mbox{[}4\mbox{]}) const
+const void \textbf{ Draw} (\textbf{ Point} player\+Position, \textbf{ Point} ghost\+Position[4], bool frightened[4]) const
 \item 
-void \mbox{\hyperlink{class_pac_man_1_1_map_a51536b105dca1bcb98b99060dea208b7}{Fill}} (int8\+\_\+t symbol)
+void \textbf{ Fill} (int8\+\_\+t symbol)
 \item 
-void \mbox{\hyperlink{class_pac_man_1_1_map_a8904860dc2e522dad90b31b97092d863}{Fill}} (std\+::string \mbox{\hyperlink{class_pac_man_1_1_map_a0a07ca19e2842c41ae7ea3cf9ce5b739}{data}}\mbox{[}SizeY\mbox{]})
+void \textbf{ Fill} (std\+::string \textbf{ data}[SizeY])
 \item 
-bool \mbox{\hyperlink{class_pac_man_1_1_map_a432e7330cec0d690643ba903838e83bc}{is\+Colliding}} (\mbox{\hyperlink{class_pac_man_1_1_point}{Point}} p)
+bool \textbf{ is\+Colliding} (\textbf{ Point} p)
 \end{DoxyCompactItemize}
 
 
-\doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{class_pac_man_1_1_map_a9bbbd7e1ab5c599588e9d0ee1f6a2a14}\label{class_pac_man_1_1_map_a9bbbd7e1ab5c599588e9d0ee1f6a2a14}} 
+\doxysubsection{Конструктор \& Деструктор Документация}
+\mbox{\label{class_pac_man_1_1_map_a9bbbd7e1ab5c599588e9d0ee1f6a2a14}} 
 \index{PacMan::Map$<$ SizeX, SizeY $>$@{PacMan::Map$<$ SizeX, SizeY $>$}!Map@{Map}}
 \index{Map@{Map}!PacMan::Map$<$ SizeX, SizeY $>$@{PacMan::Map$<$ SizeX, SizeY $>$}}
-\doxysubsubsection{\texorpdfstring{Map()}{Map()}}
+\doxysubsubsection{Map()}
 {\footnotesize\ttfamily template$<$uint32\+\_\+t SizeX, uint32\+\_\+t SizeY$>$ \\
-\mbox{\hyperlink{class_pac_man_1_1_map}{Pac\+Man\+::\+Map}}$<$ SizeX, SizeY $>$\+::\+Map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+\textbf{ Pac\+Man\+::\+Map}$<$ SizeX, SizeY $>$\+::\+Map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
 
 Конструктор по подразбиране 
 
-\doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{class_pac_man_1_1_map_a0a07ca19e2842c41ae7ea3cf9ce5b739}\label{class_pac_man_1_1_map_a0a07ca19e2842c41ae7ea3cf9ce5b739}} 
+\doxysubsection{Членове Функции(методи) Документация}
+\mbox{\label{class_pac_man_1_1_map_a0a07ca19e2842c41ae7ea3cf9ce5b739}} 
 \index{PacMan::Map$<$ SizeX, SizeY $>$@{PacMan::Map$<$ SizeX, SizeY $>$}!data@{data}}
 \index{data@{data}!PacMan::Map$<$ SizeX, SizeY $>$@{PacMan::Map$<$ SizeX, SizeY $>$}}
-\doxysubsubsection{\texorpdfstring{data()}{data()}}
+\doxysubsubsection{data()}
 {\footnotesize\ttfamily template$<$uint32\+\_\+t SizeX, uint32\+\_\+t SizeY$>$ \\
-auto \& \mbox{\hyperlink{class_pac_man_1_1_map}{Pac\+Man\+::\+Map}}$<$ SizeX, SizeY $>$\+::data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+auto \& \textbf{ Pac\+Man\+::\+Map}$<$ SizeX, SizeY $>$\+::data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Функция която връща низа с информация на картата \mbox{\Hypertarget{class_pac_man_1_1_map_ac82881ca536916e5fc34ea27d4ef18e5}\label{class_pac_man_1_1_map_ac82881ca536916e5fc34ea27d4ef18e5}} 
+Функция която връща низа с информация на картата \mbox{\label{class_pac_man_1_1_map_ac82881ca536916e5fc34ea27d4ef18e5}} 
 \index{PacMan::Map$<$ SizeX, SizeY $>$@{PacMan::Map$<$ SizeX, SizeY $>$}!Draw@{Draw}}
 \index{Draw@{Draw}!PacMan::Map$<$ SizeX, SizeY $>$@{PacMan::Map$<$ SizeX, SizeY $>$}}
-\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}}
+\doxysubsubsection{Draw()}
 {\footnotesize\ttfamily template$<$uint32\+\_\+t SizeX, uint32\+\_\+t SizeY$>$ \\
-const void \mbox{\hyperlink{class_pac_man_1_1_map}{Pac\+Man\+::\+Map}}$<$ SizeX, SizeY $>$\+::\+Draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_pac_man_1_1_point}{Point}}}]{player\+Position,  }\item[{\mbox{\hyperlink{class_pac_man_1_1_point}{Point}}}]{ghost\+Position\mbox{[}4\mbox{]},  }\item[{bool}]{frightened\mbox{[}4\mbox{]} }\end{DoxyParamCaption}) const}
+const void \textbf{ Pac\+Man\+::\+Map}$<$ SizeX, SizeY $>$\+::\+Draw (\begin{DoxyParamCaption}\item[{\textbf{ Point}}]{player\+Position,  }\item[{\textbf{ Point}}]{ghost\+Position[4],  }\item[{bool}]{frightened[4] }\end{DoxyParamCaption}) const}
 
-Функция която рисува \mbox{\Hypertarget{class_pac_man_1_1_map_a51536b105dca1bcb98b99060dea208b7}\label{class_pac_man_1_1_map_a51536b105dca1bcb98b99060dea208b7}} 
+Функция която рисува \mbox{\label{class_pac_man_1_1_map_a51536b105dca1bcb98b99060dea208b7}} 
 \index{PacMan::Map$<$ SizeX, SizeY $>$@{PacMan::Map$<$ SizeX, SizeY $>$}!Fill@{Fill}}
 \index{Fill@{Fill}!PacMan::Map$<$ SizeX, SizeY $>$@{PacMan::Map$<$ SizeX, SizeY $>$}}
-\doxysubsubsection{\texorpdfstring{Fill()}{Fill()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+\doxysubsubsection{Fill()\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily template$<$uint32\+\_\+t SizeX, uint32\+\_\+t SizeY$>$ \\
-void \mbox{\hyperlink{class_pac_man_1_1_map}{Pac\+Man\+::\+Map}}$<$ SizeX, SizeY $>$\+::\+Fill (\begin{DoxyParamCaption}\item[{int8\+\_\+t}]{symbol }\end{DoxyParamCaption})}
+void \textbf{ Pac\+Man\+::\+Map}$<$ SizeX, SizeY $>$\+::\+Fill (\begin{DoxyParamCaption}\item[{int8\+\_\+t}]{symbol }\end{DoxyParamCaption})}
 
-Функция която запълва картата с някакъв символ \mbox{\Hypertarget{class_pac_man_1_1_map_a8904860dc2e522dad90b31b97092d863}\label{class_pac_man_1_1_map_a8904860dc2e522dad90b31b97092d863}} 
+Функция която запълва картата с някакъв символ \mbox{\label{class_pac_man_1_1_map_a8904860dc2e522dad90b31b97092d863}} 
 \index{PacMan::Map$<$ SizeX, SizeY $>$@{PacMan::Map$<$ SizeX, SizeY $>$}!Fill@{Fill}}
 \index{Fill@{Fill}!PacMan::Map$<$ SizeX, SizeY $>$@{PacMan::Map$<$ SizeX, SizeY $>$}}
-\doxysubsubsection{\texorpdfstring{Fill()}{Fill()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+\doxysubsubsection{Fill()\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily template$<$uint32\+\_\+t SizeX, uint32\+\_\+t SizeY$>$ \\
-void \mbox{\hyperlink{class_pac_man_1_1_map}{Pac\+Man\+::\+Map}}$<$ SizeX, SizeY $>$\+::\+Fill (\begin{DoxyParamCaption}\item[{std\+::string}]{data\mbox{[}\+Size\+Y\mbox{]} }\end{DoxyParamCaption})}
+void \textbf{ Pac\+Man\+::\+Map}$<$ SizeX, SizeY $>$\+::\+Fill (\begin{DoxyParamCaption}\item[{std\+::string}]{data[\+Size\+Y] }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{class_pac_man_1_1_map_a22e8b4e33e5dfa9f5bec90ad0977b9d1}\label{class_pac_man_1_1_map_a22e8b4e33e5dfa9f5bec90ad0977b9d1}} 
+\mbox{\label{class_pac_man_1_1_map_a22e8b4e33e5dfa9f5bec90ad0977b9d1}} 
 \index{PacMan::Map$<$ SizeX, SizeY $>$@{PacMan::Map$<$ SizeX, SizeY $>$}!Get@{Get}}
 \index{Get@{Get}!PacMan::Map$<$ SizeX, SizeY $>$@{PacMan::Map$<$ SizeX, SizeY $>$}}
-\doxysubsubsection{\texorpdfstring{Get()}{Get()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+\doxysubsubsection{Get()\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily template$<$uint32\+\_\+t SizeX, uint32\+\_\+t SizeY$>$ \\
-int8\+\_\+t \mbox{\hyperlink{class_pac_man_1_1_map}{Pac\+Man\+::\+Map}}$<$ SizeX, SizeY $>$\+::\+Get (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_pac_man_1_1_point}{Point}}}]{pos }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+int8\+\_\+t \textbf{ Pac\+Man\+::\+Map}$<$ SizeX, SizeY $>$\+::\+Get (\begin{DoxyParamCaption}\item[{\textbf{ Point}}]{pos }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
-Функция която връща стойност на клетка с позиция pos \mbox{\Hypertarget{class_pac_man_1_1_map_a0dd8ee98ccf17ef4a716a10aec02c5dd}\label{class_pac_man_1_1_map_a0dd8ee98ccf17ef4a716a10aec02c5dd}} 
+Функция която връща стойност на клетка с позиция pos \mbox{\label{class_pac_man_1_1_map_a0dd8ee98ccf17ef4a716a10aec02c5dd}} 
 \index{PacMan::Map$<$ SizeX, SizeY $>$@{PacMan::Map$<$ SizeX, SizeY $>$}!Get@{Get}}
 \index{Get@{Get}!PacMan::Map$<$ SizeX, SizeY $>$@{PacMan::Map$<$ SizeX, SizeY $>$}}
-\doxysubsubsection{\texorpdfstring{Get()}{Get()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+\doxysubsubsection{Get()\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily template$<$uint32\+\_\+t SizeX, uint32\+\_\+t SizeY$>$ \\
-int8\+\_\+t \mbox{\hyperlink{class_pac_man_1_1_map}{Pac\+Man\+::\+Map}}$<$ SizeX, SizeY $>$\+::\+Get (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{x,  }\item[{size\+\_\+t}]{y }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+int8\+\_\+t \textbf{ Pac\+Man\+::\+Map}$<$ SizeX, SizeY $>$\+::\+Get (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{x,  }\item[{size\+\_\+t}]{y }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
-Функция която връща стойност на клетка с позиция х,у \mbox{\Hypertarget{class_pac_man_1_1_map_a0b8cd839dd6322ae080ac116ae874a82}\label{class_pac_man_1_1_map_a0b8cd839dd6322ae080ac116ae874a82}} 
+Функция която връща стойност на клетка с позиция х,у \mbox{\label{class_pac_man_1_1_map_a0b8cd839dd6322ae080ac116ae874a82}} 
 \index{PacMan::Map$<$ SizeX, SizeY $>$@{PacMan::Map$<$ SizeX, SizeY $>$}!GetSizeX@{GetSizeX}}
 \index{GetSizeX@{GetSizeX}!PacMan::Map$<$ SizeX, SizeY $>$@{PacMan::Map$<$ SizeX, SizeY $>$}}
-\doxysubsubsection{\texorpdfstring{GetSizeX()}{GetSizeX()}}
+\doxysubsubsection{GetSizeX()}
 {\footnotesize\ttfamily template$<$uint32\+\_\+t SizeX, uint32\+\_\+t SizeY$>$ \\
-auto \mbox{\hyperlink{class_pac_man_1_1_map}{Pac\+Man\+::\+Map}}$<$ SizeX, SizeY $>$\+::\+Get\+SizeX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+auto \textbf{ Pac\+Man\+::\+Map}$<$ SizeX, SizeY $>$\+::\+Get\+SizeX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
-Функция която връща широчина на картата \mbox{\Hypertarget{class_pac_man_1_1_map_a24d69b455463dffd0a55224a4150c9a0}\label{class_pac_man_1_1_map_a24d69b455463dffd0a55224a4150c9a0}} 
+Функция която връща широчина на картата \mbox{\label{class_pac_man_1_1_map_a24d69b455463dffd0a55224a4150c9a0}} 
 \index{PacMan::Map$<$ SizeX, SizeY $>$@{PacMan::Map$<$ SizeX, SizeY $>$}!GetSizeY@{GetSizeY}}
 \index{GetSizeY@{GetSizeY}!PacMan::Map$<$ SizeX, SizeY $>$@{PacMan::Map$<$ SizeX, SizeY $>$}}
-\doxysubsubsection{\texorpdfstring{GetSizeY()}{GetSizeY()}}
+\doxysubsubsection{GetSizeY()}
 {\footnotesize\ttfamily template$<$uint32\+\_\+t SizeX, uint32\+\_\+t SizeY$>$ \\
-auto \mbox{\hyperlink{class_pac_man_1_1_map}{Pac\+Man\+::\+Map}}$<$ SizeX, SizeY $>$\+::\+Get\+SizeY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+auto \textbf{ Pac\+Man\+::\+Map}$<$ SizeX, SizeY $>$\+::\+Get\+SizeY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
-Функция която връща височина на картата \mbox{\Hypertarget{class_pac_man_1_1_map_a432e7330cec0d690643ba903838e83bc}\label{class_pac_man_1_1_map_a432e7330cec0d690643ba903838e83bc}} 
+Функция която връща височина на картата \mbox{\label{class_pac_man_1_1_map_a432e7330cec0d690643ba903838e83bc}} 
 \index{PacMan::Map$<$ SizeX, SizeY $>$@{PacMan::Map$<$ SizeX, SizeY $>$}!isColliding@{isColliding}}
 \index{isColliding@{isColliding}!PacMan::Map$<$ SizeX, SizeY $>$@{PacMan::Map$<$ SizeX, SizeY $>$}}
-\doxysubsubsection{\texorpdfstring{isColliding()}{isColliding()}}
+\doxysubsubsection{isColliding()}
 {\footnotesize\ttfamily template$<$uint32\+\_\+t SizeX, uint32\+\_\+t SizeY$>$ \\
-bool \mbox{\hyperlink{class_pac_man_1_1_map}{Pac\+Man\+::\+Map}}$<$ SizeX, SizeY $>$\+::is\+Colliding (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_pac_man_1_1_point}{Point}}}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+bool \textbf{ Pac\+Man\+::\+Map}$<$ SizeX, SizeY $>$\+::is\+Colliding (\begin{DoxyParamCaption}\item[{\textbf{ Point}}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Функция която проверява дали позицията се намира на мястото на стена \mbox{\Hypertarget{class_pac_man_1_1_map_a6442e160f3b883b5acda705c70fb2e0d}\label{class_pac_man_1_1_map_a6442e160f3b883b5acda705c70fb2e0d}} 
+Функция която проверява дали позицията се намира на мястото на стена \mbox{\label{class_pac_man_1_1_map_a6442e160f3b883b5acda705c70fb2e0d}} 
 \index{PacMan::Map$<$ SizeX, SizeY $>$@{PacMan::Map$<$ SizeX, SizeY $>$}!IsValid@{IsValid}}
 \index{IsValid@{IsValid}!PacMan::Map$<$ SizeX, SizeY $>$@{PacMan::Map$<$ SizeX, SizeY $>$}}
-\doxysubsubsection{\texorpdfstring{IsValid()}{IsValid()}}
+\doxysubsubsection{IsValid()}
 {\footnotesize\ttfamily template$<$uint32\+\_\+t SizeX, uint32\+\_\+t SizeY$>$ \\
-bool \mbox{\hyperlink{class_pac_man_1_1_map}{Pac\+Man\+::\+Map}}$<$ SizeX, SizeY $>$\+::\+Is\+Valid (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_pac_man_1_1_point}{Point}}}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+bool \textbf{ Pac\+Man\+::\+Map}$<$ SizeX, SizeY $>$\+::\+Is\+Valid (\begin{DoxyParamCaption}\item[{\textbf{ Point}}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Функция която проверява дали точката е в картата \mbox{\Hypertarget{class_pac_man_1_1_map_a27722b8b3dc43f77aff135489b2e995e}\label{class_pac_man_1_1_map_a27722b8b3dc43f77aff135489b2e995e}} 
+Функция която проверява дали точката е в картата \mbox{\label{class_pac_man_1_1_map_a27722b8b3dc43f77aff135489b2e995e}} 
 \index{PacMan::Map$<$ SizeX, SizeY $>$@{PacMan::Map$<$ SizeX, SizeY $>$}!Set@{Set}}
 \index{Set@{Set}!PacMan::Map$<$ SizeX, SizeY $>$@{PacMan::Map$<$ SizeX, SizeY $>$}}
-\doxysubsubsection{\texorpdfstring{Set()}{Set()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+\doxysubsubsection{Set()\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily template$<$uint32\+\_\+t SizeX, uint32\+\_\+t SizeY$>$ \\
-void \mbox{\hyperlink{class_pac_man_1_1_map}{Pac\+Man\+::\+Map}}$<$ SizeX, SizeY $>$\+::\+Set (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_pac_man_1_1_point}{Point}}}]{pos,  }\item[{int8\+\_\+t}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+void \textbf{ Pac\+Man\+::\+Map}$<$ SizeX, SizeY $>$\+::\+Set (\begin{DoxyParamCaption}\item[{\textbf{ Point}}]{pos,  }\item[{int8\+\_\+t}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Функция която задава стойност на клетка с позиция pos \mbox{\Hypertarget{class_pac_man_1_1_map_abf799dad5df1c5ffd65d211ece6c2217}\label{class_pac_man_1_1_map_abf799dad5df1c5ffd65d211ece6c2217}} 
+Функция която задава стойност на клетка с позиция pos \mbox{\label{class_pac_man_1_1_map_abf799dad5df1c5ffd65d211ece6c2217}} 
 \index{PacMan::Map$<$ SizeX, SizeY $>$@{PacMan::Map$<$ SizeX, SizeY $>$}!Set@{Set}}
 \index{Set@{Set}!PacMan::Map$<$ SizeX, SizeY $>$@{PacMan::Map$<$ SizeX, SizeY $>$}}
-\doxysubsubsection{\texorpdfstring{Set()}{Set()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+\doxysubsubsection{Set()\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily template$<$uint32\+\_\+t SizeX, uint32\+\_\+t SizeY$>$ \\
-void \mbox{\hyperlink{class_pac_man_1_1_map}{Pac\+Man\+::\+Map}}$<$ SizeX, SizeY $>$\+::\+Set (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{x,  }\item[{size\+\_\+t}]{y,  }\item[{int8\+\_\+t}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+void \textbf{ Pac\+Man\+::\+Map}$<$ SizeX, SizeY $>$\+::\+Set (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{x,  }\item[{size\+\_\+t}]{y,  }\item[{int8\+\_\+t}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 Функция която задава стойност на клетка с позиция х,у 
 
-The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+Документация за клас генериран от следните файлове\+:\begin{DoxyCompactItemize}
 \item 
-C\+:/\+Users/\+Krusto/source/repos/\+Pac\+Man\+Clone/\+Pac\+Man\+Clone/\mbox{\hyperlink{_map_8h}{Map.\+h}}\item 
-C\+:/\+Users/\+Krusto/source/repos/\+Pac\+Man\+Clone/\+Pac\+Man\+Clone/\mbox{\hyperlink{_map_8cpp}{Map.\+cpp}}\end{DoxyCompactItemize}
+C\+:/\+Users/\+Krusto/source/repos/\+Pac\+Man\+Clone/\+Pac\+Man\+Clone/\textbf{ Map.\+h}\item 
+C\+:/\+Users/\+Krusto/source/repos/\+Pac\+Man\+Clone/\+Pac\+Man\+Clone/\textbf{ Map.\+cpp}\end{DoxyCompactItemize}

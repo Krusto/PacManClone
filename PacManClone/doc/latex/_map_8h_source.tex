@@ -1,43 +1,43 @@
-\hypertarget{_map_8h_source}{}\doxysection{C\+:/\+Users/\+Krusto/source/repos/\+Pac\+Man\+Clone/\+Pac\+Man\+Clone/\+Map.h}
-\mbox{\hyperlink{_map_8h}{Go to the documentation of this file.}}
+\doxysection{C\+:/\+Users/\+Krusto/source/repos/\+Pac\+Man\+Clone/\+Pac\+Man\+Clone/\+Map.h}
+\textbf{ Вижте документацията за този файл.}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
 \DoxyCodeLine{2 \textcolor{preprocessor}{\#include <cstdint>}}
 \DoxyCodeLine{3 \textcolor{preprocessor}{\#include <string>}}
-\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_point_8h}{Point.h}}"{}}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}Point.h"{}}}
 \DoxyCodeLine{5 }
-\DoxyCodeLine{6 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespace_pac_man}{PacMan}} \{}
+\DoxyCodeLine{6 \textcolor{keyword}{namespace }PacMan \{}
 \DoxyCodeLine{7 }
 \DoxyCodeLine{8     \textcolor{keyword}{template} <u\textcolor{keywordtype}{int}32\_t SizeX, u\textcolor{keywordtype}{int}32\_t SizeY>}
-\DoxyCodeLine{9     \textcolor{keyword}{class }\mbox{\hyperlink{class_pac_man_1_1_map}{Map}} \{}
+\DoxyCodeLine{9     \textcolor{keyword}{class }Map \{}
 \DoxyCodeLine{10     \textcolor{keyword}{public}:}
-\DoxyCodeLine{14         \mbox{\hyperlink{class_pac_man_1_1_map_a9bbbd7e1ab5c599588e9d0ee1f6a2a14}{Map}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{14         Map() = \textcolor{keywordflow}{default};}
 \DoxyCodeLine{15 }
-\DoxyCodeLine{19         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_pac_man_1_1_map_abf799dad5df1c5ffd65d211ece6c2217}{Set}}(\textcolor{keywordtype}{size\_t} x, \textcolor{keywordtype}{size\_t} y, int8\_t value) \{ m\_Data[x][y] = value; \}}
-\DoxyCodeLine{23         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_pac_man_1_1_map_a27722b8b3dc43f77aff135489b2e995e}{Set}}(\mbox{\hyperlink{class_pac_man_1_1_point}{Point}} pos, int8\_t value) \{ m\_Data[(int)pos.\mbox{\hyperlink{class_pac_man_1_1_point_a3924af949ab632d79d7da9342a38858b}{x}}][(\textcolor{keywordtype}{int})pos.\mbox{\hyperlink{class_pac_man_1_1_point_abc32b96862fc2d149fed3f452c3d92e3}{y}}] = value; \}}
-\DoxyCodeLine{27         int8\_t \mbox{\hyperlink{class_pac_man_1_1_map_a0dd8ee98ccf17ef4a716a10aec02c5dd}{Get}}(\textcolor{keywordtype}{size\_t} x, \textcolor{keywordtype}{size\_t} y)\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} m\_Data[x][y]; \}}
-\DoxyCodeLine{31         int8\_t \mbox{\hyperlink{class_pac_man_1_1_map_a22e8b4e33e5dfa9f5bec90ad0977b9d1}{Get}}(\mbox{\hyperlink{class_pac_man_1_1_point}{Point}} pos)\textcolor{keyword}{ const }\{}
-\DoxyCodeLine{32             \textcolor{keywordflow}{if} (pos.\mbox{\hyperlink{class_pac_man_1_1_point_abc32b96862fc2d149fed3f452c3d92e3}{y}} < height \&\& pos.\mbox{\hyperlink{class_pac_man_1_1_point_a3924af949ab632d79d7da9342a38858b}{x}} < width \&\& pos.\mbox{\hyperlink{class_pac_man_1_1_point_a3924af949ab632d79d7da9342a38858b}{x}} >= 0 \&\& pos.\mbox{\hyperlink{class_pac_man_1_1_point_abc32b96862fc2d149fed3f452c3d92e3}{y}} >= 0) \{}
-\DoxyCodeLine{33                 \textcolor{keywordflow}{return} m\_Data[(size\_t)pos.\mbox{\hyperlink{class_pac_man_1_1_point_a3924af949ab632d79d7da9342a38858b}{x}}][(\textcolor{keywordtype}{size\_t})pos.\mbox{\hyperlink{class_pac_man_1_1_point_abc32b96862fc2d149fed3f452c3d92e3}{y}}];}
+\DoxyCodeLine{19         \textcolor{keywordtype}{void} Set(\textcolor{keywordtype}{size\_t} x, \textcolor{keywordtype}{size\_t} y, int8\_t value) \{ m\_Data[x][y] = value; \}}
+\DoxyCodeLine{23         \textcolor{keywordtype}{void} Set(Point pos, int8\_t value) \{ m\_Data[(int)pos.x][(\textcolor{keywordtype}{int})pos.y] = value; \}}
+\DoxyCodeLine{27         int8\_t Get(\textcolor{keywordtype}{size\_t} x, \textcolor{keywordtype}{size\_t} y)\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} m\_Data[x][y]; \}}
+\DoxyCodeLine{31         int8\_t Get(Point pos)\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{32             \textcolor{keywordflow}{if} (pos.y < height \&\& pos.x < width \&\& pos.x >= 0 \&\& pos.y >= 0) \{}
+\DoxyCodeLine{33                 \textcolor{keywordflow}{return} m\_Data[(size\_t)pos.x][(\textcolor{keywordtype}{size\_t})pos.y];}
 \DoxyCodeLine{34             \}}
 \DoxyCodeLine{35             \textcolor{keywordflow}{return} INT8\_MIN;}
 \DoxyCodeLine{36         \}}
 \DoxyCodeLine{37 }
-\DoxyCodeLine{41         \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_pac_man_1_1_map_a6442e160f3b883b5acda705c70fb2e0d}{IsValid}}(\mbox{\hyperlink{class_pac_man_1_1_point}{Point}} pos) \{ \textcolor{keywordflow}{return} (pos.\mbox{\hyperlink{class_pac_man_1_1_point_abc32b96862fc2d149fed3f452c3d92e3}{y}} < height \&\& pos.\mbox{\hyperlink{class_pac_man_1_1_point_a3924af949ab632d79d7da9342a38858b}{x}} < width \&\& pos.\mbox{\hyperlink{class_pac_man_1_1_point_a3924af949ab632d79d7da9342a38858b}{x}} >= 0 \&\& pos.\mbox{\hyperlink{class_pac_man_1_1_point_abc32b96862fc2d149fed3f452c3d92e3}{y}} >= 0); \}}
-\DoxyCodeLine{45         \textcolor{keyword}{auto}\& \mbox{\hyperlink{class_pac_man_1_1_map_a0a07ca19e2842c41ae7ea3cf9ce5b739}{data}}() \{ \textcolor{keywordflow}{return} \&m\_Data; \}}
+\DoxyCodeLine{41         \textcolor{keywordtype}{bool} IsValid(Point pos) \{ \textcolor{keywordflow}{return} (pos.y < height \&\& pos.x < width \&\& pos.x >= 0 \&\& pos.y >= 0); \}}
+\DoxyCodeLine{45         \textcolor{keyword}{auto}\& data() \{ \textcolor{keywordflow}{return} \&m\_Data; \}}
 \DoxyCodeLine{46 }
-\DoxyCodeLine{50         \textcolor{keyword}{auto} \mbox{\hyperlink{class_pac_man_1_1_map_a0b8cd839dd6322ae080ac116ae874a82}{GetSizeX}}()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} SizeX; \};}
-\DoxyCodeLine{54         \textcolor{keyword}{auto} \mbox{\hyperlink{class_pac_man_1_1_map_a24d69b455463dffd0a55224a4150c9a0}{GetSizeY}}()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} SizeY; \};}
-\DoxyCodeLine{58         \textcolor{keyword}{const} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_pac_man_1_1_map_ac82881ca536916e5fc34ea27d4ef18e5}{Draw}}(\mbox{\hyperlink{class_pac_man_1_1_point}{Point}} playerPosition,\mbox{\hyperlink{class_pac_man_1_1_point}{Point}} ghostPosition[4], \textcolor{keywordtype}{bool} frightened[4]) \textcolor{keyword}{const};}
-\DoxyCodeLine{62         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_pac_man_1_1_map_a51536b105dca1bcb98b99060dea208b7}{Fill}}(int8\_t symbol);}
+\DoxyCodeLine{50         \textcolor{keyword}{auto} GetSizeX()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} SizeX; \};}
+\DoxyCodeLine{54         \textcolor{keyword}{auto} GetSizeY()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} SizeY; \};}
+\DoxyCodeLine{58         \textcolor{keyword}{const} \textcolor{keywordtype}{void} Draw(Point playerPosition,Point ghostPosition[4], \textcolor{keywordtype}{bool} frightened[4]) \textcolor{keyword}{const};}
+\DoxyCodeLine{62         \textcolor{keywordtype}{void} Fill(int8\_t symbol);}
 \DoxyCodeLine{63 }
 \DoxyCodeLine{64         \textcolor{comment}{/*}}
 \DoxyCodeLine{65 \textcolor{comment}{        * Функция която запълва картата с някакъв низ от редове}}
 \DoxyCodeLine{66 \textcolor{comment}{        */}}
-\DoxyCodeLine{67         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_pac_man_1_1_map_a51536b105dca1bcb98b99060dea208b7}{Fill}}(std::string \mbox{\hyperlink{class_pac_man_1_1_map_a0a07ca19e2842c41ae7ea3cf9ce5b739}{data}}[SizeY]);}
+\DoxyCodeLine{67         \textcolor{keywordtype}{void} Fill(std::string data[SizeY]);}
 \DoxyCodeLine{68 }
-\DoxyCodeLine{72         \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_pac_man_1_1_map_a432e7330cec0d690643ba903838e83bc}{isColliding}}(\mbox{\hyperlink{class_pac_man_1_1_point}{Point}} p) \{ }
-\DoxyCodeLine{73             \textcolor{keywordtype}{char} c = m\_Data[(int)p.\mbox{\hyperlink{class_pac_man_1_1_point_ac97e17a8cdcdc9f253ffe15a95b94a91}{GetTrunc}}().\mbox{\hyperlink{class_pac_man_1_1_point_a3924af949ab632d79d7da9342a38858b}{x}}][(int)p.\mbox{\hyperlink{class_pac_man_1_1_point_ac97e17a8cdcdc9f253ffe15a95b94a91}{GetTrunc}}().\mbox{\hyperlink{class_pac_man_1_1_point_abc32b96862fc2d149fed3f452c3d92e3}{y}}];}
+\DoxyCodeLine{72         \textcolor{keywordtype}{bool} isColliding(Point p) \{ }
+\DoxyCodeLine{73             \textcolor{keywordtype}{char} c = m\_Data[(int)p.GetTrunc().x][(int)p.GetTrunc().y];}
 \DoxyCodeLine{74             \textcolor{keywordflow}{return} c == \textcolor{charliteral}{'\#'};}
 \DoxyCodeLine{75         \}}
 \DoxyCodeLine{76 }

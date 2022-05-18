@@ -1,118 +1,118 @@
-\hypertarget{class_pac_man_1_1_player}{}\doxysection{Pac\+Man\+::Player Class Reference}
+\doxysection{Pac\+Man\+::Player Клас Препратка}
 \label{class_pac_man_1_1_player}\index{PacMan::Player@{PacMan::Player}}
 
 
 {\ttfamily \#include $<$Player.\+h$>$}
 
-\doxysubsection*{Public Member Functions}
+\doxysubsection*{Общодостъпни членове функции}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_pac_man_1_1_player_a2df50a021cd169aa34f744049accfb62}{Player}} ()=default
+\textbf{ Player} ()=default
 \item 
-\mbox{\hyperlink{class_pac_man_1_1_player_a69fcbff3737c51c419ce0b5b17b69df7}{Player}} (const \mbox{\hyperlink{class_pac_man_1_1_point}{Point}} start\+Position)
+\textbf{ Player} (const \textbf{ Point} start\+Position)
 \item 
-void \mbox{\hyperlink{class_pac_man_1_1_player_aded75e03d338b5a5cfd449a1558c9fe1}{Move}} (\mbox{\hyperlink{class_pac_man_1_1_point}{Point}} dir)
+void \textbf{ Move} (\textbf{ Point} dir)
 \item 
-void \mbox{\hyperlink{class_pac_man_1_1_player_a0b3a21676bf7a89ebf8e2f2e531b5776}{Update}} (\mbox{\hyperlink{class_pac_man_1_1_map}{Map}}$<$ 21, 21 $>$ \&map, \mbox{\hyperlink{class_pac_man_1_1_point}{Point}} ghost\+Positions\mbox{[}4\mbox{]})
+void \textbf{ Update} (\textbf{ Map}$<$ 21, 21 $>$ \&map, \textbf{ Point} ghost\+Positions[4])
 \end{DoxyCompactItemize}
-\doxysubsection*{Public Attributes}
+\doxysubsection*{Общодостъпни атрибути}
 \begin{DoxyCompactItemize}
 \item 
-bool \mbox{\hyperlink{class_pac_man_1_1_player_a0a2a57ba1341b6c7f083389af1758989}{is\+Dead}} \{\}
+bool \textbf{ is\+Dead} \{\}
 \item 
-\mbox{\hyperlink{class_pac_man_1_1_point}{Point}} \mbox{\hyperlink{class_pac_man_1_1_player_a07ce2410ed70e3627ff6672b296eed52}{position}} \{\}
+\textbf{ Point} \textbf{ position} \{\}
 \item 
-uint32\+\_\+t \mbox{\hyperlink{class_pac_man_1_1_player_aa37c08fdbdb1322955c5469c23f11f84}{direction}} \{\}
+uint32\+\_\+t \textbf{ direction} \{\}
 \item 
-uint32\+\_\+t \mbox{\hyperlink{class_pac_man_1_1_player_a47c55929496d12adea751673d32029b5}{score}} \{\}
+uint32\+\_\+t \textbf{ score} \{\}
 \item 
-uint32\+\_\+t \mbox{\hyperlink{class_pac_man_1_1_player_afb0e29ff5e80ecf1580db2e709ae54a0}{score\+Multiplier}} \{\}
+uint32\+\_\+t \textbf{ score\+Multiplier} \{\}
 \item 
-uint32\+\_\+t \mbox{\hyperlink{class_pac_man_1_1_player_a20d20e4a7015f82245ffd6e8489cb23f}{multiplier\+Ticks}} \{\}
+uint32\+\_\+t \textbf{ multiplier\+Ticks} \{\}
 \item 
-bool \mbox{\hyperlink{class_pac_man_1_1_player_a62aa803f9804f871bf5c307dfff95468}{is\+Powered}} \{\}
+bool \textbf{ is\+Powered} \{\}
 \end{DoxyCompactItemize}
 
 
-\doxysubsection{Detailed Description}
+\doxysubsection{Подробно описание}
 Клас Играч 
 
-\doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{class_pac_man_1_1_player_a2df50a021cd169aa34f744049accfb62}\label{class_pac_man_1_1_player_a2df50a021cd169aa34f744049accfb62}} 
+\doxysubsection{Конструктор \& Деструктор Документация}
+\mbox{\label{class_pac_man_1_1_player_a2df50a021cd169aa34f744049accfb62}} 
 \index{PacMan::Player@{PacMan::Player}!Player@{Player}}
 \index{Player@{Player}!PacMan::Player@{PacMan::Player}}
-\doxysubsubsection{\texorpdfstring{Player()}{Player()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+\doxysubsubsection{Player()\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily Pac\+Man\+::\+Player\+::\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
 
-Конструктор по подразбиране \mbox{\Hypertarget{class_pac_man_1_1_player_a69fcbff3737c51c419ce0b5b17b69df7}\label{class_pac_man_1_1_player_a69fcbff3737c51c419ce0b5b17b69df7}} 
+Конструктор по подразбиране \mbox{\label{class_pac_man_1_1_player_a69fcbff3737c51c419ce0b5b17b69df7}} 
 \index{PacMan::Player@{PacMan::Player}!Player@{Player}}
 \index{Player@{Player}!PacMan::Player@{PacMan::Player}}
-\doxysubsubsection{\texorpdfstring{Player()}{Player()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily Pac\+Man\+::\+Player\+::\+Player (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_pac_man_1_1_point}{Point}}}]{start\+Position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+\doxysubsubsection{Player()\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Pac\+Man\+::\+Player\+::\+Player (\begin{DoxyParamCaption}\item[{const \textbf{ Point}}]{start\+Position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 Конструктор при който се задава началната позиция на играча 
 
-\doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{class_pac_man_1_1_player_aded75e03d338b5a5cfd449a1558c9fe1}\label{class_pac_man_1_1_player_aded75e03d338b5a5cfd449a1558c9fe1}} 
+\doxysubsection{Членове Функции(методи) Документация}
+\mbox{\label{class_pac_man_1_1_player_aded75e03d338b5a5cfd449a1558c9fe1}} 
 \index{PacMan::Player@{PacMan::Player}!Move@{Move}}
 \index{Move@{Move}!PacMan::Player@{PacMan::Player}}
-\doxysubsubsection{\texorpdfstring{Move()}{Move()}}
-{\footnotesize\ttfamily void Pac\+Man\+::\+Player\+::\+Move (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_pac_man_1_1_point}{Point}}}]{dir }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+\doxysubsubsection{Move()}
+{\footnotesize\ttfamily void Pac\+Man\+::\+Player\+::\+Move (\begin{DoxyParamCaption}\item[{\textbf{ Point}}]{dir }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Функция която мърда играча в дадена посока \mbox{\Hypertarget{class_pac_man_1_1_player_a0b3a21676bf7a89ebf8e2f2e531b5776}\label{class_pac_man_1_1_player_a0b3a21676bf7a89ebf8e2f2e531b5776}} 
+Функция която мърда играча в дадена посока \mbox{\label{class_pac_man_1_1_player_a0b3a21676bf7a89ebf8e2f2e531b5776}} 
 \index{PacMan::Player@{PacMan::Player}!Update@{Update}}
 \index{Update@{Update}!PacMan::Player@{PacMan::Player}}
-\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
-{\footnotesize\ttfamily void Pac\+Man\+::\+Player\+::\+Update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_pac_man_1_1_map}{Map}}$<$ 21, 21 $>$ \&}]{map,  }\item[{\mbox{\hyperlink{class_pac_man_1_1_point}{Point}}}]{ghost\+Positions\mbox{[}4\mbox{]} }\end{DoxyParamCaption})}
+\doxysubsubsection{Update()}
+{\footnotesize\ttfamily void Pac\+Man\+::\+Player\+::\+Update (\begin{DoxyParamCaption}\item[{\textbf{ Map}$<$ 21, 21 $>$ \&}]{map,  }\item[{\textbf{ Point}}]{ghost\+Positions[4] }\end{DoxyParamCaption})}
 
 Функция която опреснява играча и картата 
 
-\doxysubsection{Member Data Documentation}
-\mbox{\Hypertarget{class_pac_man_1_1_player_aa37c08fdbdb1322955c5469c23f11f84}\label{class_pac_man_1_1_player_aa37c08fdbdb1322955c5469c23f11f84}} 
+\doxysubsection{Член данни Документация}
+\mbox{\label{class_pac_man_1_1_player_aa37c08fdbdb1322955c5469c23f11f84}} 
 \index{PacMan::Player@{PacMan::Player}!direction@{direction}}
 \index{direction@{direction}!PacMan::Player@{PacMan::Player}}
-\doxysubsubsection{\texorpdfstring{direction}{direction}}
+\doxysubsubsection{direction}
 {\footnotesize\ttfamily uint32\+\_\+t Pac\+Man\+::\+Player\+::direction \{\}}
 
-Посока в която се движи играча \mbox{\Hypertarget{class_pac_man_1_1_player_a0a2a57ba1341b6c7f083389af1758989}\label{class_pac_man_1_1_player_a0a2a57ba1341b6c7f083389af1758989}} 
+Посока в която се движи играча \mbox{\label{class_pac_man_1_1_player_a0a2a57ba1341b6c7f083389af1758989}} 
 \index{PacMan::Player@{PacMan::Player}!isDead@{isDead}}
 \index{isDead@{isDead}!PacMan::Player@{PacMan::Player}}
-\doxysubsubsection{\texorpdfstring{isDead}{isDead}}
+\doxysubsubsection{isDead}
 {\footnotesize\ttfamily bool Pac\+Man\+::\+Player\+::is\+Dead \{\}}
 
-Флаг който служи за проверка дали играчът е умрял \mbox{\Hypertarget{class_pac_man_1_1_player_a62aa803f9804f871bf5c307dfff95468}\label{class_pac_man_1_1_player_a62aa803f9804f871bf5c307dfff95468}} 
+Флаг който служи за проверка дали играчът е умрял \mbox{\label{class_pac_man_1_1_player_a62aa803f9804f871bf5c307dfff95468}} 
 \index{PacMan::Player@{PacMan::Player}!isPowered@{isPowered}}
 \index{isPowered@{isPowered}!PacMan::Player@{PacMan::Player}}
-\doxysubsubsection{\texorpdfstring{isPowered}{isPowered}}
+\doxysubsubsection{isPowered}
 {\footnotesize\ttfamily bool Pac\+Man\+::\+Player\+::is\+Powered \{\}}
 
-Флаг за проверка дали може да изяде духче \mbox{\Hypertarget{class_pac_man_1_1_player_a20d20e4a7015f82245ffd6e8489cb23f}\label{class_pac_man_1_1_player_a20d20e4a7015f82245ffd6e8489cb23f}} 
+Флаг за проверка дали може да изяде духче \mbox{\label{class_pac_man_1_1_player_a20d20e4a7015f82245ffd6e8489cb23f}} 
 \index{PacMan::Player@{PacMan::Player}!multiplierTicks@{multiplierTicks}}
 \index{multiplierTicks@{multiplierTicks}!PacMan::Player@{PacMan::Player}}
-\doxysubsubsection{\texorpdfstring{multiplierTicks}{multiplierTicks}}
+\doxysubsubsection{multiplierTicks}
 {\footnotesize\ttfamily uint32\+\_\+t Pac\+Man\+::\+Player\+::multiplier\+Ticks \{\}}
 
-Изминали тикове \mbox{\Hypertarget{class_pac_man_1_1_player_a07ce2410ed70e3627ff6672b296eed52}\label{class_pac_man_1_1_player_a07ce2410ed70e3627ff6672b296eed52}} 
+Изминали тикове \mbox{\label{class_pac_man_1_1_player_a07ce2410ed70e3627ff6672b296eed52}} 
 \index{PacMan::Player@{PacMan::Player}!position@{position}}
 \index{position@{position}!PacMan::Player@{PacMan::Player}}
-\doxysubsubsection{\texorpdfstring{position}{position}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_pac_man_1_1_point}{Point}} Pac\+Man\+::\+Player\+::position \{\}}
+\doxysubsubsection{position}
+{\footnotesize\ttfamily \textbf{ Point} Pac\+Man\+::\+Player\+::position \{\}}
 
-Позиция на играча \mbox{\Hypertarget{class_pac_man_1_1_player_a47c55929496d12adea751673d32029b5}\label{class_pac_man_1_1_player_a47c55929496d12adea751673d32029b5}} 
+Позиция на играча \mbox{\label{class_pac_man_1_1_player_a47c55929496d12adea751673d32029b5}} 
 \index{PacMan::Player@{PacMan::Player}!score@{score}}
 \index{score@{score}!PacMan::Player@{PacMan::Player}}
-\doxysubsubsection{\texorpdfstring{score}{score}}
+\doxysubsubsection{score}
 {\footnotesize\ttfamily uint32\+\_\+t Pac\+Man\+::\+Player\+::score \{\}}
 
-Точки които е събрал играча \mbox{\Hypertarget{class_pac_man_1_1_player_afb0e29ff5e80ecf1580db2e709ae54a0}\label{class_pac_man_1_1_player_afb0e29ff5e80ecf1580db2e709ae54a0}} 
+Точки които е събрал играча \mbox{\label{class_pac_man_1_1_player_afb0e29ff5e80ecf1580db2e709ae54a0}} 
 \index{PacMan::Player@{PacMan::Player}!scoreMultiplier@{scoreMultiplier}}
 \index{scoreMultiplier@{scoreMultiplier}!PacMan::Player@{PacMan::Player}}
-\doxysubsubsection{\texorpdfstring{scoreMultiplier}{scoreMultiplier}}
+\doxysubsubsection{scoreMultiplier}
 {\footnotesize\ttfamily uint32\+\_\+t Pac\+Man\+::\+Player\+::score\+Multiplier \{\}}
 
 умножител на точки 
 
-The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+Документация за клас генериран от следните файлове\+:\begin{DoxyCompactItemize}
 \item 
-C\+:/\+Users/\+Krusto/source/repos/\+Pac\+Man\+Clone/\+Pac\+Man\+Clone/\mbox{\hyperlink{_player_8h}{Player.\+h}}\item 
-C\+:/\+Users/\+Krusto/source/repos/\+Pac\+Man\+Clone/\+Pac\+Man\+Clone/\mbox{\hyperlink{_player_8cpp}{Player.\+cpp}}\end{DoxyCompactItemize}
+C\+:/\+Users/\+Krusto/source/repos/\+Pac\+Man\+Clone/\+Pac\+Man\+Clone/\textbf{ Player.\+h}\item 
+C\+:/\+Users/\+Krusto/source/repos/\+Pac\+Man\+Clone/\+Pac\+Man\+Clone/\textbf{ Player.\+cpp}\end{DoxyCompactItemize}

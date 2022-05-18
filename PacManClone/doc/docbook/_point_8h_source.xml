@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__point_8h_source" xml:lang="en-US">
-<title>Point.h</title>
-Go to the documentation of this file.<programlisting linenumbering="unnumbered">1 <emphasis role="preprocessor">#pragma&#32;once</emphasis>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__point_8h_source" xml:lang="bg">
+<title>C:/Users/Krusto/source/repos/PacManClone/PacManClone/Point.h</title>
+Вижте документацията за този файл.<programlisting linenumbering="unnumbered">1 <emphasis role="preprocessor">#pragma&#32;once</emphasis>
 2 <emphasis role="preprocessor">#include&#32;&lt;cstdint&gt;</emphasis>
 3 <emphasis role="preprocessor">#include&#32;&lt;cmath&gt;</emphasis>
 4 <emphasis role="keyword">namespace&#32;</emphasis><link linkend="_namespace_pac_man">PacMan</link>&#32;{

@@ -1,4 +1,4 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_annotated" xml:lang="en-US">
-<title>Class List</title>
-Here are the classes, structs, unions and interfaces with brief descriptions:<link linkend="_class_pac_man_1_1_game">PacMan::Game</link><link linkend="_class_pac_man_1_1_ghost">PacMan::Ghost</link><link linkend="_class_pac_man_1_1_map">PacMan::Map&lt; SizeX, SizeY &gt;</link><link linkend="_class_pac_man_1_1_player">PacMan::Player</link><link linkend="_class_pac_man_1_1_point">PacMan::Point</link></section>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_annotated" xml:lang="bg">
+<title>Класове Списък</title>
+Класове, структури, обединения и интерфейси с кратко описание:<link linkend="_class_pac_man_1_1_game">PacMan::Game</link><link linkend="_class_pac_man_1_1_ghost">PacMan::Ghost</link><link linkend="_class_pac_man_1_1_map">PacMan::Map&lt; SizeX, SizeY &gt;</link><link linkend="_class_pac_man_1_1_player">PacMan::Player</link><link linkend="_class_pac_man_1_1_point">PacMan::Point</link></section>

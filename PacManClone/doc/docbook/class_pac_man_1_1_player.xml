@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_pac_man_1_1_player" xml:lang="en-US">
-<title>PacMan::Player Class Reference</title>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_pac_man_1_1_player" xml:lang="bg">
+<title>PacMan::Player Клас Препратка</title>
 <indexterm><primary>PacMan::Player</primary></indexterm>
 <para>
 <computeroutput>#include &lt;Player.h&gt;</computeroutput>
 </para>
 <simplesect>
-    <title>Public Member Functions    </title>
+    <title>Общодостъпни членове функции    </title>
         <itemizedlist>
             <listitem><para><link linkend="_class_pac_man_1_1_player_1a2df50a021cd169aa34f744049accfb62">Player</link> ()=default</para>
 </listitem>
@@ -19,7 +19,7 @@
         </itemizedlist>
 </simplesect>
 <simplesect>
-    <title>Public Attributes    </title>
+    <title>Общодостъпни атрибути    </title>
         <itemizedlist>
             <listitem><para>bool <link linkend="_class_pac_man_1_1_player_1a0a2a57ba1341b6c7f083389af1758989">isDead</link> {}</para>
 </listitem>
@@ -38,12 +38,12 @@
         </itemizedlist>
 </simplesect>
 <section>
-<title>Detailed Description</title>
+<title>Подробно описание</title>
 
 <para>Клас Играч </para>
 </section>
 <section>
-<title>Constructor &amp; Destructor Documentation</title>
+<title>Конструктор &amp; Деструктор Документация</title>
 <anchor xml:id="_class_pac_man_1_1_player_1a2df50a021cd169aa34f744049accfb62"/><section>
     <title>Player()<computeroutput>[1/2]</computeroutput></title>
 <indexterm><primary>Player</primary><secondary>PacMan::Player</secondary></indexterm>
@@ -60,7 +60,7 @@
 </section>
 </section>
 <section>
-<title>Member Function Documentation</title>
+<title>Членове Функции(методи) Документация</title>
 <anchor xml:id="_class_pac_man_1_1_player_1aded75e03d338b5a5cfd449a1558c9fe1"/><section>
     <title>Move()</title>
 <indexterm><primary>Move</primary><secondary>PacMan::Player</secondary></indexterm>
@@ -77,7 +77,7 @@
 </section>
 </section>
 <section>
-<title>Member Data Documentation</title>
+<title>Член данни Документация</title>
 <anchor xml:id="_class_pac_man_1_1_player_1aa37c08fdbdb1322955c5469c23f11f84"/><section>
     <title>direction</title>
 <indexterm><primary>direction</primary><secondary>PacMan::Player</secondary></indexterm>
@@ -128,6 +128,6 @@
 <para>умножител на точки </para>
 </section>
 <para>
-The documentation for this class was generated from the following files:</para>
-<link linkend="__player_8h">Player.h</link><link linkend="__player_8cpp">Player.cpp</link></section>
+Документация за клас генериран от следните файлове:</para>
+C:/Users/Krusto/source/repos/PacManClone/PacManClone/<link linkend="__player_8h">Player.h</link>C:/Users/Krusto/source/repos/PacManClone/PacManClone/<link linkend="__player_8cpp">Player.cpp</link></section>
 </section>

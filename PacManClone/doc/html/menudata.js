@@ -23,14 +23,14 @@
  @licend  The above is the entire license notice for the JavaScript code in this file
 */
 var menudata={children:[
-{text:"Main Page",url:"index.html"},
-{text:"Namespaces",url:"namespaces.html",children:[
-{text:"Namespace List",url:"namespaces.html"}]},
-{text:"Classes",url:"annotated.html",children:[
-{text:"Class List",url:"annotated.html"},
-{text:"Class Index",url:"classes.html"},
-{text:"Class Members",url:"functions.html",children:[
-{text:"All",url:"functions.html",children:[
+{text:"Главна страница",url:"index.html"},
+{text:"Именни пространства",url:"namespaces.html",children:[
+{text:"Именни пространства Списък ",url:"namespaces.html"}]},
+{text:"Класове",url:"annotated.html",children:[
+{text:"Класове Списък",url:"annotated.html"},
+{text:"Класове Указател",url:"classes.html"},
+{text:"Членове на класа",url:"functions.html",children:[
+{text:"Указател към не филтриран списък на всички членове",url:"functions.html",children:[
 {text:"d",url:"functions.html#index_d"},
 {text:"f",url:"functions.html#index_f"},
 {text:"g",url:"functions.html#index_g"},
@@ -44,7 +44,7 @@ var menudata={children:[
 {text:"u",url:"functions.html#index_u"},
 {text:"x",url:"functions.html#index_x"},
 {text:"y",url:"functions.html#index_y"}]},
-{text:"Functions",url:"functions_func.html",children:[
+{text:"Функции",url:"functions_func.html",children:[
 {text:"d",url:"functions_func.html#index_d"},
 {text:"f",url:"functions_func.html#index_f"},
 {text:"g",url:"functions_func.html#index_g"},
@@ -54,9 +54,9 @@ var menudata={children:[
 {text:"p",url:"functions_func.html#index_p"},
 {text:"s",url:"functions_func.html#index_s"},
 {text:"u",url:"functions_func.html#index_u"}]},
-{text:"Variables",url:"functions_vars.html"}]}]},
-{text:"Files",url:"files.html",children:[
-{text:"File List",url:"files.html"},
-{text:"File Members",url:"globals.html",children:[
-{text:"All",url:"globals.html"},
-{text:"Functions",url:"globals_func.html"}]}]}]}
+{text:"Променливи",url:"functions_vars.html"}]}]},
+{text:"Файлове",url:"files.html",children:[
+{text:"Файлове Списък",url:"files.html"},
+{text:"Файлове Членове",url:"globals.html",children:[
+{text:"Указател към не филтриран списък на всички членове",url:"globals.html"},
+{text:"Функции",url:"globals_func.html"}]}]}]}

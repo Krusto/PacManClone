@@ -1,13 +1,13 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__map_8cpp" xml:lang="en-US">
-<title>Map.cpp File Reference</title>
-<indexterm><primary>Map.cpp</primary></indexterm>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__map_8cpp" xml:lang="bg">
+<title>C:/Users/Krusto/source/repos/PacManClone/PacManClone/Map.cpp Файл Справка</title>
+<indexterm><primary>C:/Users/Krusto/source/repos/PacManClone/PacManClone/Map.cpp</primary></indexterm>
 <programlisting linenumbering="unnumbered">#include &quot;Map.h&quot;
 #include &lt;iostream&gt;
 #include &lt;Windows.h&gt;
 #include &quot;WindowsFunctions.h&quot;
 </programlisting><simplesect>
-    <title>Namespaces    </title>
+    <title>Именни пространства    </title>
         <itemizedlist>
             <listitem><para>namespace <link linkend="_namespace_pac_man">PacMan</link></para>
 </listitem>

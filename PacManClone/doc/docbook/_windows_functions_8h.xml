@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__windows_functions_8h" xml:lang="en-US">
-<title>WindowsFunctions.h File Reference</title>
-<indexterm><primary>WindowsFunctions.h</primary></indexterm>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__windows_functions_8h" xml:lang="bg">
+<title>C:/Users/Krusto/source/repos/PacManClone/PacManClone/WindowsFunctions.h Файл Справка</title>
+<indexterm><primary>C:/Users/Krusto/source/repos/PacManClone/PacManClone/WindowsFunctions.h</primary></indexterm>
 <programlisting linenumbering="unnumbered">#include &lt;Windows.h&gt;
 </programlisting><simplesect>
-    <title>Functions    </title>
+    <title>Функции    </title>
         <itemizedlist>
             <listitem><para>void <link linkend="__windows_functions_8h_1acbfe10552d3a0096f9e3f3e78f4a505f">GotoXY</link> (SHORT x, SHORT y)</para>
 </listitem>
@@ -17,7 +17,7 @@
         </itemizedlist>
 </simplesect>
 <section>
-<title>Function Documentation</title>
+<title>Функции Документация</title>
 <anchor xml:id="__windows_functions_8h_1a6a3ca153f0817e8ba91a023b886bb662"/><section>
     <title>ClearScreen()</title>
 <indexterm><primary>ClearScreen</primary><secondary>WindowsFunctions.h</secondary></indexterm>
