@@ -1,0 +1,2297 @@
+{\rtf1\ansi\ansicpg1252\uc1 \deff0\deflang1033\deflangfe1033
+{\fonttbl {\f0\froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}
+{\f1\fswiss\fcharset0\fprq2{\*\panose 020b0604020202020204}Arial;}
+{\f2\fmodern\fcharset0\fprq1{\*\panose 02070309020205020404}Courier New;}
+{\f3\froman\fcharset2\fprq2{\*\panose 05050102010706020507}Symbol;}
+}
+{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;\red192\green192\blue192;\red0\green128\blue0;\red96\green64\blue32;\rede0\green128\blue0;\red128\green0\blue0;\red128\green96\blue32;\red0\green32\blue128;\red0\green128\blue128;\red255\green0\blue255;\red0\green0\blue0;\red112\green0\blue112;\red255\green0\blue0;}
+{\stylesheet
+{\widctlpar\adjustright \fs20\cgrid \snext0 Normal;}
+{\paperw11900\paperh16840\margl1800\margr1800\margt1440\margb1440\gutter0\ltrsect}
+{\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid \sbasedon0 \snext0 heading 1;}
+{\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid \sbasedon0 \snext0 heading 2;}
+{\s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid \sbasedon0 \snext0 heading 3;}
+{\s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext0 heading 4;}{\*\cs10 \additive Default Paragraph Font;}
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext0 heading 5;}{\*\cs10 \additive Default Paragraph Font;}
+{\s15\qc\sb240\sa60\widctlpar\outlinelevel0\adjustright \b\f1\fs32\kerning28\cgrid \sbasedon0 \snext15 Title;}
+{\s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid \sbasedon0 \snext16 Subtitle;}
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid \sbasedon0 \snext17 BodyText;}
+{\s18\widctlpar\fs22\cgrid \sbasedon0 \snext18 DenseText;}
+{\s28\widctlpar\tqc\tx4320\tqr\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext28 header;}
+{\s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid \sbasedon0 \snext29 footer;}
+{\s30\li360\sa60\sb120\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext30 GroupHeader;}
+{\s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext41 Code Example 0;}
+{\s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext42 Code Example 1;}
+{\s42\li720\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext43 Code Example 2;}
+{\s43\li1080\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext44 Code Example 3;}
+{\s44\li1440\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext45 Code Example 4;}
+{\s45\li1800\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext46 Code Example 5;}
+{\s46\li2160\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext47 Code Example 6;}
+{\s47\li2520\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext48 Code Example 7;}
+{\s48\li2880\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext49 Code Example 8;}
+{\s49\li3240\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext50 Code Example 9;}
+{\s50\li3600\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext51 Code Example 10;}
+{\s51\li3960\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext52 Code Example 11;}
+{\s52\li4320\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext53 Code Example 12;}
+{\s53\li4680\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext53 Code Example 13;}
+{\s60\li0\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext61 List Continue 0;}
+{\s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext62 List Continue 1;}
+{\s62\li720\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext63 List Continue 2;}
+{\s63\li1080\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext64 List Continue 3;}
+{\s64\li1440\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext65 List Continue 4;}
+{\s65\li1800\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext66 List Continue 5;}
+{\s66\li2160\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext67 List Continue 6;}
+{\s67\li2520\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext68 List Continue 7;}
+{\s68\li2880\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext69 List Continue 8;}
+{\s69\li3240\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext70 List Continue 9;}
+{\s70\li3600\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext71 List Continue 10;}
+{\s71\li3960\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext72 List Continue 11;}
+{\s72\li4320\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext73 List Continue 12;}
+{\s73\li4680\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext73 List Continue 13;}
+{\s80\li0\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext81 DescContinue 0;}
+{\s81\li360\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext82 DescContinue 1;}
+{\s82\li720\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext83 DescContinue 2;}
+{\s83\li1080\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext84 DescContinue 3;}
+{\s84\li1440\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext85 DescContinue 4;}
+{\s85\li1800\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext86 DescContinue 5;}
+{\s86\li2160\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext87 DescContinue 6;}
+{\s87\li2520\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext88 DescContinue 7;}
+{\s88\li2880\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext89 DescContinue 8;}
+{\s89\li3240\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext90 DescContinue 9;}
+{\s90\li3600\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext91 DescContinue 10;}
+{\s91\li3960\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext92 DescContinue 11;}
+{\s92\li4320\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext93 DescContinue 12;}
+{\s93\li4680\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext93 DescContinue 13;}
+{\s100\li0\sa30\sb30\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext101 LatexTOC 0;}
+{\s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext102 LatexTOC 1;}
+{\s102\li720\sa24\sb24\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext103 LatexTOC 2;}
+{\s103\li1080\sa21\sb21\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext104 LatexTOC 3;}
+{\s104\li1440\sa18\sb18\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext105 LatexTOC 4;}
+{\s105\li1800\sa15\sb15\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext106 LatexTOC 5;}
+{\s106\li2160\sa12\sb12\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext107 LatexTOC 6;}
+{\s107\li2520\sa9\sb9\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext108 LatexTOC 7;}
+{\s108\li2880\sa6\sb6\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext109 LatexTOC 8;}
+{\s109\li3240\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext110 LatexTOC 9;}
+{\s110\li3600\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext111 LatexTOC 10;}
+{\s111\li3960\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext112 LatexTOC 11;}
+{\s112\li4320\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext113 LatexTOC 12;}
+{\s113\li4680\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext113 LatexTOC 13;}
+{\s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext121 \sautoupd List Bullet 0;}
+{\s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext122 \sautoupd List Bullet 1;}
+{\s122\fi-360\li1080\widctlpar\jclisttab\tx1080{\*\pn \pnlvlbody\ilvl0\ls3\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext123 \sautoupd List Bullet 2;}
+{\s123\fi-360\li1440\widctlpar\jclisttab\tx1440{\*\pn \pnlvlbody\ilvl0\ls4\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext124 \sautoupd List Bullet 3;}
+{\s124\fi-360\li1800\widctlpar\jclisttab\tx1800{\*\pn \pnlvlbody\ilvl0\ls5\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext125 \sautoupd List Bullet 4;}
+{\s125\fi-360\li2160\widctlpar\jclisttab\tx2160{\*\pn \pnlvlbody\ilvl0\ls6\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext126 \sautoupd List Bullet 5;}
+{\s126\fi-360\li2520\widctlpar\jclisttab\tx2520{\*\pn \pnlvlbody\ilvl0\ls7\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext127 \sautoupd List Bullet 6;}
+{\s127\fi-360\li2880\widctlpar\jclisttab\tx2880{\*\pn \pnlvlbody\ilvl0\ls8\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext128 \sautoupd List Bullet 7;}
+{\s128\fi-360\li3240\widctlpar\jclisttab\tx3240{\*\pn \pnlvlbody\ilvl0\ls9\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext129 \sautoupd List Bullet 8;}
+{\s129\fi-360\li3600\widctlpar\jclisttab\tx3600{\*\pn \pnlvlbody\ilvl0\ls10\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext130 \sautoupd List Bullet 9;}
+{\s130\fi-360\li3960\widctlpar\jclisttab\tx3960{\*\pn \pnlvlbody\ilvl0\ls11\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext131 \sautoupd List Bullet 10;}
+{\s131\fi-360\li4320\widctlpar\jclisttab\tx4320{\*\pn \pnlvlbody\ilvl0\ls12\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext132 \sautoupd List Bullet 11;}
+{\s132\fi-360\li4680\widctlpar\jclisttab\tx4680{\*\pn \pnlvlbody\ilvl0\ls13\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext133 \sautoupd List Bullet 12;}
+{\s133\fi-360\li5040\widctlpar\jclisttab\tx5040{\*\pn \pnlvlbody\ilvl0\ls14\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext133 \sautoupd List Bullet 13;}
+{\s140\fi-360\li360\widctlpar\fs20\cgrid \sbasedon0 \snext141 \sautoupd List Enum 0;}
+{\s141\fi-360\li720\widctlpar\fs20\cgrid \sbasedon0 \snext142 \sautoupd List Enum 1;}
+{\s142\fi-360\li1080\widctlpar\fs20\cgrid \sbasedon0 \snext143 \sautoupd List Enum 2;}
+{\s143\fi-360\li1440\widctlpar\fs20\cgrid \sbasedon0 \snext144 \sautoupd List Enum 3;}
+{\s144\fi-360\li1800\widctlpar\fs20\cgrid \sbasedon0 \snext145 \sautoupd List Enum 4;}
+{\s145\fi-360\li2160\widctlpar\fs20\cgrid \sbasedon0 \snext146 \sautoupd List Enum 5;}
+{\s146\fi-360\li2520\widctlpar\fs20\cgrid \sbasedon0 \snext147 \sautoupd List Enum 6;}
+{\s147\fi-360\li2880\widctlpar\fs20\cgrid \sbasedon0 \snext148 \sautoupd List Enum 7;}
+{\s148\fi-360\li3240\widctlpar\fs20\cgrid \sbasedon0 \snext149 \sautoupd List Enum 8;}
+{\s149\fi-360\li3600\widctlpar\fs20\cgrid \sbasedon0 \snext150 \sautoupd List Enum 9;}
+{\s150\fi-360\li3960\widctlpar\fs20\cgrid \sbasedon0 \snext151 \sautoupd List Enum 10;}
+{\s151\fi-360\li4320\widctlpar\fs20\cgrid \sbasedon0 \snext152 \sautoupd List Enum 11;}
+{\s152\fi-360\li4680\widctlpar\fs20\cgrid \sbasedon0 \snext153 \sautoupd List Enum 12;}
+{\s153\fi-360\li5040\widctlpar\fs20\cgrid \sbasedon0 \snext153 \sautoupd List Enum 13;}
+}
+{\info 
+{\title {\comment PacManClone }PacManClone}
+{\comment Generated by doxygen 1.9.4.}
+{\creatim \yr2022\mo5\dy17\hr23\min46\sec39}
+}\pard\plain 
+\sectd\pgnlcrm
+{\footer \s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid {\chpgn}}
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+\vertalc\qc\par\par\par\par\par\par\par
+\pard\plain \s15\qc\sb240\sa60\widctlpar\outlinelevel0\adjustright \b\f1\fs32\kerning28\cgrid 
+{\field\fldedit {\*\fldinst TITLE \\*MERGEFORMAT}{\fldrslt PacManClone}}\par
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+\par
+\par\par\par\par\par\par\par\par\par\par\par\par
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+{\field\fldedit {\*\fldinst AUTHOR \\*MERGEFORMAT}{\fldrslt AUTHOR}}\par
+Version \par{\field\fldedit {\*\fldinst CREATEDATE \\*MERGEFORMAT}{\fldrslt Tue May 17 2022 }}\par
+\page\page\vertalt
+\pard\plain 
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid Table of Contents\par
+\pard\plain \par
+{\field\fldedit {\*\fldinst TOC \\f \\*MERGEFORMAT}{\fldrslt Table of contents}}\par
+\pard\plain 
+\sect \sbkpage \pgndec \pgnrestart
+\sect \sectd \sbknone
+{\footer \s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid {\chpgn}}
+
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+Namespace Index\par \pard\plain 
+{\tc \v Namespace Index}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Namespace List\par \pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid Here is a list of all namespaces with brief descriptions:}
+{
+\par
+\pard\plain \s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+{\b {\b PacMan} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABF \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+\par}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+Class Index\par \pard\plain 
+{\tc \v Class Index}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Class List\par \pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid Here are the classes, structs, unions and interfaces with brief descriptions:}
+{
+\par
+\pard\plain \s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+{\b {\b PacMan::Game} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABG \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b PacMan::Ghost} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABK \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b PacMan::Map< SizeX, SizeY >} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABZ \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b PacMan::Player} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAACN \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b PacMan::Point} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAACZ \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+\par}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+File Index\par \pard\plain 
+{\tc \v File Index}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+File List\par \pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid Here is a list of all files with brief descriptions:}
+{
+\par
+\pard\plain \s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+{\b C:/Users/Krusto/source/repos/PacManClone/PacManClone/{\b Ghost.h} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAH \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b C:/Users/Krusto/source/repos/PacManClone/PacManClone/{\b main.cpp} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAI \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b C:/Users/Krusto/source/repos/PacManClone/PacManClone/{\b Map.cpp} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAK \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b C:/Users/Krusto/source/repos/PacManClone/PacManClone/{\b Map.h} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAL \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b C:/Users/Krusto/source/repos/PacManClone/PacManClone/{\b Math.cpp} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAM \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b C:/Users/Krusto/source/repos/PacManClone/PacManClone/{\b Math.h} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAO \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b C:/Users/Krusto/source/repos/PacManClone/PacManClone/{\b PacMan.cpp} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAQ \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b C:/Users/Krusto/source/repos/PacManClone/PacManClone/{\b PacMan.h} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAR \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b C:/Users/Krusto/source/repos/PacManClone/PacManClone/{\b Player.cpp} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAS \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b C:/Users/Krusto/source/repos/PacManClone/PacManClone/{\b Player.h} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAT \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b C:/Users/Krusto/source/repos/PacManClone/PacManClone/{\b Point.h} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAU \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b C:/Users/Krusto/source/repos/PacManClone/PacManClone/{\b WindowsFunctions.cpp} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAV \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b C:/Users/Krusto/source/repos/PacManClone/PacManClone/{\b WindowsFunctions.h} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABA \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+\par}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+Namespace Documentation\par \pard\plain 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+PacMan Namespace Reference\par \pard\plain 
+{\tc\tcl2 \v PacMan}
+{\xe \v PacMan}
+{\bkmkstart AAAAAAAABF}
+{\bkmkend AAAAAAAABF}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Classes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b Game}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b Ghost}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b Map}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b Player}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b Point}\par
+}
+
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+Class Documentation{\tc \v Class Documentation}
+\par \pard\plain 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+PacMan::Game Class Reference\par \pard\plain 
+{\tc\tcl2 \v PacMan::Game}
+{\xe \v PacMan::Game}
+{\bkmkstart AAAAAAAABG}
+{\bkmkend AAAAAAAABG}
+\par
+{
+{\f2 #include <PacMan.h>}}\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Public Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Game} ()=default\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b Init} ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b Update} ()\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Constructor & Destructor Documentation\par
+\pard\plain 
+{\xe \v Game\:PacMan::Game}
+{\xe \v PacMan::Game\:Game}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+PacMan::Game::Game (){\f2 [default]}}}
+\par
+{\bkmkstart AAAAAAAABH}
+{\bkmkend AAAAAAAABH}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Function Documentation\par
+\pard\plain 
+{\xe \v Init\:PacMan::Game}
+{\xe \v PacMan::Game\:Init}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void PacMan::Game::Init ()}}
+\par
+{\bkmkstart AAAAAAAABI}
+{\bkmkend AAAAAAAABI}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v Update\:PacMan::Game}
+{\xe \v PacMan::Game\:Update}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void PacMan::Game::Update ()}}
+\par
+{\bkmkstart AAAAAAAABJ}
+{\bkmkend AAAAAAAABJ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this class was generated from the following files:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+C:/Users/Krusto/source/repos/PacManClone/PacManClone/{\b PacMan.h}\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+C:/Users/Krusto/source/repos/PacManClone/PacManClone/{\b PacMan.cpp}\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+PacMan::Ghost Class Reference\par \pard\plain 
+{\tc\tcl2 \v PacMan::Ghost}
+{\xe \v PacMan::Ghost}
+{\bkmkstart AAAAAAAABK}
+{\bkmkend AAAAAAAABK}
+\par
+{
+{\f2 #include <Ghost.h>}}\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Public Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Ghost} ()=default\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b Move} ({\b Point} dir)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+float {\b GetTargetDistance} (uint32_t {\b direction})\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+bool {\b IsCollidingPacman} ({\b Player} &player)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b UpdateTarget} (uint32_t pacmanDirection, {\b Point} ghostPosition, {\b Point} pacmanPosition, {\b Map}< 21, 21 > &map)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b Update} ({\b Map}< 21, 21 > &map, {\b Player} &player, {\b Ghost} &ghost)\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Public Attributes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+uint32_t {\b id} \{\}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+uint32_t {\b frightenedSpeedTimer} \{\}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+bool {\b frightenedMode} \{\}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+uint32_t {\b movementMode} \{0\}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Point} {\b position} \{\}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Point} {\b home} \{10,10\}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+uint32_t {\b direction} \{\}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Point} {\b target} \{\}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Constructor & Destructor Documentation\par
+\pard\plain 
+{\xe \v Ghost\:PacMan::Ghost}
+{\xe \v PacMan::Ghost\:Ghost}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+PacMan::Ghost::Ghost (){\f2 [default]}}}
+\par
+{\bkmkstart AAAAAAAABL}
+{\bkmkend AAAAAAAABL}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Function Documentation\par
+\pard\plain 
+{\xe \v GetTargetDistance\:PacMan::Ghost}
+{\xe \v PacMan::Ghost\:GetTargetDistance}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+float PacMan::Ghost::GetTargetDistance (uint32_t  {\i direction}){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAABM}
+{\bkmkend AAAAAAAABM}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'D0\'A4\'D1\'83\'D0\'BD\'D0\'BA\'D1\'86\'D0\'B8\'D1\'8F \'D0\'BA\'D0\'BE\'D1\'8F\'D1\'82\'D0\'BE \'D0\'B2\'D1\'80\'D1\'8A\'D1\'89\'D0\'B0 \'D1\'80\'D0\'B0\'D0\'B7\'D1\'81\'D1\'82\'D0\'BE\'D1\'8F\'D0\'BD\'D0\'B8\'D0\'B5\'D1\'82\'D0\'BE \'D0\'B4\'D0\'BE \'D1\'86\'D0\'B5\'D0\'BB\'D1\'82\'D0\'B0 \par
+}}
+{\xe \v IsCollidingPacman\:PacMan::Ghost}
+{\xe \v PacMan::Ghost\:IsCollidingPacman}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+bool PacMan::Ghost::IsCollidingPacman ({\b Player} &  {\i player}){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAABN}
+{\bkmkend AAAAAAAABN}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'D0\'A4\'D1\'83\'D0\'BD\'D0\'BA\'D1\'86\'D0\'B8\'D1\'8F \'D0\'BA\'D0\'BE\'D1\'8F\'D1\'82\'D0\'BE \'D0\'BF\'D1\'80\'D0\'BE\'D0\'B2\'D0\'B5\'D1\'80\'D1\'8F\'D0\'B2\'D0\'B0 \'D0\'B4\'D0\'B0\'D0\'BB\'D0\'B8 \'D0\'B8\'D0\'BC\'D0\'B0 \'D0\'BA\'D0\'BE\'D0\'BB\'D0\'B8\'D0\'B7\'D0\'B8\'D1\'8F \'D0\'BC-\'D1\'83 \'D0\'B4\'D1\'83\'D1\'85\'D1\'87\'D0\'B5\'D1\'82\'D0\'BE \'D0\'B8 \'D0\'BF\'D0\'B0\'D0\'BA\'D0\'BC\'D0\'B0\'D0\'BD \par
+}}
+{\xe \v Move\:PacMan::Ghost}
+{\xe \v PacMan::Ghost\:Move}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void PacMan::Ghost::Move ({\b Point}  {\i dir}){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAABO}
+{\bkmkend AAAAAAAABO}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'D0\'A4\'D1\'83\'D0\'BD\'D0\'BA\'D1\'86\'D0\'B8\'D1\'8F \'D0\'B7\'D0\'B0 \'D0\'B4\'D0\'B2\'D0\'B8\'D0\'B6\'D0\'B5\'D0\'BD\'D0\'B8\'D0\'B5 \'D0\'BD\'D0\'B0 \'D0\'B4\'D1\'83\'D1\'85\'D1\'87\'D0\'B5\'D1\'82\'D0\'BE \'D0\'B2 \'D0\'BD\'D1\'8F\'D0\'BA\'D0\'B0\'D0\'BA\'D0\'B2\'D0\'B0 \'D0\'BF\'D0\'BE\'D1\'81\'D0\'BE\'D0\'BA\'D0\'B0 \par
+}}
+{\xe \v Update\:PacMan::Ghost}
+{\xe \v PacMan::Ghost\:Update}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void PacMan::Ghost::Update ({\b Map}< 21, 21 > &  {\i map}, {\b Player} &  {\i player}, {\b Ghost} &  {\i ghost}){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAABP}
+{\bkmkend AAAAAAAABP}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'D0\'A4\'D1\'83\'D0\'BD\'D0\'BA\'D1\'86\'D0\'B8\'D1\'8F \'D0\'B7\'D0\'B0 \'D0\'BE\'D0\'BF\'D1\'80\'D0\'B5\'D1\'81\'D0\'BD\'D1\'8F\'D0\'B2\'D0\'B0\'D0\'BD\'D0\'B5 \'D0\'BD\'D0\'B0 \'D0\'B4\'D1\'83\'D1\'85\'D1\'87\'D0\'B5\'D1\'82\'D0\'BE \par
+}}
+{\xe \v UpdateTarget\:PacMan::Ghost}
+{\xe \v PacMan::Ghost\:UpdateTarget}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void PacMan::Ghost::UpdateTarget (uint32_t  {\i pacmanDirection}, {\b Point}  {\i ghostPosition}, {\b Point}  {\i pacmanPosition}, {\b Map}< 21, 21 > &  {\i map}){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAABQ}
+{\bkmkend AAAAAAAABQ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'D0\'A4\'D1\'83\'D0\'BD\'D0\'BA\'D1\'86\'D0\'B8\'D1\'8F \'D0\'BA\'D0\'BE\'D1\'8F\'D1\'82\'D0\'BE \'D0\'BE\'D0\'BF\'D1\'80\'D0\'B5\'D1\'81\'D0\'BD\'D1\'8F\'D0\'B2\'D0\'B0 \'D1\'86\'D0\'B5\'D0\'BB\'D1\'82\'D0\'B0 \par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Data Documentation\par
+\pard\plain 
+{\xe \v direction\:PacMan::Ghost}
+{\xe \v PacMan::Ghost\:direction}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+uint32_t PacMan::Ghost::direction \{\}}}
+\par
+{\bkmkstart AAAAAAAABR}
+{\bkmkend AAAAAAAABR}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'D0\'9F\'D0\'BE\'D1\'81\'D0\'BE\'D0\'BA\'D0\'B0 \'D0\'BD\'D0\'B0 \'D0\'B4\'D1\'83\'D1\'85\'D1\'87\'D0\'B5\'D1\'82\'D0\'BE \par
+}}
+{\xe \v frightenedMode\:PacMan::Ghost}
+{\xe \v PacMan::Ghost\:frightenedMode}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+bool PacMan::Ghost::frightenedMode \{\}}}
+\par
+{\bkmkstart AAAAAAAABS}
+{\bkmkend AAAAAAAABS}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'D0\'9F\'D1\'80\'D0\'BE\'D0\'BC\'D0\'B5\'D0\'BD\'D0\'BB\'D0\'B8\'D0\'B2\'D0\'B0 \'D0\'BA\'D0\'BE\'D1\'8F\'D1\'82\'D0\'BE \'D1\'81\'D0\'BB\'D1\'83\'D0\'B6\'D0\'B8 \'D0\'B7\'D0\'B0 \'D0\'BF\'D1\'80\'D0\'BE\'D0\'B2\'D0\'B5\'D1\'80\'D0\'BA\'D0\'B0 \'D0\'B4\'D0\'B0\'D0\'BB\'D0\'B8 \'D0\'B5 \'D1\'83\'D0\'BF\'D0\'BB\'D0\'B0\'D1\'88\'D0\'B5\'D0\'BD\'D0\'BE \par
+}}
+{\xe \v frightenedSpeedTimer\:PacMan::Ghost}
+{\xe \v PacMan::Ghost\:frightenedSpeedTimer}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+uint32_t PacMan::Ghost::frightenedSpeedTimer \{\}}}
+\par
+{\bkmkstart AAAAAAAABT}
+{\bkmkend AAAAAAAABT}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'D0\'A2\'D0\'B0\'D0\'B9\'D0\'BC\'D0\'B5\'D1\'80 \'D0\'B7\'D0\'B0 \'D0\'BA\'D0\'BE\'D0\'BB\'D0\'BA\'D0\'BE \'D0\'B2\'D1\'80\'D0\'B5\'D0\'BC\'D0\'B5 \'D1\'81\'D0\'B5 \'D1\'81\'D1\'82\'D1\'80\'D0\'B0\'D1\'85\'D1\'83\'D0\'B2\'D0\'B0 \par
+}}
+{\xe \v home\:PacMan::Ghost}
+{\xe \v PacMan::Ghost\:home}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b Point} PacMan::Ghost::home \{10,10\}}}
+\par
+{\bkmkstart AAAAAAAABU}
+{\bkmkend AAAAAAAABU}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'D0\'9F\'D0\'BE\'D0\'B7\'D0\'B8\'D1\'86\'D0\'B8\'D1\'8F \'D0\'BD\'D0\'B0 \'D0\'BA\'D1\'8A\'D1\'89\'D0\'B0\'D1\'82\'D0\'B0 \'D0\'BD\'D0\'B0 \'D0\'B4\'D1\'83\'D1\'85\'D1\'87\'D0\'B5\'D1\'82\'D0\'BE \par
+}}
+{\xe \v id\:PacMan::Ghost}
+{\xe \v PacMan::Ghost\:id}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+uint32_t PacMan::Ghost::id \{\}}}
+\par
+{\bkmkstart AAAAAAAABV}
+{\bkmkend AAAAAAAABV}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'D0\'98\'D0\'B4\'D0\'B5\'D0\'BD\'D1\'82\'D0\'B8\'D1\'84\'D0\'B8\'D0\'BA\'D0\'B0\'D1\'82\'D0\'BE\'D1\'80 \'D0\'BD\'D0\'B0 \'D0\'B4\'D1\'83\'D1\'85\'D1\'87\'D0\'B5\'D1\'82\'D0\'BE \par
+}}
+{\xe \v movementMode\:PacMan::Ghost}
+{\xe \v PacMan::Ghost\:movementMode}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+uint32_t PacMan::Ghost::movementMode \{0\}}}
+\par
+{\bkmkstart AAAAAAAABW}
+{\bkmkend AAAAAAAABW}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'D0\'A0\'D0\'B5\'D0\'B6\'D0\'B8\'D0\'BC \'D0\'BD\'D0\'B0 \'D0\'B4\'D0\'B2\'D0\'B8\'D0\'B6\'D0\'B5\'D0\'BD\'D0\'B8\'D0\'B5 \par
+}}
+{\xe \v position\:PacMan::Ghost}
+{\xe \v PacMan::Ghost\:position}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b Point} PacMan::Ghost::position \{\}}}
+\par
+{\bkmkstart AAAAAAAABX}
+{\bkmkend AAAAAAAABX}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'D0\'9F\'D0\'BE\'D0\'B7\'D0\'B8\'D0\'B6\'D0\'B8\'D1\'8F \'D0\'BD\'D0\'B0 \'D0\'B4\'D1\'83\'D1\'85\'D1\'87\'D0\'B5\'D1\'82\'D0\'BE \par
+}}
+{\xe \v target\:PacMan::Ghost}
+{\xe \v PacMan::Ghost\:target}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b Point} PacMan::Ghost::target \{\}}}
+\par
+{\bkmkstart AAAAAAAABY}
+{\bkmkend AAAAAAAABY}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'D0\'A6\'D0\'B5\'D0\'BB \'D0\'BD\'D0\'B0 \'D0\'B4\'D1\'83\'D1\'85\'D1\'87\'D0\'B5\'D1\'82\'D0\'BE \par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this class was generated from the following file:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+C:/Users/Krusto/source/repos/PacManClone/PacManClone/{\b Ghost.h}\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+PacMan::Map< SizeX, SizeY > Class Template Reference\par \pard\plain 
+{\tc\tcl2 \v PacMan::Map< SizeX, SizeY >}
+{\xe \v PacMan::Map< SizeX, SizeY >}
+{\bkmkstart AAAAAAAABZ}
+{\bkmkend AAAAAAAABZ}
+\par
+{
+{\f2 #include <Map.h>}}\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Public Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Map} ()=default\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b Set} (size_t x, size_t y, int8_t value)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b Set} ({\b Point} pos, int8_t value)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int8_t {\b Get} (size_t x, size_t y) const\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int8_t {\b Get} ({\b Point} pos) const\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+bool {\b IsValid} ({\b Point} pos)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+auto & {\b data} ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+auto {\b GetSizeX} () const\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+auto {\b GetSizeY} () const\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const void {\b Draw} ({\b Point} playerPosition, {\b Point} ghostPosition[4], bool frightened[4]) const\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b Fill} (int8_t symbol)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b Fill} (std::string {\b data}[SizeY])\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+bool {\b isColliding} ({\b Point} p)\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Constructor & Destructor Documentation\par
+\pard\plain 
+{\xe \v Map\:PacMan::Map< SizeX, SizeY >}
+{\xe \v PacMan::Map< SizeX, SizeY >\:Map}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+template<uint32_t SizeX, uint32_t SizeY> {\b PacMan::Map}< SizeX, SizeY >::Map (){\f2 [default]}}}
+\par
+{\bkmkstart AAAAAAAACA}
+{\bkmkend AAAAAAAACA}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'D0\'9A\'D0\'BE\'D0\'BD\'D1\'81\'D1\'82\'D1\'80\'D1\'83\'D0\'BA\'D1\'82\'D0\'BE\'D1\'80 \'D0\'BF\'D0\'BE \'D0\'BF\'D0\'BE\'D0\'B4\'D1\'80\'D0\'B0\'D0\'B7\'D0\'B1\'D0\'B8\'D1\'80\'D0\'B0\'D0\'BD\'D0\'B5 \par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Function Documentation\par
+\pard\plain 
+{\xe \v data\:PacMan::Map< SizeX, SizeY >}
+{\xe \v PacMan::Map< SizeX, SizeY >\:data}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+template<uint32_t SizeX, uint32_t SizeY> auto & {\b PacMan::Map}< SizeX, SizeY >::data (){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAACB}
+{\bkmkend AAAAAAAACB}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'D0\'A4\'D1\'83\'D0\'BD\'D0\'BA\'D1\'86\'D0\'B8\'D1\'8F \'D0\'BA\'D0\'BE\'D1\'8F\'D1\'82\'D0\'BE \'D0\'B2\'D1\'80\'D1\'8A\'D1\'89\'D0\'B0 \'D0\'BD\'D0\'B8\'D0\'B7\'D0\'B0 \'D1\'81 \'D0\'B8\'D0\'BD\'D1\'84\'D0\'BE\'D1\'80\'D0\'BC\'D0\'B0\'D1\'86\'D0\'B8\'D1\'8F \'D0\'BD\'D0\'B0 \'D0\'BA\'D0\'B0\'D1\'80\'D1\'82\'D0\'B0\'D1\'82\'D0\'B0 \par
+}}
+{\xe \v Draw\:PacMan::Map< SizeX, SizeY >}
+{\xe \v PacMan::Map< SizeX, SizeY >\:Draw}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+template<uint32_t SizeX, uint32_t SizeY> const void {\b PacMan::Map}< SizeX, SizeY >::Draw ({\b Point}  {\i playerPosition}, {\b Point}  {\i ghostPosition}[4], bool  {\i frightened}[4]) const}}
+\par
+{\bkmkstart AAAAAAAACC}
+{\bkmkend AAAAAAAACC}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'D0\'A4\'D1\'83\'D0\'BD\'D0\'BA\'D1\'86\'D0\'B8\'D1\'8F \'D0\'BA\'D0\'BE\'D1\'8F\'D1\'82\'D0\'BE \'D1\'80\'D0\'B8\'D1\'81\'D1\'83\'D0\'B2\'D0\'B0 \par
+}}
+{\xe \v Fill\:PacMan::Map< SizeX, SizeY >}
+{\xe \v PacMan::Map< SizeX, SizeY >\:Fill}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+template<uint32_t SizeX, uint32_t SizeY> void {\b PacMan::Map}< SizeX, SizeY >::Fill (int8_t  {\i symbol})}}
+\par
+{\bkmkstart AAAAAAAACD}
+{\bkmkend AAAAAAAACD}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'D0\'A4\'D1\'83\'D0\'BD\'D0\'BA\'D1\'86\'D0\'B8\'D1\'8F \'D0\'BA\'D0\'BE\'D1\'8F\'D1\'82\'D0\'BE \'D0\'B7\'D0\'B0\'D0\'BF\'D1\'8A\'D0\'BB\'D0\'B2\'D0\'B0 \'D0\'BA\'D0\'B0\'D1\'80\'D1\'82\'D0\'B0\'D1\'82\'D0\'B0 \'D1\'81 \'D0\'BD\'D1\'8F\'D0\'BA\'D0\'B0\'D0\'BA\'D1\'8A\'D0\'B2 \'D1\'81\'D0\'B8\'D0\'BC\'D0\'B2\'D0\'BE\'D0\'BB \par
+}}
+{\xe \v Fill\:PacMan::Map< SizeX, SizeY >}
+{\xe \v PacMan::Map< SizeX, SizeY >\:Fill}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+template<uint32_t SizeX, uint32_t SizeY> void {\b PacMan::Map}< SizeX, SizeY >::Fill (std::string  {\i data}[SizeY])}}
+\par
+{\bkmkstart AAAAAAAACE}
+{\bkmkend AAAAAAAACE}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v Get\:PacMan::Map< SizeX, SizeY >}
+{\xe \v PacMan::Map< SizeX, SizeY >\:Get}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+template<uint32_t SizeX, uint32_t SizeY> int8_t {\b PacMan::Map}< SizeX, SizeY >::Get ({\b Point}  {\i pos}) const{\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAACF}
+{\bkmkend AAAAAAAACF}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'D0\'A4\'D1\'83\'D0\'BD\'D0\'BA\'D1\'86\'D0\'B8\'D1\'8F \'D0\'BA\'D0\'BE\'D1\'8F\'D1\'82\'D0\'BE \'D0\'B2\'D1\'80\'D1\'8A\'D1\'89\'D0\'B0 \'D1\'81\'D1\'82\'D0\'BE\'D0\'B9\'D0\'BD\'D0\'BE\'D1\'81\'D1\'82 \'D0\'BD\'D0\'B0 \'D0\'BA\'D0\'BB\'D0\'B5\'D1\'82\'D0\'BA\'D0\'B0 \'D1\'81 \'D0\'BF\'D0\'BE\'D0\'B7\'D0\'B8\'D1\'86\'D0\'B8\'D1\'8F pos \par
+}}
+{\xe \v Get\:PacMan::Map< SizeX, SizeY >}
+{\xe \v PacMan::Map< SizeX, SizeY >\:Get}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+template<uint32_t SizeX, uint32_t SizeY> int8_t {\b PacMan::Map}< SizeX, SizeY >::Get (size_t  {\i x}, size_t  {\i y}) const{\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAACG}
+{\bkmkend AAAAAAAACG}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'D0\'A4\'D1\'83\'D0\'BD\'D0\'BA\'D1\'86\'D0\'B8\'D1\'8F \'D0\'BA\'D0\'BE\'D1\'8F\'D1\'82\'D0\'BE \'D0\'B2\'D1\'80\'D1\'8A\'D1\'89\'D0\'B0 \'D1\'81\'D1\'82\'D0\'BE\'D0\'B9\'D0\'BD\'D0\'BE\'D1\'81\'D1\'82 \'D0\'BD\'D0\'B0 \'D0\'BA\'D0\'BB\'D0\'B5\'D1\'82\'D0\'BA\'D0\'B0 \'D1\'81 \'D0\'BF\'D0\'BE\'D0\'B7\'D0\'B8\'D1\'86\'D0\'B8\'D1\'8F \'D1\'85,\'D1\'83 \par
+}}
+{\xe \v GetSizeX\:PacMan::Map< SizeX, SizeY >}
+{\xe \v PacMan::Map< SizeX, SizeY >\:GetSizeX}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+template<uint32_t SizeX, uint32_t SizeY> auto {\b PacMan::Map}< SizeX, SizeY >::GetSizeX () const{\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAACH}
+{\bkmkend AAAAAAAACH}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'D0\'A4\'D1\'83\'D0\'BD\'D0\'BA\'D1\'86\'D0\'B8\'D1\'8F \'D0\'BA\'D0\'BE\'D1\'8F\'D1\'82\'D0\'BE \'D0\'B2\'D1\'80\'D1\'8A\'D1\'89\'D0\'B0 \'D1\'88\'D0\'B8\'D1\'80\'D0\'BE\'D1\'87\'D0\'B8\'D0\'BD\'D0\'B0 \'D0\'BD\'D0\'B0 \'D0\'BA\'D0\'B0\'D1\'80\'D1\'82\'D0\'B0\'D1\'82\'D0\'B0 \par
+}}
+{\xe \v GetSizeY\:PacMan::Map< SizeX, SizeY >}
+{\xe \v PacMan::Map< SizeX, SizeY >\:GetSizeY}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+template<uint32_t SizeX, uint32_t SizeY> auto {\b PacMan::Map}< SizeX, SizeY >::GetSizeY () const{\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAACI}
+{\bkmkend AAAAAAAACI}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'D0\'A4\'D1\'83\'D0\'BD\'D0\'BA\'D1\'86\'D0\'B8\'D1\'8F \'D0\'BA\'D0\'BE\'D1\'8F\'D1\'82\'D0\'BE \'D0\'B2\'D1\'80\'D1\'8A\'D1\'89\'D0\'B0 \'D0\'B2\'D0\'B8\'D1\'81\'D0\'BE\'D1\'87\'D0\'B8\'D0\'BD\'D0\'B0 \'D0\'BD\'D0\'B0 \'D0\'BA\'D0\'B0\'D1\'80\'D1\'82\'D0\'B0\'D1\'82\'D0\'B0 \par
+}}
+{\xe \v isColliding\:PacMan::Map< SizeX, SizeY >}
+{\xe \v PacMan::Map< SizeX, SizeY >\:isColliding}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+template<uint32_t SizeX, uint32_t SizeY> bool {\b PacMan::Map}< SizeX, SizeY >::isColliding ({\b Point}  {\i p}){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAACJ}
+{\bkmkend AAAAAAAACJ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'D0\'A4\'D1\'83\'D0\'BD\'D0\'BA\'D1\'86\'D0\'B8\'D1\'8F \'D0\'BA\'D0\'BE\'D1\'8F\'D1\'82\'D0\'BE \'D0\'BF\'D1\'80\'D0\'BE\'D0\'B2\'D0\'B5\'D1\'80\'D1\'8F\'D0\'B2\'D0\'B0 \'D0\'B4\'D0\'B0\'D0\'BB\'D0\'B8 \'D0\'BF\'D0\'BE\'D0\'B7\'D0\'B8\'D1\'86\'D0\'B8\'D1\'8F\'D1\'82\'D0\'B0 \'D1\'81\'D0\'B5 \'D0\'BD\'D0\'B0\'D0\'BC\'D0\'B8\'D1\'80\'D0\'B0 \'D0\'BD\'D0\'B0 \'D0\'BC\'D1\'8F\'D1\'81\'D1\'82\'D0\'BE\'D1\'82\'D0\'BE \'D0\'BD\'D0\'B0 \'D1\'81\'D1\'82\'D0\'B5\'D0\'BD\'D0\'B0 \par
+}}
+{\xe \v IsValid\:PacMan::Map< SizeX, SizeY >}
+{\xe \v PacMan::Map< SizeX, SizeY >\:IsValid}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+template<uint32_t SizeX, uint32_t SizeY> bool {\b PacMan::Map}< SizeX, SizeY >::IsValid ({\b Point}  {\i pos}){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAACK}
+{\bkmkend AAAAAAAACK}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'D0\'A4\'D1\'83\'D0\'BD\'D0\'BA\'D1\'86\'D0\'B8\'D1\'8F \'D0\'BA\'D0\'BE\'D1\'8F\'D1\'82\'D0\'BE \'D0\'BF\'D1\'80\'D0\'BE\'D0\'B2\'D0\'B5\'D1\'80\'D1\'8F\'D0\'B2\'D0\'B0 \'D0\'B4\'D0\'B0\'D0\'BB\'D0\'B8 \'D1\'82\'D0\'BE\'D1\'87\'D0\'BA\'D0\'B0\'D1\'82\'D0\'B0 \'D0\'B5 \'D0\'B2 \'D0\'BA\'D0\'B0\'D1\'80\'D1\'82\'D0\'B0\'D1\'82\'D0\'B0 \par
+}}
+{\xe \v Set\:PacMan::Map< SizeX, SizeY >}
+{\xe \v PacMan::Map< SizeX, SizeY >\:Set}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+template<uint32_t SizeX, uint32_t SizeY> void {\b PacMan::Map}< SizeX, SizeY >::Set ({\b Point}  {\i pos}, int8_t  {\i value}){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAACL}
+{\bkmkend AAAAAAAACL}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'D0\'A4\'D1\'83\'D0\'BD\'D0\'BA\'D1\'86\'D0\'B8\'D1\'8F \'D0\'BA\'D0\'BE\'D1\'8F\'D1\'82\'D0\'BE \'D0\'B7\'D0\'B0\'D0\'B4\'D0\'B0\'D0\'B2\'D0\'B0 \'D1\'81\'D1\'82\'D0\'BE\'D0\'B9\'D0\'BD\'D0\'BE\'D1\'81\'D1\'82 \'D0\'BD\'D0\'B0 \'D0\'BA\'D0\'BB\'D0\'B5\'D1\'82\'D0\'BA\'D0\'B0 \'D1\'81 \'D0\'BF\'D0\'BE\'D0\'B7\'D0\'B8\'D1\'86\'D0\'B8\'D1\'8F pos \par
+}}
+{\xe \v Set\:PacMan::Map< SizeX, SizeY >}
+{\xe \v PacMan::Map< SizeX, SizeY >\:Set}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+template<uint32_t SizeX, uint32_t SizeY> void {\b PacMan::Map}< SizeX, SizeY >::Set (size_t  {\i x}, size_t  {\i y}, int8_t  {\i value}){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAACM}
+{\bkmkend AAAAAAAACM}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'D0\'A4\'D1\'83\'D0\'BD\'D0\'BA\'D1\'86\'D0\'B8\'D1\'8F \'D0\'BA\'D0\'BE\'D1\'8F\'D1\'82\'D0\'BE \'D0\'B7\'D0\'B0\'D0\'B4\'D0\'B0\'D0\'B2\'D0\'B0 \'D1\'81\'D1\'82\'D0\'BE\'D0\'B9\'D0\'BD\'D0\'BE\'D1\'81\'D1\'82 \'D0\'BD\'D0\'B0 \'D0\'BA\'D0\'BB\'D0\'B5\'D1\'82\'D0\'BA\'D0\'B0 \'D1\'81 \'D0\'BF\'D0\'BE\'D0\'B7\'D0\'B8\'D1\'86\'D0\'B8\'D1\'8F \'D1\'85,\'D1\'83 \par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this class was generated from the following files:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+C:/Users/Krusto/source/repos/PacManClone/PacManClone/{\b Map.h}\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+C:/Users/Krusto/source/repos/PacManClone/PacManClone/{\b Map.cpp}\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+PacMan::Player Class Reference\par \pard\plain 
+{\tc\tcl2 \v PacMan::Player}
+{\xe \v PacMan::Player}
+{\bkmkstart AAAAAAAACN}
+{\bkmkend AAAAAAAACN}
+\par
+{
+{\f2 #include <Player.h>}}\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Public Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Player} ()=default\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Player} (const {\b Point} startPosition)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b Move} ({\b Point} dir)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b Update} ({\b Map}< 21, 21 > &map, {\b Point} ghostPositions[4])\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Public Attributes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+bool {\b isDead} \{\}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Point} {\b position} \{\}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+uint32_t {\b direction} \{\}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+uint32_t {\b score} \{\}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+uint32_t {\b scoreMultiplier} \{\}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+uint32_t {\b multiplierTicks} \{\}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+bool {\b isPowered} \{\}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'D0\'9A\'D0\'BB\'D0\'B0\'D1\'81 \'D0\'98\'D0\'B3\'D1\'80\'D0\'B0\'D1\'87 \par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Constructor & Destructor Documentation\par
+\pard\plain 
+{\xe \v Player\:PacMan::Player}
+{\xe \v PacMan::Player\:Player}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+PacMan::Player::Player (){\f2 [default]}}}
+\par
+{\bkmkstart AAAAAAAACO}
+{\bkmkend AAAAAAAACO}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'D0\'9A\'D0\'BE\'D0\'BD\'D1\'81\'D1\'82\'D1\'80\'D1\'83\'D0\'BA\'D1\'82\'D0\'BE\'D1\'80 \'D0\'BF\'D0\'BE \'D0\'BF\'D0\'BE\'D0\'B4\'D1\'80\'D0\'B0\'D0\'B7\'D0\'B1\'D0\'B8\'D1\'80\'D0\'B0\'D0\'BD\'D0\'B5 \par
+}}
+{\xe \v Player\:PacMan::Player}
+{\xe \v PacMan::Player\:Player}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+PacMan::Player::Player (const {\b Point}  {\i startPosition}){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAACP}
+{\bkmkend AAAAAAAACP}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'D0\'9A\'D0\'BE\'D0\'BD\'D1\'81\'D1\'82\'D1\'80\'D1\'83\'D0\'BA\'D1\'82\'D0\'BE\'D1\'80 \'D0\'BF\'D1\'80\'D0\'B8 \'D0\'BA\'D0\'BE\'D0\'B9\'D1\'82\'D0\'BE \'D1\'81\'D0\'B5 \'D0\'B7\'D0\'B0\'D0\'B4\'D0\'B0\'D0\'B2\'D0\'B0 \'D0\'BD\'D0\'B0\'D1\'87\'D0\'B0\'D0\'BB\'D0\'BD\'D0\'B0\'D1\'82\'D0\'B0 \'D0\'BF\'D0\'BE\'D0\'B7\'D0\'B8\'D1\'86\'D0\'B8\'D1\'8F \'D0\'BD\'D0\'B0 \'D0\'B8\'D0\'B3\'D1\'80\'D0\'B0\'D1\'87\'D0\'B0 \par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Function Documentation\par
+\pard\plain 
+{\xe \v Move\:PacMan::Player}
+{\xe \v PacMan::Player\:Move}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void PacMan::Player::Move ({\b Point}  {\i dir}){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAACQ}
+{\bkmkend AAAAAAAACQ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'D0\'A4\'D1\'83\'D0\'BD\'D0\'BA\'D1\'86\'D0\'B8\'D1\'8F \'D0\'BA\'D0\'BE\'D1\'8F\'D1\'82\'D0\'BE \'D0\'BC\'D1\'8A\'D1\'80\'D0\'B4\'D0\'B0 \'D0\'B8\'D0\'B3\'D1\'80\'D0\'B0\'D1\'87\'D0\'B0 \'D0\'B2 \'D0\'B4\'D0\'B0\'D0\'B4\'D0\'B5\'D0\'BD\'D0\'B0 \'D0\'BF\'D0\'BE\'D1\'81\'D0\'BE\'D0\'BA\'D0\'B0 \par
+}}
+{\xe \v Update\:PacMan::Player}
+{\xe \v PacMan::Player\:Update}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void PacMan::Player::Update ({\b Map}< 21, 21 > &  {\i map}, {\b Point}  {\i ghostPositions}[4])}}
+\par
+{\bkmkstart AAAAAAAACR}
+{\bkmkend AAAAAAAACR}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'D0\'A4\'D1\'83\'D0\'BD\'D0\'BA\'D1\'86\'D0\'B8\'D1\'8F \'D0\'BA\'D0\'BE\'D1\'8F\'D1\'82\'D0\'BE \'D0\'BE\'D0\'BF\'D1\'80\'D0\'B5\'D1\'81\'D0\'BD\'D1\'8F\'D0\'B2\'D0\'B0 \'D0\'B8\'D0\'B3\'D1\'80\'D0\'B0\'D1\'87\'D0\'B0 \'D0\'B8 \'D0\'BA\'D0\'B0\'D1\'80\'D1\'82\'D0\'B0\'D1\'82\'D0\'B0 \par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Data Documentation\par
+\pard\plain 
+{\xe \v direction\:PacMan::Player}
+{\xe \v PacMan::Player\:direction}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+uint32_t PacMan::Player::direction \{\}}}
+\par
+{\bkmkstart AAAAAAAACS}
+{\bkmkend AAAAAAAACS}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'D0\'9F\'D0\'BE\'D1\'81\'D0\'BE\'D0\'BA\'D0\'B0 \'D0\'B2 \'D0\'BA\'D0\'BE\'D1\'8F\'D1\'82\'D0\'BE \'D1\'81\'D0\'B5 \'D0\'B4\'D0\'B2\'D0\'B8\'D0\'B6\'D0\'B8 \'D0\'B8\'D0\'B3\'D1\'80\'D0\'B0\'D1\'87\'D0\'B0 \par
+}}
+{\xe \v isDead\:PacMan::Player}
+{\xe \v PacMan::Player\:isDead}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+bool PacMan::Player::isDead \{\}}}
+\par
+{\bkmkstart AAAAAAAACT}
+{\bkmkend AAAAAAAACT}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'D0\'A4\'D0\'BB\'D0\'B0\'D0\'B3 \'D0\'BA\'D0\'BE\'D0\'B9\'D1\'82\'D0\'BE \'D1\'81\'D0\'BB\'D1\'83\'D0\'B6\'D0\'B8 \'D0\'B7\'D0\'B0 \'D0\'BF\'D1\'80\'D0\'BE\'D0\'B2\'D0\'B5\'D1\'80\'D0\'BA\'D0\'B0 \'D0\'B4\'D0\'B0\'D0\'BB\'D0\'B8 \'D0\'B8\'D0\'B3\'D1\'80\'D0\'B0\'D1\'87\'D1\'8A\'D1\'82 \'D0\'B5 \'D1\'83\'D0\'BC\'D1\'80\'D1\'8F\'D0\'BB \par
+}}
+{\xe \v isPowered\:PacMan::Player}
+{\xe \v PacMan::Player\:isPowered}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+bool PacMan::Player::isPowered \{\}}}
+\par
+{\bkmkstart AAAAAAAACU}
+{\bkmkend AAAAAAAACU}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'D0\'A4\'D0\'BB\'D0\'B0\'D0\'B3 \'D0\'B7\'D0\'B0 \'D0\'BF\'D1\'80\'D0\'BE\'D0\'B2\'D0\'B5\'D1\'80\'D0\'BA\'D0\'B0 \'D0\'B4\'D0\'B0\'D0\'BB\'D0\'B8 \'D0\'BC\'D0\'BE\'D0\'B6\'D0\'B5 \'D0\'B4\'D0\'B0 \'D0\'B8\'D0\'B7\'D1\'8F\'D0\'B4\'D0\'B5 \'D0\'B4\'D1\'83\'D1\'85\'D1\'87\'D0\'B5 \par
+}}
+{\xe \v multiplierTicks\:PacMan::Player}
+{\xe \v PacMan::Player\:multiplierTicks}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+uint32_t PacMan::Player::multiplierTicks \{\}}}
+\par
+{\bkmkstart AAAAAAAACV}
+{\bkmkend AAAAAAAACV}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'D0\'98\'D0\'B7\'D0\'BC\'D0\'B8\'D0\'BD\'D0\'B0\'D0\'BB\'D0\'B8 \'D1\'82\'D0\'B8\'D0\'BA\'D0\'BE\'D0\'B2\'D0\'B5 \par
+}}
+{\xe \v position\:PacMan::Player}
+{\xe \v PacMan::Player\:position}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b Point} PacMan::Player::position \{\}}}
+\par
+{\bkmkstart AAAAAAAACW}
+{\bkmkend AAAAAAAACW}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'D0\'9F\'D0\'BE\'D0\'B7\'D0\'B8\'D1\'86\'D0\'B8\'D1\'8F \'D0\'BD\'D0\'B0 \'D0\'B8\'D0\'B3\'D1\'80\'D0\'B0\'D1\'87\'D0\'B0 \par
+}}
+{\xe \v score\:PacMan::Player}
+{\xe \v PacMan::Player\:score}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+uint32_t PacMan::Player::score \{\}}}
+\par
+{\bkmkstart AAAAAAAACX}
+{\bkmkend AAAAAAAACX}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'D0\'A2\'D0\'BE\'D1\'87\'D0\'BA\'D0\'B8 \'D0\'BA\'D0\'BE\'D0\'B8\'D1\'82\'D0\'BE \'D0\'B5 \'D1\'81\'D1\'8A\'D0\'B1\'D1\'80\'D0\'B0\'D0\'BB \'D0\'B8\'D0\'B3\'D1\'80\'D0\'B0\'D1\'87\'D0\'B0 \par
+}}
+{\xe \v scoreMultiplier\:PacMan::Player}
+{\xe \v PacMan::Player\:scoreMultiplier}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+uint32_t PacMan::Player::scoreMultiplier \{\}}}
+\par
+{\bkmkstart AAAAAAAACY}
+{\bkmkend AAAAAAAACY}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'D1\'83\'D0\'BC\'D0\'BD\'D0\'BE\'D0\'B6\'D0\'B8\'D1\'82\'D0\'B5\'D0\'BB \'D0\'BD\'D0\'B0 \'D1\'82\'D0\'BE\'D1\'87\'D0\'BA\'D0\'B8 \par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this class was generated from the following files:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+C:/Users/Krusto/source/repos/PacManClone/PacManClone/{\b Player.h}\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+C:/Users/Krusto/source/repos/PacManClone/PacManClone/{\b Player.cpp}\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+PacMan::Point Class Reference\par \pard\plain 
+{\tc\tcl2 \v PacMan::Point}
+{\xe \v PacMan::Point}
+{\bkmkstart AAAAAAAACZ}
+{\bkmkend AAAAAAAACZ}
+\par
+{
+{\f2 #include <Point.h>}}\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Public Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Point} ()=default\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Point} (float {\b x}, float {\b y})\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Point} (const {\b Point} &)=default\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Point} & {\b operator=} (const {\b Point} &other)=default\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+bool {\b operator==} (const {\b Point} &rhs)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Point} & {\b operator+=} (const {\b Point} &rhs)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Point} & {\b operator-=} (const {\b Point} &rhs)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+bool {\b operator!=} (const {\b Point} &rhs)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Point} {\b operator+} (const {\b Point} &rhs)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Point} & {\b operator*} (float rhs)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Point} {\b GetTrunc} ()\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Public Attributes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+float {\b x} \{\}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+float {\b y} \{\}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Constructor & Destructor Documentation\par
+\pard\plain 
+{\xe \v Point\:PacMan::Point}
+{\xe \v PacMan::Point\:Point}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+PacMan::Point::Point (){\f2 [default]}}}
+\par
+{\bkmkstart AAAAAAAADA}
+{\bkmkend AAAAAAAADA}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'D0\'9A\'D0\'BE\'D0\'BD\'D1\'81\'D1\'82\'D1\'80\'D1\'83\'D0\'BA\'D1\'82\'D0\'BE\'D1\'80 \'D0\'BF\'D0\'BE \'D0\'BF\'D0\'BE\'D0\'B4\'D1\'80\'D0\'B0\'D0\'B7\'D0\'B1\'D0\'B8\'D1\'80\'D0\'B0\'D0\'BD\'D0\'B5 \par
+}}
+{\xe \v Point\:PacMan::Point}
+{\xe \v PacMan::Point\:Point}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+PacMan::Point::Point (float  {\i x}, float  {\i y}){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAADB}
+{\bkmkend AAAAAAAADB}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'D0\'9A\'D0\'BE\'D0\'BD\'D1\'81\'D1\'82\'D1\'80\'D1\'83\'D0\'BA\'D1\'82\'D0\'BE\'D1\'80 \'D0\'BA\'D0\'BE\'D0\'B9\'D1\'82\'D0\'BE \'D0\'B2\'D0\'B7\'D0\'B8\'D0\'BC\'D0\'B0 \'D1\'85,\'D1\'83 \'D0\'BA\'D0\'B0\'D1\'82\'D0\'BE \'D0\'BF\'D0\'B0\'D1\'80\'D0\'B0\'D0\'BC\'D0\'B5\'D1\'82\'D1\'80\'D0\'B8 \par
+}}
+{\xe \v Point\:PacMan::Point}
+{\xe \v PacMan::Point\:Point}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+PacMan::Point::Point (const {\b Point} & ){\f2 [default]}}}
+\par
+{\bkmkstart AAAAAAAADC}
+{\bkmkend AAAAAAAADC}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'D0\'9A\'D0\'BE\'D0\'BD\'D1\'81\'D1\'82\'D1\'80\'D1\'83\'D0\'BA\'D1\'82\'D0\'BE\'D1\'80 \'D0\'BA\'D0\'BE\'D0\'B9\'D1\'82\'D0\'BE \'D0\'BA\'D0\'BE\'D0\'BF\'D0\'B8\'D1\'80\'D0\'B0 \'D0\'B4\'D0\'B0\'D0\'BD\'D0\'BD\'D0\'B8\'D1\'82\'D0\'B5 \'D0\'BE\'D1\'82 \'D0\'B4\'D1\'80\'D1\'83\'D0\'B3\'D0\'B0 \'D1\'82\'D0\'BE\'D1\'87\'D0\'BA\'D0\'B0 \par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Function Documentation\par
+\pard\plain 
+{\xe \v GetTrunc\:PacMan::Point}
+{\xe \v PacMan::Point\:GetTrunc}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b Point} PacMan::Point::GetTrunc (){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAADD}
+{\bkmkend AAAAAAAADD}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v operator!=\:PacMan::Point}
+{\xe \v PacMan::Point\:operator!=}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+bool PacMan::Point::operator!= (const {\b Point} &  {\i rhs}){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAADE}
+{\bkmkend AAAAAAAADE}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v operator*\:PacMan::Point}
+{\xe \v PacMan::Point\:operator*}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b Point} & PacMan::Point::operator* (float  {\i rhs}){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAADF}
+{\bkmkend AAAAAAAADF}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v operator+\:PacMan::Point}
+{\xe \v PacMan::Point\:operator+}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b Point} PacMan::Point::operator+ (const {\b Point} &  {\i rhs}){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAADG}
+{\bkmkend AAAAAAAADG}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v operator+=\:PacMan::Point}
+{\xe \v PacMan::Point\:operator+=}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b Point} & PacMan::Point::operator+= (const {\b Point} &  {\i rhs}){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAADH}
+{\bkmkend AAAAAAAADH}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v operator-=\:PacMan::Point}
+{\xe \v PacMan::Point\:operator-=}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b Point} & PacMan::Point::operator-= (const {\b Point} &  {\i rhs}){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAADI}
+{\bkmkend AAAAAAAADI}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v operator=\:PacMan::Point}
+{\xe \v PacMan::Point\:operator=}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b Point} & PacMan::Point::operator= (const {\b Point} &  {\i other}){\f2 [default]}}}
+\par
+{\bkmkstart AAAAAAAADJ}
+{\bkmkend AAAAAAAADJ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v operator==\:PacMan::Point}
+{\xe \v PacMan::Point\:operator==}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+bool PacMan::Point::operator== (const {\b Point} &  {\i rhs}){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAADK}
+{\bkmkend AAAAAAAADK}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Data Documentation\par
+\pard\plain 
+{\xe \v x\:PacMan::Point}
+{\xe \v PacMan::Point\:x}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+float PacMan::Point::x \{\}}}
+\par
+{\bkmkstart AAAAAAAADL}
+{\bkmkend AAAAAAAADL}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v y\:PacMan::Point}
+{\xe \v PacMan::Point\:y}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+float PacMan::Point::y \{\}}}
+\par
+{\bkmkstart AAAAAAAADM}
+{\bkmkend AAAAAAAADM}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this class was generated from the following file:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+C:/Users/Krusto/source/repos/PacManClone/PacManClone/{\b Point.h}\par
+}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+File Documentation{\tc \v File Documentation}
+\par \pard\plain 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+C:/Users/Krusto/source/repos/PacManClone/PacManClone/Ghost.h File Reference\par \pard\plain 
+{\tc\tcl2 \v C:/Users/Krusto/source/repos/PacManClone/PacManClone/Ghost.h}
+{\xe \v C:/Users/Krusto/source/repos/PacManClone/PacManClone/Ghost.h}
+{\bkmkstart AAAAAAAAAH}
+{\bkmkend AAAAAAAAAH}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include "Point.h"}\par
+{\f2 #include <iostream>}\par
+{\f2 #include <stdlib.h>}\par
+{\f2 #include "Map.h"}\par
+{\f2 #include "Math.h"}\par
+{\f2 #include "Player.h"}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Classes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b PacMan::Ghost}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Namespaces\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+namespace {\b PacMan}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+C:/Users/Krusto/source/repos/PacManClone/PacManClone/Ghost.h\par \pard\plain 
+{\bkmkstart AAAAAAAAAA}
+{\bkmkend AAAAAAAAAA}
+Go to the documentation of this file.{
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 1 {\cf21 #pragma once}\par
+2 {\cf21 #include "Point.h"}\par
+3 {\cf21 #include <iostream>}\par
+4 {\cf21 #include <stdlib.h>}\par
+5 {\cf21 #include "Map.h"}\par
+6 {\cf21 #include "Math.h"}\par
+7 {\cf21 #include "Player.h"}\par
+8 \par
+9 {\cf17 namespace }PacMan \{\par
+10     {\cf17 class }Ghost \{\par
+11     {\cf17 public}:\par
+12         Ghost() = {\cf19 default};\par
+13 \par
+17         {\cf18 void} Move(Point dir) \{ position += dir; \}\par
+18 \par
+22         {\cf18 float} GetTargetDistance(uint32_t direction) \{\par
+23             {\cf18 float} x = position.x;\par
+24             {\cf18 float} y = position.y;\par
+25 \par
+26             {\cf19 switch} (direction)\par
+27             \{\par
+28             {\cf19 case} 0:\par
+29             \{\par
+30                 x += 1;\par
+31 \par
+32                 {\cf19 break};\par
+33             \}\par
+34             {\cf19 case} 1:\par
+35             \{\par
+36                 y -= 1;\par
+37 \par
+38                 {\cf19 break};\par
+39             \}\par
+40             {\cf19 case} 2:\par
+41             \{\par
+42                 x -= 1;\par
+43 \par
+44                 {\cf19 break};\par
+45             \}\par
+46             {\cf19 case} 3:\par
+47             \{\par
+48                 y += 1;\par
+49             \}\par
+50             \}\par
+51             {\cf19 return} GetDistance(\{ x,y \}, target);\par
+52         \}\par
+53 \par
+57         {\cf18 bool} IsCollidingPacman(Player& player) \{\par
+58             {\cf19 return} player.position.GetTrunc() == position;\par
+59         \}\par
+63         {\cf18 void} UpdateTarget(uint32_t pacmanDirection, Point ghostPosition, Point pacmanPosition,Map<21,21>& map) \{\par
+64                 {\cf19 if} (movementMode == 0) {\cf20 // scatter mode}\par
+65                 \{\par
+66                     {\cf20 //\'D0\'BE\'D1\'82\'D0\'B8\'D0\'B2\'D0\'B0 \'D0\'B2 \'D0\'BA\'D1\'80\'D0\'B0\'D1\'8F \'D0\'BD\'D0\'B0 \'D0\'BA\'D0\'B0\'D1\'80\'D1\'82\'D0\'B0\'D1\'82\'D0\'B0}\par
+67                     {\cf19 switch} ({\cf18 id})\par
+68                     \{\par
+69                     {\cf19 case} 0:\par
+70                     \{\par
+71                         target = \{(map.GetSizeX() - 1.0f), 0.0f \};\par
+72 \par
+73                         {\cf19 break};\par
+74                     \}\par
+75                     {\cf19 case} 1:\par
+76                     \{\par
+77                         target = \{ 0.0f, 0.0f \};\par
+78 \par
+79                         {\cf19 break};\par
+80                     \}\par
+81                     {\cf19 case} 2:\par
+82                     \{\par
+83                         target = \{ (map.GetSizeX() - 1.0f), (map.GetSizeY() - 1.0f) \};\par
+84 \par
+85                         {\cf19 break};\par
+86                     \}\par
+87                     {\cf19 case} 3:\par
+88                     \{\par
+89                         target = \{ 0.0f,(map.GetSizeY() - 1.0f) \};\par
+90                     \}\par
+91                     \}\par
+92                 \}\par
+93                 {\cf19 else} {\cf20 //chase mode}\par
+94                 \{\par
+95                     {\cf19 switch} ({\cf18 id})\par
+96                     \{\par
+97                     {\cf19 case} 0: {\cf20 //\'D1\'87\'D0\'B5\'D1\'80\'D0\'B2\'D0\'B5\'D0\'BD\'D0\'B8\'D1\'8F\'D1\'82 \'D0\'B4\'D1\'83\'D1\'85 \'D0\'BD\'D0\'B0\'D1\'86\'D0\'B5\'D0\'BB\'D0\'B2\'D0\'B0 \'D0\'BF\'D0\'B0\'D0\'BA\'D0\'BC\'D0\'B0\'D0\'BD}\par
+98                     \{\par
+99                         target = pacmanPosition;\par
+100 \par
+101                         {\cf19 break};\par
+102                     \}\par
+103                     {\cf19 case} 1: {\cf20 //\'D1\'80\'D0\'BE\'D0\'B7\'D0\'BE\'D0\'B2\'D0\'B8\'D1\'8F\'D1\'82 \'D0\'B4\'D1\'83\'D1\'85 \'D0\'BD\'D0\'B0\'D1\'86\'D0\'B5\'D0\'BB\'D0\'B2\'D0\'B0 4 \'D0\'BA\'D0\'BB\'D0\'B5\'D1\'82\'D0\'BA\'D0\'B8 \'D0\'BF\'D1\'80\'D0\'B5\'D0\'B4 \'D0\'BF\'D0\'B0\'D0\'BA\'D0\'BC\'D0\'B0\'D0\'BD}\par
+104                     \{\par
+105                         target = pacmanPosition;\par
+106 \par
+107                         {\cf19 switch} (pacmanDirection)\par
+108                         \{\par
+109                         {\cf19 case} 0:\par
+110                         \{\par
+111                             target += \{2, 0\};\par
+112 \par
+113                             {\cf19 break};\par
+114                         \}\par
+115                         {\cf19 case} 1:\par
+116                         \{\par
+117                             target -= \{0, 2\};\par
+118 \par
+119                             {\cf19 break};\par
+120                         \}\par
+121                         {\cf19 case} 2:\par
+122                         \{\par
+123                             target -= \{2, 0\};\par
+124                             {\cf19 break};\par
+125                         \}\par
+126                         {\cf19 case} 3:\par
+127                         \{\par
+128                             target += \{0, 2\};\par
+129 \par
+130                         \}\par
+131                         \}\par
+132 \par
+133                         {\cf19 break};\par
+134                     \}\par
+135                     {\cf19 case} 2: {\cf20 // \'D1\'81\'D0\'B8\'D0\'BD\'D0\'B8\'D1\'8F\'D1\'82 \'D0\'BD\'D0\'B0\'D1\'86\'D0\'B5\'D0\'BB\'D0\'B2\'D0\'B0 2 \'D0\'BA\'D0\'BB\'D0\'B5\'D1\'82\'D0\'BA\'D0\'B8 \'D0\'BF\'D1\'80\'D0\'B5\'D0\'B4 \'D0\'BF\'D0\'B0\'D0\'BA\'D0\'BC\'D0\'B0\'D0\'BD}\par
+136                     \{\par
+137                         target = pacmanPosition;\par
+138 \par
+139                         {\cf19 switch} (pacmanDirection)\par
+140                         \{\par
+141                         {\cf19 case} 0:\par
+142                         \{\par
+143                             target += \{1, 0\};\par
+144 \par
+145                             {\cf19 break};\par
+146                         \}\par
+147                         {\cf19 case} 1:\par
+148                         \{\par
+149                             target -= \{0, 1\};\par
+150 \par
+151                             {\cf19 break};\par
+152                         \}\par
+153                         {\cf19 case} 2:\par
+154                         \{\par
+155                             target -= \{1, 0\};\par
+156 \par
+157                             {\cf19 break};\par
+158                         \}\par
+159                         {\cf19 case} 3:\par
+160                         \{\par
+161                             target += \{0, 1\};\par
+162                         \}\par
+163                         \}\par
+164 \par
+165                         target += \{target.x - ghostPosition.x, \par
+166                                      target.y - ghostPosition.y\};\par
+167 \par
+168                         {\cf19 break};\par
+169                     \}\par
+170                     {\cf19 case} 3: {\cf20 // \'D0\'BE\'D1\'80\'D0\'B0\'D0\'BD\'D0\'B6\'D0\'B5\'D0\'B2\'D0\'B8\'D1\'8F\'D1\'82 \'D0\'B4\'D1\'83\'D1\'85 \'D0\'BF\'D1\'80\'D0\'B5\'D1\'81\'D0\'BB\'D0\'B5\'D0\'B4\'D0\'B2\'D0\'B0 \'D0\'BF\'D0\'B0\'D0\'BA\'D0\'BC\'D0\'B0\'D0\'BD \'D0\'B8 \'D1\'81\'D0\'BB\'D0\'B5\'D0\'B4 \'D1\'82\'D0\'BE\'D0\'B2\'D0\'B0 \'D0\'BE\'D1\'82\'D0\'B8\'D0\'B2\'D0\'B0 \'D0\'B2 scatter \'D1\'80\'D0\'B5\'D0\'B6\'D0\'B8\'D0\'BC}\par
+171                     \{\par
+172                         \par
+173                         {\cf19 if} ( GetDistance(pacmanPosition,position) >= 4)\par
+174                         \{\par
+175                             target = pacmanPosition;\par
+176                         \}\par
+177                         {\cf19 else}\par
+178                         \{\par
+179                             target = \{ 0.0f, (map.GetSizeY() - 1.0f) \};\par
+180                         \}\par
+181                     \}\par
+182                     \}\par
+183                 \}\par
+184         \}\par
+188         {\cf18 void} Update(Map<21, 21>& map, Player& player,Ghost& ghost) \{\par
+189             {\cf18 bool} move = 0;\par
+190 \par
+191             {\cf18 unsigned} {\cf18 char} available_ways = 0;\par
+192             {\cf18 float} speed = 1;\par
+193 \par
+194             {\cf18 bool} walls[4]\{\};\par
+195 \par
+196             UpdateTarget(player.direction,ghost.position, player.position,map);\par
+197 \par
+198             walls[0] = map.Get(position + Point\{ speed,0 \}) == {\cf23 '#'};\par
+199             walls[1] = map.Get(position + Point\{ 0,-speed \}) == {\cf23 '#'};\par
+200             walls[2] = map.Get(position + Point\{ -speed,0 \}) == {\cf23 '#'};\par
+201             walls[3] = map.Get(position + Point\{ 0,speed \}) == {\cf23 '#'};\par
+202 \par
+203             {\cf19 if} (frightenedMode != 1)\par
+204             \{\par
+205                 {\cf18 unsigned} {\cf18 char} optimal_direction = 4;\par
+206 \par
+207                 {\cf20 // \'D0\'B4\'D1\'83\'D1\'85\'D1\'87\'D0\'B5\'D1\'82\'D0\'BE \'D0\'BC\'D0\'BE\'D0\'B6\'D0\'B5 \'D0\'B4\'D0\'B0 \'D0\'BC\'D1\'8A\'D1\'80\'D0\'B4\'D0\'B0}\par
+208                 move = 1;\par
+209 \par
+210                 {\cf19 for} ({\cf18 unsigned} {\cf18 char} a = 0; a < 4; a++)\par
+211                 \{\par
+212                     {\cf20 //\'D0\'B4\'D1\'83\'D1\'85\'D1\'87\'D0\'B5\'D1\'82\'D0\'B0\'D1\'82\'D0\'B0 \'D0\'BD\'D0\'B5 \'D0\'BC\'D0\'BE\'D0\'B3\'D0\'B0\'D1\'82 \'D0\'B4\'D0\'B0 \'D1\'81\'D0\'B5 \'D0\'BE\'D0\'B1\'D1\'8A\'D1\'80\'D0\'BD\'D0\'B0\'D1\'82, \'D1\'81\'D1\'82\'D0\'B8\'D0\'B3\'D0\'B0 \'D0\'B4\'D0\'B0 \'D0\'BD\'D0\'B5 \'D0\'B5 \'D0\'BD\'D1\'83\'D0\'B6\'D0\'BD\'D0\'BE}\par
+213                     {\cf19 if} (a == (2 + direction) % 4)\par
+214                     \{\par
+215                         {\cf19 continue};\par
+216                     \}\par
+217                     {\cf19 else} {\cf19 if} (walls[a] == {\cf17 false})\par
+218                     \{\par
+219                         {\cf19 if} (optimal_direction == 4)\par
+220                         \{\par
+221                             optimal_direction = a;\par
+222                         \}\par
+223 \par
+224                         available_ways++;\par
+225 \par
+226                         {\cf19 if} (GetTargetDistance(a) < GetTargetDistance(optimal_direction))\par
+227                         \{\par
+228                             {\cf20 // \'D0\'BE\'D0\'BF\'D1\'82\'D0\'B8\'D0\'BC\'D0\'B0\'D0\'BB\'D0\'BD\'D0\'B0\'D1\'82\'D0\'B0 \'D0\'BF\'D0\'BE\'D1\'81\'D0\'BE\'D0\'BA\'D0\'B0 \'D0\'B7\'D0\'B0 \'D0\'B4\'D0\'B0 \'D1\'81\'D1\'82\'D0\'B8\'D0\'B3\'D0\'BD\'D0\'B5 \'D1\'86\'D0\'B5\'D0\'BB\'D1\'82\'D0\'B0}\par
+229                             optimal_direction = a;\par
+230                         \}\par
+231                     \}\par
+232                 \}\par
+233 \par
+234                 {\cf19 if} (available_ways > 1)\par
+235                 \{\par
+236                     {\cf20 // \'D0\'BA\'D0\'BE\'D0\'B3\'D0\'B0\'D1\'82\'D0\'BE \'D1\'81\'D1\'82\'D0\'B8\'D0\'B3\'D0\'BD\'D0\'B5 \'D0\'BA\'D1\'80\'D1\'8A\'D1\'81\'D1\'82\'D0\'BE\'D0\'BF\'D1\'8A\'D1\'82 \'D0\'B8\'D0\'B7\'D0\'B1\'D0\'B8\'D1\'80\'D0\'B0 \'D0\'BD\'D0\'B0\'D0\'B9 \'D0\'B4\'D0\'BE\'D0\'B1\'D1\'80\'D0\'B0\'D1\'82\'D0\'B0 \'D0\'BF\'D0\'BE\'D1\'81\'D0\'BE\'D0\'BA\'D0\'B0}\par
+237                     direction = optimal_direction;\par
+238                 \}\par
+239                 {\cf19 else}\par
+240                 \{\par
+241                     {\cf19 if} (optimal_direction == 4)\par
+242                     \{\par
+243                         {\cf20 // \'D0\'BE\'D0\'B1\'D1\'80\'D1\'8A\'D1\'89\'D0\'B0 \'D1\'81\'D0\'B5 \'D0\'B4\'D1\'83\'D1\'85\'D1\'87\'D0\'B5\'D1\'82\'D0\'BE \'D0\'BD\'D0\'B0 \'D0\'BE\'D0\'B1\'D1\'80\'D0\'B0\'D1\'82\'D0\'BD\'D0\'BE \'D0\'B7\'D0\'B0\'D1\'89\'D0\'BE\'D1\'82\'D0\'BE \'D1\'82\'D1\'80\'D1\'8F\'D0\'B1\'D0\'B2\'D0\'B0}\par
+244                         direction = (2 + direction) % 4;\par
+245                     \}\par
+246                     {\cf19 else}\par
+247                     \{\par
+248                         direction = optimal_direction;\par
+249                     \}\par
+250                 \}\par
+251             \}\par
+252             {\cf19 else}\par
+253             \{\par
+254                 {\cf18 unsigned} {\cf18 char} random_direction = rand() % 4;\par
+255 \par
+256                 {\cf19 if} (frightenedSpeedTimer == 0)\par
+257                 \{\par
+258                     \par
+259                     move = 1;\par
+260 \par
+261                     frightenedSpeedTimer = 30;\par
+262 \par
+263                     {\cf19 for} ({\cf18 unsigned} {\cf18 char} a = 0; a < 4; a++)\par
+264                     \{\par
+265                         {\cf20 // \'D0\'BD\'D0\'B5 \'D0\'BC\'D0\'BE\'D0\'B6\'D0\'B5 \'D0\'B4\'D0\'B0 \'D1\'81\'D0\'B5 \'D0\'BE\'D0\'B1\'D1\'80\'D1\'8A\'D1\'89\'D0\'B0\'D1\'82 \'D0\'B4\'D0\'BE\'D1\'80\'D0\'B8 \'D0\'B8 \'D0\'B4\'D0\'B0 \'D1\'81\'D0\'B5 \'D1\'81\'D1\'82\'D1\'80\'D0\'B0\'D1\'85\'D1\'83\'D0\'B2\'D0\'B0\'D1\'82}\par
+266                         {\cf19 if} (a == (2 + direction) % 4)\par
+267                         \{\par
+268                             {\cf19 continue};\par
+269                         \}\par
+270                         {\cf19 else} {\cf19 if} (walls[a] == 0)\par
+271                         \{\par
+272                             available_ways++;\par
+273                         \}\par
+274                     \}\par
+275 \par
+276                     {\cf19 if} (available_ways > 0)\par
+277                     \{\par
+278                         {\cf19 while} (walls[random_direction] == 1 || random_direction == (2 + direction) % 4)\par
+279                         \{\par
+280                             {\cf20 // \'D0\'B2\'D0\'B7\'D0\'B8\'D0\'BC\'D0\'B0\'D0\'BC\'D0\'B5 \'D0\'BF\'D1\'80\'D0\'BE\'D0\'B8\'D0\'B7\'D0\'B2\'D0\'BE\'D0\'BB\'D0\'BD\'D0\'B0 \'D0\'BF\'D0\'BE\'D1\'81\'D0\'BE\'D0\'BA\'D0\'B0 \'D0\'B4\'D0\'BE\'D0\'BA\'D0\'B0\'D1\'82\'D0\'BE \'D0\'BD\'D0\'B5 \'D0\'BC\'D0\'BE\'D0\'B6\'D0\'B5 \'D0\'B4\'D0\'B0 \'D1\'8F \'D0\'B8\'D0\'B7\'D0\'BF\'D0\'BE\'D0\'BB\'D0\'B7\'D0\'B2\'D0\'B0\'D0\'BC\'D0\'B5}\par
+281                             random_direction = rand() % 4;\par
+282                         \}\par
+283 \par
+284                         direction = random_direction;\par
+285                     \}\par
+286                     {\cf19 else}\par
+287                     \{\par
+288                         {\cf20 // \'D0\'B0\'D0\'BA\'D0\'BE \'D0\'BD\'D1\'8F\'D0\'BC\'D0\'B0 \'D0\'B4\'D1\'80\'D1\'83\'D0\'B3 \'D0\'BF\'D1\'8A\'D1\'82 \'D1\'81\'D0\'B5 \'D0\'BE\'D0\'B1\'D1\'80\'D1\'8A\'D1\'89\'D0\'B0 \'D0\'BD\'D0\'B0\'D0\'BE\'D0\'B1\'D1\'80\'D0\'B0\'D1\'82\'D0\'BD\'D0\'BE}\par
+289                         direction = (2 + direction) % 4;\par
+290                     \}\par
+291                 \}\par
+292                 {\cf19 else}\par
+293                 \{\par
+294                     frightenedSpeedTimer--;\par
+295                 \}\par
+296             \}\par
+297             {\cf20 // \'D0\'B0\'D0\'BA\'D0\'BE \'D0\'BC\'D0\'BE\'D0\'B6\'D0\'B5 \'D0\'B4\'D0\'B0 \'D1\'81\'D0\'B5 \'D0\'BC\'D1\'80\'D1\'8A\'D0\'B4\'D0\'BD\'D0\'B5 \'D0\'B3\'D0\'BE \'D0\'BC\'D0\'B5\'D1\'81\'D1\'82\'D0\'B8\'D0\'BC}\par
+298             {\cf19 if} (move)\par
+299             \{\par
+300                 {\cf19 switch} (direction)\par
+301                 \{\par
+302                 {\cf19 case} 0:\par
+303                 \{\par
+304                     position.x += speed;\par
+305 \par
+306                     {\cf19 break};\par
+307                 \}\par
+308                 {\cf19 case} 1:\par
+309                 \{\par
+310                     position.y -= speed;\par
+311 \par
+312                     {\cf19 break};\par
+313                 \}\par
+314                 {\cf19 case} 2:\par
+315                 \{\par
+316                     position.x -= speed;\par
+317 \par
+318                     {\cf19 break};\par
+319                 \}\par
+320                 {\cf19 case} 3:\par
+321                 \{\par
+322                     position.y += speed;\par
+323                 \}\par
+324                 \}\par
+325 \par
+326                 {\cf20 // \'D0\'BA\'D0\'BE\'D0\'B3\'D0\'B0\'D1\'82\'D0\'BE \'D0\'BC\'D0\'B8\'D0\'BD\'D0\'B5 \'D0\'BF\'D1\'80\'D0\'B5\'D0\'B7 \'D0\'BF\'D0\'BE\'D1\'80\'D1\'82\'D0\'B0\'D0\'BB\'D0\'B0 \'D0\'B3\'D0\'BE \'D0\'BF\'D1\'80\'D0\'B0\'D1\'89\'D0\'B0\'D0\'BC\'D0\'B5 \'D0\'BE\'D1\'82 \'D0\'B4\'D1\'80\'D1\'83\'D0\'B3\'D0\'B0\'D1\'82\'D0\'B0 \'D1\'81\'D1\'82\'D1\'80\'D0\'B0\'D0\'BD\'D0\'B0}\par
+327                 {\cf19 if} (position.x <= -1)\par
+328                 \{\par
+329                     position.x = map.GetSizeX() - speed;\par
+330                 \}\par
+331                 {\cf19 else} {\cf19 if} (position.x >= map.GetSizeX())\par
+332                 \{\par
+333                     position.x = speed;\par
+334                 \}\par
+335             \}\par
+336 \par
+337             {\cf19 if} (position.GetTrunc() == player.position.GetTrunc())\par
+338             \{\par
+339                 {\cf19 if} (frightenedMode == 0) {\cf20 // \'D0\'BA\'D0\'BE\'D0\'B3\'D0\'B0\'D1\'82\'D0\'BE \'D0\'BD\'D0\'B5 \'D0\'B5 \'D1\'83\'D0\'BF\'D0\'BB\'D0\'B0\'D1\'88\'D0\'B5\'D0\'BD \'D0\'B8 \'D0\'B4\'D0\'BE\'D0\'BA\'D0\'BE\'D1\'81\'D0\'BD\'D0\'B5 \'D0\'BF\'D0\'B0\'D0\'BA\'D0\'BC\'D0\'B0\'D0\'BD, \'D0\'B8\'D0\'B3\'D1\'80\'D0\'B0\'D1\'82\'D0\'B0 \'D0\'BF\'D1\'80\'D0\'B8\'D0\'BA\'D0\'BB\'D1\'8E\'D1\'87\'D0\'B2\'D0\'B0}\par
+340                 \{\par
+341                     player.isDead = 1;\par
+342                 \}\par
+343                 {\cf19 else} {\cf20 //\'D0\'B8\'D0\'BD\'D0\'B0\'D1\'87\'D0\'B5 \'D0\'B1\'D1\'8F\'D0\'B3\'D0\'B0 \'D0\'BA\'D1\'8A\'D0\'BC \'D0\'BA\'D0\'BB\'D0\'B5\'D1\'82\'D0\'BA\'D0\'B0\'D1\'82\'D0\'B0}\par
+344                 \{\par
+345                     frightenedMode = 2;\par
+346 \par
+347                     target = home;\par
+348                 \}\par
+349             \}\par
+350         \}\par
+354         uint32_t {\cf18 id}\{\};\par
+358         uint32_t frightenedSpeedTimer\{\};\par
+362         {\cf18 bool} frightenedMode\{\};\par
+366         uint32_t movementMode\{0\};\par
+370         Point position\{\};\par
+374         Point home\{10,10\};\par
+378         uint32_t direction\{\};\par
+382         Point target\{\};\par
+383     \};\par
+384 \}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+C:/Users/Krusto/source/repos/PacManClone/PacManClone/main.cpp File Reference\par \pard\plain 
+{\tc\tcl2 \v C:/Users/Krusto/source/repos/PacManClone/PacManClone/main.cpp}
+{\xe \v C:/Users/Krusto/source/repos/PacManClone/PacManClone/main.cpp}
+{\bkmkstart AAAAAAAAAI}
+{\bkmkend AAAAAAAAAI}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include <iostream>}\par
+{\f2 #include <Windows.h>}\par
+{\f2 #include "PacMan.h"}\par
+{\f2 #include "WindowsFunctions.h"}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b main} ()\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Function Documentation\par
+\pard\plain 
+{\xe \v main\:main.cpp}
+{\xe \v main.cpp\:main}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int main ()}}
+\par
+{\bkmkstart AAAAAAAAAJ}
+{\bkmkend AAAAAAAAAJ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+C:/Users/Krusto/source/repos/PacManClone/PacManClone/Map.cpp File Reference\par \pard\plain 
+{\tc\tcl2 \v C:/Users/Krusto/source/repos/PacManClone/PacManClone/Map.cpp}
+{\xe \v C:/Users/Krusto/source/repos/PacManClone/PacManClone/Map.cpp}
+{\bkmkstart AAAAAAAAAK}
+{\bkmkend AAAAAAAAAK}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include "Map.h"}\par
+{\f2 #include <iostream>}\par
+{\f2 #include <Windows.h>}\par
+{\f2 #include "WindowsFunctions.h"}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Namespaces\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+namespace {\b PacMan}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+C:/Users/Krusto/source/repos/PacManClone/PacManClone/Map.h File Reference\par \pard\plain 
+{\tc\tcl2 \v C:/Users/Krusto/source/repos/PacManClone/PacManClone/Map.h}
+{\xe \v C:/Users/Krusto/source/repos/PacManClone/PacManClone/Map.h}
+{\bkmkstart AAAAAAAAAL}
+{\bkmkend AAAAAAAAAL}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include <cstdint>}\par
+{\f2 #include <string>}\par
+{\f2 #include "Point.h"}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Classes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b PacMan::Map< SizeX, SizeY >}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Namespaces\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+namespace {\b PacMan}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+C:/Users/Krusto/source/repos/PacManClone/PacManClone/Map.h\par \pard\plain 
+{\bkmkstart AAAAAAAAAB}
+{\bkmkend AAAAAAAAAB}
+Go to the documentation of this file.{
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 1 {\cf21 #pragma once}\par
+2 {\cf21 #include <cstdint>}\par
+3 {\cf21 #include <string>}\par
+4 {\cf21 #include "Point.h"}\par
+5 \par
+6 {\cf17 namespace }PacMan \{\par
+7 \par
+8     {\cf17 template} <u{\cf18 int}32_t SizeX, u{\cf18 int}32_t SizeY>\par
+9     {\cf17 class }Map \{\par
+10     {\cf17 public}:\par
+14         Map() = {\cf19 default};\par
+15 \par
+19         {\cf18 void} Set({\cf18 size_t} x, {\cf18 size_t} y, int8_t value) \{ m_Data[x][y] = value; \}\par
+23         {\cf18 void} Set(Point pos, int8_t value) \{ m_Data[(int)pos.x][({\cf18 int})pos.y] = value; \}\par
+27         int8_t Get({\cf18 size_t} x, {\cf18 size_t} y){\cf17  const }\{ {\cf19 return} m_Data[x][y]; \}\par
+31         int8_t Get(Point pos){\cf17  const }\{\par
+32             {\cf19 if} (pos.y < height && pos.x < width && pos.x >= 0 && pos.y >= 0) \{\par
+33                 {\cf19 return} m_Data[(size_t)pos.x][({\cf18 size_t})pos.y];\par
+34             \}\par
+35             {\cf19 return} INT8_MIN;\par
+36         \}\par
+37 \par
+41         {\cf18 bool} IsValid(Point pos) \{ {\cf19 return} (pos.y < height && pos.x < width && pos.x >= 0 && pos.y >= 0); \}\par
+45         {\cf17 auto}& data() \{ {\cf19 return} &m_Data; \}\par
+46 \par
+50         {\cf17 auto} GetSizeX(){\cf17  const }\{ {\cf19 return} SizeX; \};\par
+54         {\cf17 auto} GetSizeY(){\cf17  const }\{ {\cf19 return} SizeY; \};\par
+58         {\cf17 const} {\cf18 void} Draw(Point playerPosition,Point ghostPosition[4], {\cf18 bool} frightened[4]) {\cf17 const};\par
+62         {\cf18 void} Fill(int8_t symbol);\par
+63 \par
+64         {\cf20 /*}\par
+65 {\cf20         * \'D0\'A4\'D1\'83\'D0\'BD\'D0\'BA\'D1\'86\'D0\'B8\'D1\'8F \'D0\'BA\'D0\'BE\'D1\'8F\'D1\'82\'D0\'BE \'D0\'B7\'D0\'B0\'D0\'BF\'D1\'8A\'D0\'BB\'D0\'B2\'D0\'B0 \'D0\'BA\'D0\'B0\'D1\'80\'D1\'82\'D0\'B0\'D1\'82\'D0\'B0 \'D1\'81 \'D0\'BD\'D1\'8F\'D0\'BA\'D0\'B0\'D0\'BA\'D1\'8A\'D0\'B2 \'D0\'BD\'D0\'B8\'D0\'B7 \'D0\'BE\'D1\'82 \'D1\'80\'D0\'B5\'D0\'B4\'D0\'BE\'D0\'B2\'D0\'B5}\par
+66 {\cf20         */}\par
+67         {\cf18 void} Fill(std::string data[SizeY]);\par
+68 \par
+72         {\cf18 bool} isColliding(Point p) \{ \par
+73             {\cf18 char} c = m_Data[(int)p.GetTrunc().x][(int)p.GetTrunc().y];\par
+74             {\cf19 return} c == {\cf23 '#'};\par
+75         \}\par
+76 \par
+77     {\cf17 private}:\par
+81         {\cf18 char} m_Data[SizeX][SizeY]\{\};\par
+85         uint32_t width = SizeX;\par
+89         uint32_t height = SizeY;\par
+90     \};\par
+91 \par
+92 \}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+C:/Users/Krusto/source/repos/PacManClone/PacManClone/Math.cpp File Reference\par \pard\plain 
+{\tc\tcl2 \v C:/Users/Krusto/source/repos/PacManClone/PacManClone/Math.cpp}
+{\xe \v C:/Users/Krusto/source/repos/PacManClone/PacManClone/Math.cpp}
+{\bkmkstart AAAAAAAAAM}
+{\bkmkend AAAAAAAAAM}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include "Math.h"}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+float {\b GetDistance} ({\b PacMan::Point} p1, {\b PacMan::Point} p2)\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Function Documentation\par
+\pard\plain 
+{\xe \v GetDistance\:Math.cpp}
+{\xe \v Math.cpp\:GetDistance}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+float GetDistance ({\b PacMan::Point}  {\i p1}, {\b PacMan::Point}  {\i p2})}}
+\par
+{\bkmkstart AAAAAAAAAN}
+{\bkmkend AAAAAAAAAN}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'D0\'A4\'D1\'83\'D0\'BD\'D0\'BA\'D1\'86\'D0\'B8\'D1\'8F \'D0\'B7\'D0\'B0 \'D0\'B8\'D0\'B7\'D1\'87\'D0\'B8\'D1\'81\'D0\'BB\'D1\'8F\'D0\'B2\'D0\'B0\'D0\'BD\'D0\'B5 \'D0\'BD\'D0\'B0 \'D0\'B4\'D0\'B8\'D1\'81\'D1\'82\'D0\'B0\'D0\'BD\'D1\'86\'D0\'B8\'D1\'8F \'D0\'B8\'D0\'B7\'D0\'BF\'D0\'BE\'D0\'BB\'D0\'B7\'D0\'B2\'D0\'B0\'D0\'B9\'D0\'BA\'D0\'B8 \'D1\'82\'D0\'B5\'D0\'BE\'D1\'80\'D0\'B5\'D0\'BC\'D0\'B0\'D1\'82\'D0\'B0 \'D0\'BD\'D0\'B0 \'D0\'9F\'D0\'B8\'D1\'82\'D0\'B0\'D0\'B3\'D0\'BE\'D1\'80 \par
+}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+C:/Users/Krusto/source/repos/PacManClone/PacManClone/Math.h File Reference\par \pard\plain 
+{\tc\tcl2 \v C:/Users/Krusto/source/repos/PacManClone/PacManClone/Math.h}
+{\xe \v C:/Users/Krusto/source/repos/PacManClone/PacManClone/Math.h}
+{\bkmkstart AAAAAAAAAO}
+{\bkmkend AAAAAAAAAO}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include "Point.h"}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+float {\b GetDistance} ({\b PacMan::Point} p1, {\b PacMan::Point} p2)\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Function Documentation\par
+\pard\plain 
+{\xe \v GetDistance\:Math.h}
+{\xe \v Math.h\:GetDistance}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+float GetDistance ({\b PacMan::Point}  {\i p1}, {\b PacMan::Point}  {\i p2})}}
+\par
+{\bkmkstart AAAAAAAAAP}
+{\bkmkend AAAAAAAAAP}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'D0\'A4\'D1\'83\'D0\'BD\'D0\'BA\'D1\'86\'D0\'B8\'D1\'8F \'D0\'B7\'D0\'B0 \'D0\'B8\'D0\'B7\'D1\'87\'D0\'B8\'D1\'81\'D0\'BB\'D1\'8F\'D0\'B2\'D0\'B0\'D0\'BD\'D0\'B5 \'D0\'BD\'D0\'B0 \'D0\'B4\'D0\'B8\'D1\'81\'D1\'82\'D0\'B0\'D0\'BD\'D1\'86\'D0\'B8\'D1\'8F \'D0\'B8\'D0\'B7\'D0\'BF\'D0\'BE\'D0\'BB\'D0\'B7\'D0\'B2\'D0\'B0\'D0\'B9\'D0\'BA\'D0\'B8 \'D1\'82\'D0\'B5\'D0\'BE\'D1\'80\'D0\'B5\'D0\'BC\'D0\'B0\'D1\'82\'D0\'B0 \'D0\'BD\'D0\'B0 \'D0\'9F\'D0\'B8\'D1\'82\'D0\'B0\'D0\'B3\'D0\'BE\'D1\'80 \par
+}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+C:/Users/Krusto/source/repos/PacManClone/PacManClone/Math.h\par \pard\plain 
+{\bkmkstart AAAAAAAAAC}
+{\bkmkend AAAAAAAAAC}
+Go to the documentation of this file.{
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 1 {\cf21 #pragma once}\par
+2 {\cf21 #include "Point.h"}\par
+6 {\cf18 float} GetDistance(PacMan::Point p1, PacMan::Point p2);\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+C:/Users/Krusto/source/repos/PacManClone/PacManClone/PacMan.cpp File Reference\par \pard\plain 
+{\tc\tcl2 \v C:/Users/Krusto/source/repos/PacManClone/PacManClone/PacMan.cpp}
+{\xe \v C:/Users/Krusto/source/repos/PacManClone/PacManClone/PacMan.cpp}
+{\bkmkstart AAAAAAAAAQ}
+{\bkmkend AAAAAAAAAQ}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include "PacMan.h"}\par
+{\f2 #include "Map.cpp"}\par
+{\f2 #include <Windows.h>}\par
+{\f2 #include "WindowsFunctions.h"}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+C:/Users/Krusto/source/repos/PacManClone/PacManClone/PacMan.h File Reference\par \pard\plain 
+{\tc\tcl2 \v C:/Users/Krusto/source/repos/PacManClone/PacManClone/PacMan.h}
+{\xe \v C:/Users/Krusto/source/repos/PacManClone/PacManClone/PacMan.h}
+{\bkmkstart AAAAAAAAAR}
+{\bkmkend AAAAAAAAAR}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include "Player.h"}\par
+{\f2 #include "Map.h"}\par
+{\f2 #include "Ghost.h"}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Classes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b PacMan::Game}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Namespaces\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+namespace {\b PacMan}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+C:/Users/Krusto/source/repos/PacManClone/PacManClone/PacMan.h\par \pard\plain 
+{\bkmkstart AAAAAAAAAD}
+{\bkmkend AAAAAAAAAD}
+Go to the documentation of this file.{
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 1 {\cf21 #pragma once}\par
+2 {\cf21 #include "Player.h"}\par
+3 {\cf21 #include "Map.h"}\par
+4 {\cf21 #include "Ghost.h"}\par
+5 \par
+6 {\cf17 namespace }PacMan \{\par
+7     {\cf17 class }Game \{\par
+8     {\cf17 public}:\par
+9         {\cf20 /*}\par
+10 {\cf20         * \'D0\'9A\'D0\'BE\'D0\'BD\'D1\'81\'D1\'82\'D1\'80\'D1\'83\'D0\'BA\'D1\'82\'D0\'BE\'D1\'80 \'D0\'BF\'D0\'BE \'D0\'BF\'D0\'BE\'D0\'B4\'D1\'80\'D0\'B0\'D0\'B7\'D0\'B1\'D0\'B8\'D1\'80\'D0\'B0\'D0\'BD\'D0\'B5}\par
+11 {\cf20         */}\par
+12         Game() = {\cf19 default};\par
+13         {\cf20 /*}\par
+14 {\cf20         * \'D0\'A4\'D1\'83\'D0\'BD\'D0\'BA\'D1\'86\'D0\'B8\'D1\'8F \'D0\'B7\'D0\'B0 \'D0\'B8\'D0\'BD\'D0\'B8\'D1\'86\'D0\'B8\'D0\'B0\'D0\'BB\'D0\'B8\'D0\'B7\'D0\'B0\'D1\'86\'D0\'B8\'D1\'8F \'D0\'BD\'D0\'B0 \'D0\'B8\'D0\'B3\'D1\'80\'D0\'B0\'D1\'82\'D0\'B0}\par
+15 {\cf20         */}\par
+16         {\cf18 void} Init();\par
+17         {\cf20 /*}\par
+18 {\cf20         * \'D0\'A4\'D1\'83\'D0\'BD\'D0\'BA\'D1\'86\'D0\'B8\'D1\'8F \'D0\'BA\'D0\'BE\'D1\'8F\'D1\'82\'D0\'BE \'D0\'BE\'D0\'BF\'D1\'80\'D0\'B5\'D1\'81\'D0\'BD\'D1\'8F\'D0\'B2\'D0\'B0 \'D0\'B8\'D0\'B3\'D1\'80\'D0\'B0\'D1\'82\'D0\'B0}\par
+19 {\cf20         */}\par
+20         {\cf18 void} Update();\par
+21     {\cf17 private}:\par
+22         {\cf20 /*}\par
+23 {\cf20         * \'D0\'9F\'D1\'80\'D0\'B5\'D0\'B4\'D0\'B8\'D1\'88\'D0\'BD\'D0\'B0 \'D0\'BF\'D0\'BE\'D0\'B7\'D0\'B8\'D1\'86\'D0\'B8\'D1\'8F \'D0\'BD\'D0\'B0 \'D0\'B8\'D0\'B3\'D1\'80\'D0\'B0\'D1\'87\'D0\'B0}\par
+24 {\cf20         */}\par
+25         Point m_OldPlayerPosition\{\};\par
+26         {\cf20 /*}\par
+27 {\cf20         * \'D0\'98\'D0\'B3\'D1\'80\'D0\'B0\'D1\'87}\par
+28 {\cf20         */}\par
+29         Player m_Player\{\};\par
+30         {\cf20 /*}\par
+31 {\cf20         * \'D0\'9D\'D0\'B8\'D0\'B7 \'D0\'BE\'D1\'82 \'D0\'B4\'D1\'83\'D1\'85\'D1\'87\'D0\'B5\'D1\'82\'D0\'B0 \'D0\'BA\'D0\'BE\'D0\'B8\'D1\'82\'D0\'BE \'D1\'81\'D0\'B5 \'D0\'B4\'D0\'B2\'D0\'B8\'D0\'B6\'D0\'B0\'D1\'82 \'D0\'BD\'D0\'B0 \'D0\'BA\'D0\'B0\'D1\'80\'D1\'82\'D0\'B0\'D1\'82\'D0\'B0}\par
+32 {\cf20         */}\par
+33         Ghost m_Enemy[4]\{\};\par
+34         {\cf20 /*}\par
+35 {\cf20         * \'D0\'9A\'D0\'B0\'D1\'80\'D1\'82\'D0\'B0 \'D1\'81 \'D1\'80\'D0\'B0\'D0\'B7\'D0\'BC\'D0\'B5\'D1\'80\'D0\'B8 [21,21]}\par
+36 {\cf20         */}\par
+37         Map<21,21> m_Map\{\};\par
+38         {\cf20 /*}\par
+39 {\cf20         * \'D0\'B1\'D1\'80\'D0\'BE\'D0\'B9 \'D0\'B8\'D0\'B7\'D0\'BC\'D0\'B8\'D0\'BD\'D0\'B0\'D0\'BB\'D0\'B8 \'D1\'82\'D0\'B8\'D0\'BA\'D0\'BE\'D0\'B2\'D0\'B5}\par
+40 {\cf20         */}\par
+41         uint32_t m_Ticks\{\};\par
+42     \};\par
+43 \}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+C:/Users/Krusto/source/repos/PacManClone/PacManClone/Player.cpp File Reference\par \pard\plain 
+{\tc\tcl2 \v C:/Users/Krusto/source/repos/PacManClone/PacManClone/Player.cpp}
+{\xe \v C:/Users/Krusto/source/repos/PacManClone/PacManClone/Player.cpp}
+{\bkmkstart AAAAAAAAAS}
+{\bkmkend AAAAAAAAAS}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include "Player.h"}\par
+{\f2 #include "WindowsFunctions.h"}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+C:/Users/Krusto/source/repos/PacManClone/PacManClone/Player.h File Reference\par \pard\plain 
+{\tc\tcl2 \v C:/Users/Krusto/source/repos/PacManClone/PacManClone/Player.h}
+{\xe \v C:/Users/Krusto/source/repos/PacManClone/PacManClone/Player.h}
+{\bkmkstart AAAAAAAAAT}
+{\bkmkend AAAAAAAAAT}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include "Point.h"}\par
+{\f2 #include "Map.h"}\par
+{\f2 #include <cstdlib>}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Classes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b PacMan::Player}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Namespaces\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+namespace {\b PacMan}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+C:/Users/Krusto/source/repos/PacManClone/PacManClone/Player.h\par \pard\plain 
+{\bkmkstart AAAAAAAAAE}
+{\bkmkend AAAAAAAAAE}
+Go to the documentation of this file.{
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 1 {\cf21 #pragma once}\par
+2 {\cf21 #include "Point.h"}\par
+3 {\cf21 #include "Map.h"}\par
+4 {\cf21 #include <cstdlib>}\par
+5 {\cf17 namespace }PacMan \{\par
+9     {\cf17 class }Player \{\par
+10     {\cf17 public}:\par
+14         Player() = {\cf19 default};\par
+18         Player({\cf17 const} Point startPosition) : position(startPosition) \{\}\par
+22         {\cf18 void} Move(Point dir) \{ position += dir; \};\par
+26         {\cf18 void} Update(Map<21, 21>& map,Point ghostPositions[4]);\par
+27 \par
+31         {\cf18 bool} isDead\{\};\par
+35         Point position\{\};\par
+39         uint32_t direction\{\};\par
+43         uint32_t score\{\};\par
+47         uint32_t scoreMultiplier\{\};\par
+51         uint32_t multiplierTicks\{\};\par
+55         {\cf18 bool} isPowered\{\};\par
+56     \};\par
+57 \}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+C:/Users/Krusto/source/repos/PacManClone/PacManClone/Point.h File Reference\par \pard\plain 
+{\tc\tcl2 \v C:/Users/Krusto/source/repos/PacManClone/PacManClone/Point.h}
+{\xe \v C:/Users/Krusto/source/repos/PacManClone/PacManClone/Point.h}
+{\bkmkstart AAAAAAAAAU}
+{\bkmkend AAAAAAAAAU}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include <cstdint>}\par
+{\f2 #include <cmath>}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Classes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b PacMan::Point}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Namespaces\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+namespace {\b PacMan}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+C:/Users/Krusto/source/repos/PacManClone/PacManClone/Point.h\par \pard\plain 
+{\bkmkstart AAAAAAAAAF}
+{\bkmkend AAAAAAAAAF}
+Go to the documentation of this file.{
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 1 {\cf21 #pragma once}\par
+2 {\cf21 #include <cstdint>}\par
+3 {\cf21 #include <cmath>}\par
+4 {\cf17 namespace }PacMan \{\par
+5     {\cf17 class }Point \{\par
+6     {\cf17 public}:\par
+10         Point() = {\cf19 default};\par
+14         Point({\cf18 float} x, {\cf18 float} y) : x(x), y(y) \{\}\par
+18         Point({\cf17 const} Point&) = {\cf19 default};\par
+19 \par
+20         Point& operator=({\cf17 const} Point& other) = {\cf19 default};\par
+21         {\cf18 bool} operator==({\cf17 const} Point& rhs) \{\par
+22             {\cf19 return} (this->x == rhs.x && this->y == rhs.y);\par
+23         \}\par
+24         Point& operator+=({\cf17 const} Point& rhs)\par
+25         \{\par
+26             this->x += rhs.x;\par
+27             this->y += rhs.y;\par
+28             {\cf19 return} *{\cf17 this};\par
+29         \}\par
+30         Point& operator-=({\cf17 const} Point& rhs)\par
+31         \{\par
+32             this->x -= rhs.x;\par
+33             this->y -= rhs.y;\par
+34             {\cf19 return} *{\cf17 this};\par
+35         \}\par
+36         {\cf18 bool} operator!=({\cf17 const} Point& rhs)\par
+37         \{\par
+38             {\cf19 return} !(*{\cf17 this}==rhs);\par
+39         \}\par
+40         Point operator+({\cf17 const} Point& rhs)\par
+41         \{\par
+42             {\cf18 float} x = this->x + rhs.x;\par
+43             {\cf18 float} y = this->y + rhs.y;\par
+44             {\cf19 return} \{ x,y \};\par
+45         \}\par
+46         Point& operator*({\cf18 float} rhs) \{\par
+47             this->x *= rhs;\par
+48             this->y *= rhs;\par
+49             {\cf19 return} *{\cf17 this};\par
+50         \}\par
+51         Point GetTrunc() \{ {\cf19 return} \{ trunc(floor(x)),trunc(floor(y)) \}; \};\par
+52         {\cf18 float} x\{\};\par
+53         {\cf18 float} y\{\};\par
+54     \};\par
+55 \par
+56 \}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+C:/Users/Krusto/source/repos/PacManClone/PacManClone/WindowsFunctions.cpp File Reference\par \pard\plain 
+{\tc\tcl2 \v C:/Users/Krusto/source/repos/PacManClone/PacManClone/WindowsFunctions.cpp}
+{\xe \v C:/Users/Krusto/source/repos/PacManClone/PacManClone/WindowsFunctions.cpp}
+{\bkmkstart AAAAAAAAAV}
+{\bkmkend AAAAAAAAAV}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include "WindowsFunctions.h"}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b GotoXY} (SHORT x, SHORT y)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+POINT {\b GetCursorPosition} ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b ClearScreen} ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b ShowConsoleCursor} (bool showFlag)\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Function Documentation\par
+\pard\plain 
+{\xe \v ClearScreen\:WindowsFunctions.cpp}
+{\xe \v WindowsFunctions.cpp\:ClearScreen}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void ClearScreen ()}}
+\par
+{\bkmkstart AAAAAAAAAW}
+{\bkmkend AAAAAAAAAW}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'D0\'A4\'D1\'83\'D0\'BD\'D0\'BA\'D1\'86\'D0\'B8\'D1\'8F \'D0\'BA\'D0\'BE\'D1\'8F\'D1\'82\'D0\'BE \'D1\'82\'D1\'80\'D0\'B8\'D0\'B5 \'D0\'B5\'D0\'BA\'D1\'80\'D0\'B0\'D0\'BD\'D0\'B0 \par
+}}
+{\xe \v GetCursorPosition\:WindowsFunctions.cpp}
+{\xe \v WindowsFunctions.cpp\:GetCursorPosition}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+POINT GetCursorPosition ()}}
+\par
+{\bkmkstart AAAAAAAAAX}
+{\bkmkend AAAAAAAAAX}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'D0\'A4\'D1\'83\'D0\'BD\'D0\'BA\'D1\'86\'D0\'B8\'D1\'8F \'D0\'BA\'D0\'BE\'D1\'8F\'D1\'82\'D0\'BE \'D0\'B2\'D0\'B7\'D0\'B8\'D0\'BC\'D0\'B0 \'D0\'BF\'D0\'BE\'D0\'B7\'D0\'B8\'D1\'86\'D0\'B8\'D1\'8F\'D1\'82\'D0\'B0 \'D0\'BD\'D0\'B0 \'D0\'BA\'D1\'83\'D1\'80\'D1\'81\'D0\'BE\'D1\'80\'D0\'B0 \par
+}}
+{\xe \v GotoXY\:WindowsFunctions.cpp}
+{\xe \v WindowsFunctions.cpp\:GotoXY}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void GotoXY (SHORT  {\i x}, SHORT  {\i y})}}
+\par
+{\bkmkstart AAAAAAAAAY}
+{\bkmkend AAAAAAAAAY}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'D0\'A4\'D1\'83\'D0\'BD\'D0\'BA\'D1\'86\'D0\'B8\'D1\'8F \'D0\'BA\'D0\'BE\'D1\'8F\'D1\'82\'D0\'BE \'D0\'BA\'D0\'B0\'D0\'B7\'D0\'B2\'D0\'B0 \'D0\'BD\'D0\'B0 \'D0\'BA\'D1\'83\'D1\'80\'D1\'81\'D0\'BE\'D1\'80\'D0\'B0 \'D0\'B4\'D0\'B0 \'D0\'BE\'D1\'82\'D0\'B8\'D0\'B4\'D0\'B5 \'D0\'BD\'D0\'B0 x,y \par
+}}
+{\xe \v ShowConsoleCursor\:WindowsFunctions.cpp}
+{\xe \v WindowsFunctions.cpp\:ShowConsoleCursor}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void ShowConsoleCursor (bool  {\i showFlag})}}
+\par
+{\bkmkstart AAAAAAAAAZ}
+{\bkmkend AAAAAAAAAZ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'D0\'A4\'D1\'83\'D0\'BD\'D0\'BA\'D1\'86\'D1\'83\'D1\'8F \'D0\'BA\'D0\'BE\'D1\'8F\'D1\'82\'D0\'BE \'D0\'BF\'D0\'BE\'D0\'BA\'D0\'B0\'D0\'B7\'D0\'B2\'D0\'B0 \'D0\'B8\'D0\'BB\'D0\'B8 \'D1\'81\'D0\'BA\'D1\'80\'D0\'B8\'D0\'B2\'D0\'B0 \'D0\'BA\'D1\'83\'D1\'80\'D1\'81\'D0\'BE\'D1\'80\'D0\'B0 \par
+}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+C:/Users/Krusto/source/repos/PacManClone/PacManClone/WindowsFunctions.h File Reference\par \pard\plain 
+{\tc\tcl2 \v C:/Users/Krusto/source/repos/PacManClone/PacManClone/WindowsFunctions.h}
+{\xe \v C:/Users/Krusto/source/repos/PacManClone/PacManClone/WindowsFunctions.h}
+{\bkmkstart AAAAAAAABA}
+{\bkmkend AAAAAAAABA}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include <Windows.h>}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b GotoXY} (SHORT x, SHORT y)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+POINT {\b GetCursorPosition} ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b ClearScreen} ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b ShowConsoleCursor} (bool showFlag)\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Function Documentation\par
+\pard\plain 
+{\xe \v ClearScreen\:WindowsFunctions.h}
+{\xe \v WindowsFunctions.h\:ClearScreen}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void ClearScreen ()}}
+\par
+{\bkmkstart AAAAAAAABB}
+{\bkmkend AAAAAAAABB}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'D0\'A4\'D1\'83\'D0\'BD\'D0\'BA\'D1\'86\'D0\'B8\'D1\'8F \'D0\'BA\'D0\'BE\'D1\'8F\'D1\'82\'D0\'BE \'D1\'82\'D1\'80\'D0\'B8\'D0\'B5 \'D0\'B5\'D0\'BA\'D1\'80\'D0\'B0\'D0\'BD\'D0\'B0 \par
+}}
+{\xe \v GetCursorPosition\:WindowsFunctions.h}
+{\xe \v WindowsFunctions.h\:GetCursorPosition}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+POINT GetCursorPosition ()}}
+\par
+{\bkmkstart AAAAAAAABC}
+{\bkmkend AAAAAAAABC}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'D0\'A4\'D1\'83\'D0\'BD\'D0\'BA\'D1\'86\'D0\'B8\'D1\'8F \'D0\'BA\'D0\'BE\'D1\'8F\'D1\'82\'D0\'BE \'D0\'B2\'D0\'B7\'D0\'B8\'D0\'BC\'D0\'B0 \'D0\'BF\'D0\'BE\'D0\'B7\'D0\'B8\'D1\'86\'D0\'B8\'D1\'8F\'D1\'82\'D0\'B0 \'D0\'BD\'D0\'B0 \'D0\'BA\'D1\'83\'D1\'80\'D1\'81\'D0\'BE\'D1\'80\'D0\'B0 \par
+}}
+{\xe \v GotoXY\:WindowsFunctions.h}
+{\xe \v WindowsFunctions.h\:GotoXY}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void GotoXY (SHORT  {\i x}, SHORT  {\i y})}}
+\par
+{\bkmkstart AAAAAAAABD}
+{\bkmkend AAAAAAAABD}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'D0\'A4\'D1\'83\'D0\'BD\'D0\'BA\'D1\'86\'D0\'B8\'D1\'8F \'D0\'BA\'D0\'BE\'D1\'8F\'D1\'82\'D0\'BE \'D0\'BA\'D0\'B0\'D0\'B7\'D0\'B2\'D0\'B0 \'D0\'BD\'D0\'B0 \'D0\'BA\'D1\'83\'D1\'80\'D1\'81\'D0\'BE\'D1\'80\'D0\'B0 \'D0\'B4\'D0\'B0 \'D0\'BE\'D1\'82\'D0\'B8\'D0\'B4\'D0\'B5 \'D0\'BD\'D0\'B0 x,y \par
+}}
+{\xe \v ShowConsoleCursor\:WindowsFunctions.h}
+{\xe \v WindowsFunctions.h\:ShowConsoleCursor}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void ShowConsoleCursor (bool  {\i showFlag})}}
+\par
+{\bkmkstart AAAAAAAABE}
+{\bkmkend AAAAAAAABE}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'D0\'A4\'D1\'83\'D0\'BD\'D0\'BA\'D1\'86\'D1\'83\'D1\'8F \'D0\'BA\'D0\'BE\'D1\'8F\'D1\'82\'D0\'BE \'D0\'BF\'D0\'BE\'D0\'BA\'D0\'B0\'D0\'B7\'D0\'B2\'D0\'B0 \'D0\'B8\'D0\'BB\'D0\'B8 \'D1\'81\'D0\'BA\'D1\'80\'D0\'B8\'D0\'B2\'D0\'B0 \'D0\'BA\'D1\'83\'D1\'80\'D1\'81\'D0\'BE\'D1\'80\'D0\'B0 \par
+}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+C:/Users/Krusto/source/repos/PacManClone/PacManClone/WindowsFunctions.h\par \pard\plain 
+{\bkmkstart AAAAAAAAAG}
+{\bkmkend AAAAAAAAAG}
+Go to the documentation of this file.{
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 1 {\cf21 #pragma once}\par
+2 {\cf21 #include <Windows.h>}\par
+3 \par
+7 {\cf18 void} GotoXY(SHORT x, SHORT y);\par
+11 POINT GetCursorPosition();\par
+15 {\cf18 void} ClearScreen();\par
+19 {\cf18 void} ShowConsoleCursor({\cf18 bool} showFlag);\par
+}
+
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid Index\par 
+\pard\plain 
+{\tc \v Index}
+{\field\fldedit {\*\fldinst INDEX \\c2 \\*MERGEFORMAT}{\fldrslt INDEX}}
+}
