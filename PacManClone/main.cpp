@@ -11,12 +11,10 @@ int main() {
 	PacMan::Game game;
 	game.Init();
 
-	bool exit = false;
-	while (!exit) {
-
+	while (true) {
 		ClearScreen();
 		game.Update();
 		Sleep(100);
 	}
-
+	return 0;
 }

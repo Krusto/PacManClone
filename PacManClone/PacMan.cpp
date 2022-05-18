@@ -4,8 +4,8 @@
 #include "WindowsFunctions.h"
 void PacMan::Game::Init()
 {
-	m_Player.position ={ 2,2};
-	m_OldPlayerPosition = { 2,2 };
+	m_Player.position = {2,2};
+	m_OldPlayerPosition = {2,2};
 
 	for (size_t i = 0; i < 4; i++)
 	{
@@ -71,6 +71,8 @@ void PacMan::Game::Update()
 	else {
 		system("cls");
 		std::cout << "Game Over\n";
+		std::cout << "Score : " << m_Player.score << '\n';
+		exit(0);
 	}
 	std::cout << "Score : "<<m_Player.score<<'\n';
 
